@@ -160,11 +160,6 @@ npm run build
 
 The built files will be in the `out/` directory.
 
-### Vercel (Recommended)
-
-Deploy easily with Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/prompts-wine)
 
 ## 🤝 Contributing
 
