@@ -16,8 +16,8 @@ export default function Home(): React.JSX.Element {
         </div>
 
         <div className="flex flex-col gap-4 sm:flex-row">
-          <Button variant="default" size="lg">
-            Get Started
+          <Button variant="default" size="lg" asChild>
+            <a href="/components">View Components</a>
           </Button>
           <Button variant="outline" size="lg">
             Learn More
