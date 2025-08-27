@@ -1,6 +1,6 @@
 # Prompts Wine 🍷
 
-**Live Demo: [prompts.wine](https://prompts.wine)**
+**🏠 Browse the knowledge base: [prompts.wine](https://prompts.wine)**
 
 A modern Next.js 15+ project showcasing a beautiful component library with shadcn/ui components, built with TypeScript, Tailwind CSS v4, and featuring a sleek dark theme by default.
 
@@ -20,7 +20,7 @@ A modern Next.js 15+ project showcasing a beautiful component library with shadc
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm, yarn, pnpm, or bun
 
 ### Installation
@@ -83,7 +83,7 @@ prompts-wine/
 This project includes a comprehensive set of shadcn/ui components:
 
 - **Button** - Multiple variants (default, secondary, outline, ghost) with sizes
-- **Tabs** - Nested navigation with smooth transitions  
+- **Tabs** - Nested navigation with smooth transitions
 - **ScrollArea** - Custom scrollable content areas
 - **Collapsible** - Expandable/collapsible content sections
 - **FileTree** - Interactive file/folder tree component
@@ -176,7 +176,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 🙏 Acknowledgments
 
 - [Next.js](https://nextjs.org) - The React framework
-- [shadcn/ui](https://ui.shadcn.com) - Beautiful UI components  
+- [shadcn/ui](https://ui.shadcn.com) - Beautiful UI components
 - [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
 - [Lucide React](https://lucide.dev) - Beautiful icons
 - [Radix UI](https://radix-ui.com) - Unstyled, accessible UI primitives
