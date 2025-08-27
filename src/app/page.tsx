@@ -10,24 +10,34 @@ import {
   CollapsibleContent,
 } from "@/components/ui/collapsible";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import {
-  User,
-  Settings,
-  Copy,
-  Code,
-  Folder,
-  FileText,
-  Plus,
-} from "lucide-react";
+import { FileScan, Folder, Plus } from "lucide-react";
 import Image from "next/image";
 
 export default function Prompts(): React.JSX.Element {
   const [selectedFile, setSelectedFile] = React.useState<string>("");
   const [isCollapsibleOpen, setIsCollapsibleOpen] = React.useState(false);
+  const [activeFilter, setActiveFilter] = React.useState<string>("all");
 
   const handleFileSelect = React.useCallback((item: FileTreeItem) => {
     setSelectedFile(item.name);
   }, []);
+
+  // Filter function for file tree based on active tab
+  const getFilteredFileTreeData = React.useCallback(() => {
+    switch (activeFilter) {
+      case "all":
+        // For now, return all data
+        return sampleFileTreeData;
+      case "agents":
+        // TODO: Filter for agent files
+        return sampleFileTreeData;
+      case "commands":
+        // TODO: Filter for command files
+        return sampleFileTreeData;
+      default:
+        return sampleFileTreeData;
+    }
+  }, [activeFilter]);
 
   return (
     <div className="bg-background text-foreground min-h-screen">
@@ -70,101 +80,105 @@ export default function Prompts(): React.JSX.Element {
 
         {/* Main Layout - 3 column grid */}
         <div className="grid w-full flex-1 grid-cols-1 gap-6 lg:grid-cols-3">
-          {/* Left Sidebar - File Tree */}
+          {/* Left Sidebar - Tabs with nested File Tree */}
           <div className="lg:col-span-1">
-            <div className="bg-card rounded-lg border p-4">
-              <div className="mb-4 flex items-center justify-between">
-                <h3 className="text-card-foreground text-lg font-semibold">
-                  Project Explorer
-                </h3>
-                <Button variant="ghost" size="sm">
-                  <Plus className="h-4 w-4" />
-                </Button>
-              </div>
-              <ScrollArea className="h-96">
-                <FileTree
-                  data={sampleFileTreeData}
-                  onSelect={handleFileSelect}
-                  selectedPath={selectedFile}
-                />
-              </ScrollArea>
-            </div>
+            <Tabs
+              value={activeFilter}
+              onValueChange={setActiveFilter}
+              className="w-full"
+            >
+              <TabsList className="grid w-full grid-cols-4">
+                <TabsTrigger value="all">All</TabsTrigger>
+                <TabsTrigger value="agents">Agents</TabsTrigger>
+                <TabsTrigger value="prompts">Prompts</TabsTrigger>
+                <TabsTrigger value="commands">Commands</TabsTrigger>
+              </TabsList>
+
+              <TabsContent value={activeFilter} className="mt-4">
+                <div className="bg-card rounded-lg border p-4">
+                  <div className="mb-4 flex items-center justify-between">
+                    <h3 className="text-card-foreground text-lg font-semibold">
+                      Project Explorer
+                    </h3>
+                    <Button variant="ghost" size="sm">
+                      <Plus className="h-4 w-4" />
+                    </Button>
+                  </div>
+                  <ScrollArea className="h-96">
+                    <FileTree
+                      data={getFilteredFileTreeData()}
+                      onSelect={handleFileSelect}
+                      selectedPath={selectedFile}
+                    />
+                  </ScrollArea>
+                </div>
+              </TabsContent>
+            </Tabs>
           </div>
 
           {/* Main Content Area */}
           <div className="lg:col-span-2">
-            <Tabs defaultValue="all" className="w-full">
-              <TabsList className="grid w-full grid-cols-3">
-                <TabsTrigger value="all">All</TabsTrigger>
-              </TabsList>
-
-              {/* All Examples */}
-              <TabsContent value="all">
-                <div className="space-y-6">
-                  {/* Quick Overview Card */}
-                  <div className="bg-card rounded-lg border p-6">
-                    <h3 className="text-card-foreground mb-4 text-lg font-semibold">
-                      Coming Soon...
-                    </h3>
-                    <p className="text-muted-foreground mb-4">
-                      Explore the file tree to see various prompt templates.
-                    </p>
-                    <div className="bg-muted rounded-lg p-4">
-                      <h4 className="text-foreground mb-2 font-medium">
-                        Selected: {selectedFile || "No file selected"}
-                      </h4>
-                      <p className="text-muted-foreground text-sm">
-                        Click on files in the project explorer to select them.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="space-y-4">
-                    <Collapsible
-                      open={isCollapsibleOpen}
-                      onOpenChange={setIsCollapsibleOpen}
-                      className="rounded-lg border"
-                    >
-                      <CollapsibleTrigger asChild>
-                        <Button
-                          variant="ghost"
-                          className="h-auto w-full justify-between p-4"
-                        >
-                          <div className="flex items-center gap-2">
-                            <Folder className="h-4 w-4" />
-                            <span>Advanced Settings</span>
-                          </div>
-                          <span className="text-muted-foreground text-xs">
-                            {isCollapsibleOpen ? "Collapse" : "Expand"}
-                          </span>
-                        </Button>
-                      </CollapsibleTrigger>
-                      <CollapsibleContent className="px-4 pb-4">
-                        <div className="space-y-2 text-sm">
-                          <div className="bg-muted rounded p-3">
-                            <p className="text-foreground mb-1 font-medium">
-                              API Configuration
-                            </p>
-                            <p className="text-muted-foreground">
-                              Configure API endpoints and authentication
-                              settings.
-                            </p>
-                          </div>
-                          <div className="bg-muted rounded p-3">
-                            <p className="text-foreground mb-1 font-medium">
-                              Database Options
-                            </p>
-                            <p className="text-muted-foreground">
-                              Set up database connections and query
-                              optimization.
-                            </p>
-                          </div>
-                        </div>
-                      </CollapsibleContent>
-                    </Collapsible>
-                  </div>
+            <div className="space-y-6">
+              {/* Quick Overview Card */}
+              <div className="bg-card rounded-lg border p-6">
+                <h3 className="text-card-foreground mb-4 text-lg font-semibold capitalize">
+                  {activeFilter}
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Explore the file tree to see various artifacts.
+                </p>
+                <div className="bg-muted rounded-lg p-4">
+                  <h4 className="text-foreground mb-2 font-medium">
+                    Selected: {selectedFile || "No file selected"}
+                  </h4>
+                  <p className="text-muted-foreground text-sm">
+                    Click on files in the project explorer to select them.
+                  </p>
                 </div>
-              </TabsContent>
-            </Tabs>
+              </div>
+              <div className="space-y-4">
+                <Collapsible
+                  open={isCollapsibleOpen}
+                  onOpenChange={setIsCollapsibleOpen}
+                  className="rounded-lg border"
+                >
+                  <CollapsibleTrigger asChild>
+                    <Button
+                      variant="ghost"
+                      className="h-auto w-full justify-between p-4"
+                    >
+                      <div className="flex items-center gap-2">
+                        <FileScan className="h-4 w-4" />
+                        <span>Details</span>
+                      </div>
+                      <span className="text-muted-foreground text-xs">
+                        {isCollapsibleOpen ? "Collapse" : "Expand"}
+                      </span>
+                    </Button>
+                  </CollapsibleTrigger>
+                  <CollapsibleContent className="px-4 pt-2 pb-4">
+                    <div className="space-y-2 text-sm">
+                      <div className="bg-muted rounded p-3">
+                        <p className="text-foreground mb-1 font-medium">
+                          API Configuration
+                        </p>
+                        <p className="text-muted-foreground">
+                          Configure API endpoints and authentication settings.
+                        </p>
+                      </div>
+                      <div className="bg-muted rounded p-3">
+                        <p className="text-foreground mb-1 font-medium">
+                          Database Options
+                        </p>
+                        <p className="text-muted-foreground">
+                          Set up database connections and query optimization.
+                        </p>
+                      </div>
+                    </div>
+                  </CollapsibleContent>
+                </Collapsible>
+              </div>
+            </div>
           </div>
         </div>
 
