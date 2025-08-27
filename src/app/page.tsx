@@ -40,8 +40,8 @@ export default function Prompts(): React.JSX.Element {
             <div className="mt-1 flex items-center gap-2 pl-2">
               <span>└─</span>
               <h2>
-                a directory of subagents for Claude Code that have aged like
-                fine wine 🍷
+                A directory of instructions, agents, and workflows for LLMs &
+                tools that have aged like fine wine 🍷
               </h2>
             </div>
             <div className="flex items-center gap-2 pl-2">
@@ -173,7 +173,11 @@ export default function Prompts(): React.JSX.Element {
             <a href="/components">View Components</a>
           </Button>
           <Button variant="outline" size="lg" asChild>
-            <a href="https://github.com/funsaized/prompts.wine" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/funsaized/prompts.wine"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Learn More
             </a>
           </Button>

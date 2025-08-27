@@ -10,7 +10,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "prompts.wine",
   description:
-    "A directory of instructions, agents, and workflows for LLMs & AI tools.",
+    "A directory of instructions, agents, and workflows for LLMs & AI tools that have aged like fine wine",
 };
 
 export default function RootLayout({
@@ -20,9 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistMono.variable} antialiased font-mono`}
-      >
+      <body className={`${geistMono.variable} font-mono antialiased`}>
         {children}
       </body>
     </html>
