@@ -25,38 +25,43 @@ const sampleFileTreeData: FileTreeItem[] = [
   {
     name: "src",
     type: "folder",
+    path: "src",
     isOpen: true,
     children: [
       {
         name: "app",
         type: "folder",
+        path: "app",
         isOpen: true,
         children: [
-          { name: "page.tsx", type: "file" },
-          { name: "layout.tsx", type: "file" },
-          { name: "globals.css", type: "file" },
+          { name: "page.tsx", type: "file", path: "app/page.tsx" },
+          { name: "layout.tsx", type: "file", path: "app/layout.tsx" },
+          { name: "globals.css", type: "file", path: "app/globals.css" },
           {
             name: "components",
             type: "folder",
-            children: [{ name: "page.tsx", type: "file" }],
+            path: "app/components",
+            children: [{ name: "page.tsx", type: "file", path: "app/components/page.tsx" }],
           },
         ],
       },
       {
         name: "components",
         type: "folder",
+        path: "components",
         isOpen: true,
         children: [
           {
             name: "ui",
             type: "folder",
+            path: "components/ui",
             isOpen: true,
             children: [
-              { name: "button.tsx", type: "file" },
-              { name: "tabs.tsx", type: "file" },
-              { name: "scroll-area.tsx", type: "file" },
-              { name: "collapsible.tsx", type: "file" },
-              { name: "file-tree.tsx", type: "file" },
+              { name: "button.tsx", type: "file", path: "components/ui/button.tsx" },
+              { name: "tabs.tsx", type: "file", path: "components/ui/tabs.tsx" },
+              { name: "scroll-area.tsx", type: "file", path: "components/ui/scroll-area.tsx" },
+              { name: "collapsible.tsx", type: "file", path: "components/ui/collapsible.tsx" },
+              { name: "file-tree.tsx", type: "file", path: "components/ui/file-tree.tsx" },
             ],
           },
         ],
@@ -64,22 +69,24 @@ const sampleFileTreeData: FileTreeItem[] = [
       {
         name: "lib",
         type: "folder",
-        children: [{ name: "utils.ts", type: "file" }],
+        path: "lib",
+        children: [{ name: "utils.ts", type: "file", path: "lib/utils.ts" }],
       },
     ],
   },
   {
     name: "public",
     type: "folder",
+    path: "public",
     children: [
-      { name: "next.svg", type: "file" },
-      { name: "vercel.svg", type: "file" },
+      { name: "next.svg", type: "file", path: "public/next.svg" },
+      { name: "vercel.svg", type: "file", path: "public/vercel.svg" },
     ],
   },
-  { name: "package.json", type: "file" },
-  { name: "next.config.ts", type: "file" },
-  { name: "tailwind.config.ts", type: "file" },
-  { name: "README.md", type: "file" },
+  { name: "package.json", type: "file", path: "package.json" },
+  { name: "next.config.ts", type: "file", path: "next.config.ts" },
+  { name: "tailwind.config.ts", type: "file", path: "tailwind.config.ts" },
+  { name: "README.md", type: "file", path: "README.md" },
 ];
 
 export default function ComponentsPage(): React.JSX.Element {

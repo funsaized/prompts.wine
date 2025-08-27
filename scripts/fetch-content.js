@@ -153,7 +153,7 @@ async function main() {
     // Generate static content data
     console.log('⚡ Generating static content data...');
     try {
-      const { generateStaticContentData, saveStaticContentData } = require('../src/lib/server-content');
+      const { generateStaticContentData, saveStaticContentData } = require('../src/lib/server-content.js');
       const contentData = await generateStaticContentData();
       await saveStaticContentData(contentData);
       console.log('✅ Static content data generated!');
