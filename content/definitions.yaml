@@ -1,0 +1,86 @@
+categories:
+  agents:
+    name: "Agents"
+    description: "AI agent configurations and specialized prompts"
+    patterns:
+      - "**/agents/**"
+      - "**/.claude/**"
+      - "**/*agent*"
+    defaultTags:
+      - "agents"
+  
+  prompts:
+    name: "Prompts"
+    description: "Reusable prompt templates and examples"
+    patterns:
+      - "**/prompts/**"
+      - "**/*.prompt.*"
+      - "**/templates/**"
+    defaultTags:
+      - "prompts"
+  
+  commands:
+    name: "Commands"
+    description: "Command definitions and automation workflows"
+    patterns:
+      - "**/commands/**"
+      - "**/*.command.*"
+      - "**/workflows/**"
+    defaultTags:
+      - "commands"
+  
+  instructions:
+    name: "Instructions"
+    description: "Setup guides and configuration instructions"
+    patterns:
+      - "**/instructions/**"
+      - "**/*.instructions.*"
+      - "**/guides/**"
+      - "**/setup/**"
+    defaultTags:
+      - "instructions"
+
+tags:
+  agents:
+    name: "Agents"
+    description: "AI agent configurations"
+    color: "#3b82f6"
+  
+  prompts:
+    name: "Prompts"  
+    description: "Prompt templates"
+    color: "#10b981"
+    
+  commands:
+    name: "Commands"
+    description: "Automation commands"
+    color: "#f59e0b"
+    
+  instructions:
+    name: "Instructions"
+    description: "Setup guides"
+    color: "#8b5cf6"
+    
+  development:
+    name: "Development"
+    description: "Development tools and utilities"
+    color: "#06b6d4"
+    
+  automation:
+    name: "Automation"
+    description: "Automation scripts and workflows"
+    color: "#ef4444"
+
+patterns:
+  - pattern: "**/*.md"
+    tags: ["markdown"]
+  
+  - pattern: "**/claude/**"
+    tags: ["claude", "agents"]
+    category: "agents"
+    
+  - pattern: "**/github/**"
+    tags: ["github", "automation"]
+    
+  - pattern: "**/dev/**"
+    tags: ["development"]

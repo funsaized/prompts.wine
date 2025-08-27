@@ -1,0 +1,364 @@
+{
+  "contentTree": [
+    {
+      "name": "agents",
+      "type": "folder",
+      "path": "agents",
+      "children": [
+        {
+          "name": "code-reviewer.md",
+          "type": "file",
+          "path": "agents/code-reviewer.md",
+          "tags": [
+            "agents",
+            "markdown"
+          ],
+          "frontmatter": {},
+          "size": 2034,
+          "lastModified": "2025-08-27T23:28:17.685Z"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "name": "commands",
+      "type": "folder",
+      "path": "commands",
+      "children": [
+        {
+          "name": "deploy-automation.md",
+          "type": "file",
+          "path": "commands/deploy-automation.md",
+          "tags": [
+            "commands",
+            "markdown"
+          ],
+          "frontmatter": {},
+          "size": 4984,
+          "lastModified": "2025-08-27T23:28:58.893Z"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "name": "instructions",
+      "type": "folder",
+      "path": "instructions",
+      "children": [
+        {
+          "name": "setup-development-environment.md",
+          "type": "file",
+          "path": "instructions/setup-development-environment.md",
+          "tags": [
+            "instructions",
+            "markdown"
+          ],
+          "frontmatter": {},
+          "size": 8699,
+          "lastModified": "2025-08-27T23:29:37.239Z"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "name": "prompts",
+      "type": "folder",
+      "path": "prompts",
+      "children": [
+        {
+          "name": "api-documentation.md",
+          "type": "file",
+          "path": "prompts/api-documentation.md",
+          "tags": [
+            "prompts",
+            "markdown"
+          ],
+          "frontmatter": {},
+          "size": 2845,
+          "lastModified": "2025-08-27T23:28:33.048Z"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "name": "definitions.yaml",
+      "type": "file",
+      "path": "definitions.yaml",
+      "tags": [],
+      "frontmatter": {},
+      "size": 1816,
+      "lastModified": "2025-08-27T23:27:57.885Z"
+    },
+    {
+      "name": "example.md",
+      "type": "file",
+      "path": "example.md",
+      "tags": [
+        "markdown"
+      ],
+      "frontmatter": {},
+      "size": 819,
+      "lastModified": "2025-08-27T10:35:50.742Z"
+    }
+  ],
+  "definitions": {
+    "categories": {
+      "agents": {
+        "name": "Agents",
+        "description": "AI agents and configurations"
+      },
+      "prompts": {
+        "name": "Prompts",
+        "description": "Reusable prompt templates"
+      },
+      "commands": {
+        "name": "Commands",
+        "description": "Automation commands"
+      },
+      "instructions": {
+        "name": "Instructions",
+        "description": "Setup guides"
+      }
+    },
+    "tags": {
+      "agents": {
+        "name": "Agents",
+        "color": "#3b82f6"
+      },
+      "prompts": {
+        "name": "Prompts",
+        "color": "#10b981"
+      },
+      "commands": {
+        "name": "Commands",
+        "color": "#f59e0b"
+      },
+      "instructions": {
+        "name": "Instructions",
+        "color": "#8b5cf6"
+      },
+      "markdown": {
+        "name": "Markdown",
+        "color": "#6b7280"
+      }
+    },
+    "patterns": []
+  },
+  "contentMap": {
+    "agents/code-reviewer.md": "---\ntitle: \"Code Reviewer Agent\"\ndescription: \"AI agent specialized in code review and quality assessment\"\ncategory: \"agents\"\ntags: [\"agents\", \"code-review\", \"quality\"]\nauthor: \"System\"\ndate: \"2024-01-27\"\n---\n\n# Code Reviewer Agent\n\nA specialized AI agent designed to perform thorough code reviews with a focus on quality, security, and best practices.\n\n## Purpose\n\nThis agent excels at:\n- **Code Quality Assessment**: Analyzing code structure, readability, and maintainability\n- **Security Vulnerability Detection**: Identifying potential security issues and unsafe patterns\n- **Performance Analysis**: Spotting performance bottlenecks and optimization opportunities\n- **Best Practices Enforcement**: Ensuring adherence to coding standards and conventions\n\n## Usage\n\n```bash\n@code-reviewer Please review this pull request for quality and security issues.\n```\n\n## Key Features\n\n### Quality Metrics\n- Complexity analysis (cyclomatic, cognitive)\n- Code duplication detection\n- Naming convention validation\n- Documentation completeness\n\n### Security Scanning\n- Input validation checks\n- Authentication/authorization review\n- Dependency vulnerability assessment\n- Data protection compliance\n\n### Performance Review\n- Algorithm efficiency analysis\n- Resource usage optimization\n- Database query performance\n- Memory management review\n\n## Example Review Output\n\n```markdown\n## Code Review Summary\n\n### ✅ Strengths\n- Clean, readable code structure\n- Comprehensive error handling\n- Good test coverage (87%)\n\n### ⚠️  Issues Found\n- **Security**: SQL injection vulnerability in user input handling\n- **Performance**: N+1 query problem in data fetching\n- **Quality**: Function complexity exceeds recommended threshold\n\n### 🔧 Recommendations\n1. Implement parameterized queries for database operations\n2. Add data loader pattern to batch database requests\n3. Refactor large functions into smaller, focused methods\n```\n\n## Configuration\n\nThe agent can be customized with specific rules and preferences for your codebase and team standards.",
+    "commands/deploy-automation.md": "---\ntitle: \"Automated Deployment Pipeline\"\ndescription: \"Complete CI/CD deployment automation command workflow\"\ncategory: \"commands\"\ntags: [\"commands\", \"deployment\", \"automation\", \"cicd\"]\nauthor: \"DevOps Team\"\ndate: \"2024-01-27\"\n---\n\n# Automated Deployment Pipeline\n\nA comprehensive deployment automation workflow that handles testing, building, and deployment across multiple environments.\n\n## Command Overview\n\nThis command orchestrates a complete deployment pipeline with the following stages:\n1. **Pre-deployment Validation**\n2. **Automated Testing**\n3. **Build and Package**\n4. **Security Scanning**\n5. **Deployment to Staging**\n6. **Integration Testing**\n7. **Production Deployment**\n8. **Post-deployment Verification**\n\n## Usage\n\n```bash\n# Deploy to staging\n./deploy.sh --env staging --branch main --skip-tests false\n\n# Deploy to production with approval gate\n./deploy.sh --env production --branch release --approve required\n\n# Rollback deployment\n./deploy.sh --rollback --env production --version v1.2.3\n```\n\n## Command Structure\n\n### Basic Deployment\n```bash\n#!/bin/bash\nset -e\n\nENVIRONMENT=${1:-staging}\nBRANCH=${2:-main}\nSKIP_TESTS=${3:-false}\n\necho \"🚀 Starting deployment to $ENVIRONMENT\"\necho \"📦 Branch: $BRANCH\"\necho \"🧪 Skip tests: $SKIP_TESTS\"\n\n# Pre-deployment checks\necho \"🔍 Running pre-deployment validation...\"\n./scripts/validate-environment.sh $ENVIRONMENT\n\n# Run tests unless skipped\nif [ \"$SKIP_TESTS\" != \"true\" ]; then\n  echo \"🧪 Running test suite...\"\n  npm test\n  npm run test:integration\nfi\n\n# Security scanning\necho \"🛡️  Running security scans...\"\nnpm audit --audit-level moderate\ndocker scan $IMAGE_NAME\n\n# Build and deploy\necho \"🏗️  Building application...\"\nnpm run build:$ENVIRONMENT\n\necho \"📋 Deploying to $ENVIRONMENT...\"\nkubectl apply -f k8s/$ENVIRONMENT/\nkubectl rollout status deployment/app -n $ENVIRONMENT\n\n# Post-deployment verification\necho \"✅ Running post-deployment checks...\"\n./scripts/health-check.sh $ENVIRONMENT\n\necho \"🎉 Deployment to $ENVIRONMENT completed successfully!\"\n```\n\n## Advanced Features\n\n### Environment-Specific Configuration\n```yaml\n# deploy-config.yml\nenvironments:\n  staging:\n    replicas: 2\n    resources:\n      memory: \"512Mi\"\n      cpu: \"0.5\"\n    monitoring: basic\n    \n  production:\n    replicas: 5\n    resources:\n      memory: \"2Gi\"  \n      cpu: \"1.0\"\n    monitoring: full\n    approval_required: true\n```\n\n### Rollback Strategy\n```bash\n# Automated rollback on failure\ndeploy_and_verify() {\n  local env=$1\n  local version=$2\n  \n  # Deploy new version\n  kubectl set image deployment/app app=$IMAGE:$version -n $env\n  \n  # Wait for rollout with timeout\n  if ! kubectl rollout status deployment/app -n $env --timeout=300s; then\n    echo \"❌ Deployment failed, initiating rollback...\"\n    kubectl rollout undo deployment/app -n $env\n    kubectl rollout status deployment/app -n $env\n    exit 1\n  fi\n  \n  # Health check\n  if ! ./scripts/health-check.sh $env; then\n    echo \"❌ Health check failed, initiating rollback...\"\n    kubectl rollout undo deployment/app -n $env\n    exit 1\n  fi\n  \n  echo \"✅ Deployment successful and verified\"\n}\n```\n\n## Monitoring and Notifications\n\n### Slack Integration\n```bash\nsend_notification() {\n  local status=$1\n  local env=$2\n  local message=$3\n  \n  curl -X POST -H 'Content-type: application/json' \\\n    --data \"{\n      \\\"text\\\":\\\"🚀 Deployment $status\\\",\n      \\\"attachments\\\":[{\n        \\\"color\\\":\\\"$([ \"$status\" = \"SUCCESS\" ] && echo \"good\" || echo \"danger\")\\\",\n        \\\"fields\\\":[{\n          \\\"title\\\":\\\"Environment\\\",\n          \\\"value\\\":\\\"$env\\\",\n          \\\"short\\\":true\n        },{\n          \\\"title\\\":\\\"Status\\\",\n          \\\"value\\\":\\\"$message\\\",\n          \\\"short\\\":true\n        }]\n      }]\n    }\" \\\n    $SLACK_WEBHOOK_URL\n}\n```\n\n## Error Handling\n\nThe command includes comprehensive error handling:\n- **Test Failures**: Automatic deployment cancellation\n- **Build Errors**: Immediate pipeline termination  \n- **Deployment Failures**: Automatic rollback to previous version\n- **Health Check Failures**: Rollback and team notification\n- **Resource Limits**: Scaling recommendations and alerts\n\n## Prerequisites\n\n- Docker and Kubernetes CLI tools\n- Node.js and npm for application builds\n- Access to container registry\n- Configured kubectl contexts for all environments\n- Slack webhook URL for notifications (optional)\n\n## Security Considerations\n\n- **Secrets Management**: All sensitive data stored in Kubernetes secrets\n- **Image Scanning**: Automated vulnerability scanning before deployment\n- **RBAC**: Role-based access control for different environments\n- **Audit Logging**: Complete audit trail of all deployment activities\n\n## Customization\n\nThis deployment command can be customized for different technology stacks:\n- **Languages**: Node.js, Python, Java, Go, etc.\n- **Platforms**: Kubernetes, Docker Swarm, AWS ECS, etc.\n- **Monitoring**: Prometheus, DataDog, New Relic, etc.\n- **Notifications**: Slack, Teams, Email, PagerDuty, etc.",
+    "instructions/setup-development-environment.md": "---\ntitle: \"Development Environment Setup\"\ndescription: \"Complete guide for setting up a modern development environment\"\ncategory: \"instructions\"\ntags: [\"instructions\", \"setup\", \"development\", \"environment\"]\nauthor: \"DevOps Team\"\ndate: \"2024-01-27\"\n---\n\n# Development Environment Setup\n\nA comprehensive guide for setting up a modern development environment with all necessary tools and configurations.\n\n## Prerequisites\n\nBefore starting, ensure you have:\n- Administrative access to your machine\n- Stable internet connection\n- At least 8GB RAM and 50GB free disk space\n\n## Step 1: Install Core Tools\n\n### Package Manager\n**macOS:**\n```bash\n# Install Homebrew\n/bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\"\n\n# Add to PATH\necho 'eval \"$(/opt/homebrew/bin/brew shellenv)\"' >> ~/.zprofile\neval \"$(/opt/homebrew/bin/brew shellenv)\"\n```\n\n**Windows:**\n```powershell\n# Install Chocolatey (Run as Administrator)\nSet-ExecutionPolicy Bypass -Scope Process -Force\n[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072\niex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))\n```\n\n**Linux (Ubuntu/Debian):**\n```bash\n# Update package manager\nsudo apt update && sudo apt upgrade -y\n```\n\n### Git Configuration\n```bash\n# Install Git\n# macOS: brew install git\n# Windows: choco install git\n# Linux: sudo apt install git\n\n# Configure Git\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"your.email@example.com\"\ngit config --global init.defaultBranch main\n\n# Generate SSH key\nssh-keygen -t ed25519 -C \"your.email@example.com\"\neval \"$(ssh-agent -s)\"\nssh-add ~/.ssh/id_ed25519\n\n# Display public key (add to GitHub/GitLab)\ncat ~/.ssh/id_ed25519.pub\n```\n\n## Step 2: Install Development Environment\n\n### Node.js and Package Managers\n```bash\n# Install Node Version Manager (nvm)\ncurl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash\nsource ~/.bashrc\n\n# Install latest LTS Node.js\nnvm install --lts\nnvm use --lts\nnvm alias default node\n\n# Install package managers\nnpm install -g pnpm yarn\n\n# Verify installation\nnode --version\nnpm --version\npnpm --version\nyarn --version\n```\n\n### Python Development\n```bash\n# macOS: brew install python3\n# Windows: choco install python3\n# Linux: sudo apt install python3 python3-pip\n\n# Install Python package manager\npip3 install --upgrade pip\n\n# Install virtual environment tools\npip3 install virtualenv pipenv\n\n# Verify installation\npython3 --version\npip3 --version\n```\n\n### Docker and Container Tools\n```bash\n# Install Docker Desktop\n# macOS: brew install --cask docker\n# Windows: choco install docker-desktop\n# Linux: Follow official Docker installation guide\n\n# Install Docker Compose\n# macOS/Windows: Included with Docker Desktop\n# Linux: \nsudo curl -L \"https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)\" -o /usr/local/bin/docker-compose\nsudo chmod +x /usr/local/bin/docker-compose\n\n# Verify installation\ndocker --version\ndocker-compose --version\n```\n\n## Step 3: Code Editors and IDE Setup\n\n### Visual Studio Code\n```bash\n# Install VS Code\n# macOS: brew install --cask visual-studio-code\n# Windows: choco install vscode\n# Linux: snap install --classic code\n\n# Install essential extensions\ncode --install-extension ms-vscode.vscode-typescript-next\ncode --install-extension bradlc.vscode-tailwindcss\ncode --install-extension esbenp.prettier-vscode\ncode --install-extension ms-vscode.vscode-eslint\ncode --install-extension ms-python.python\ncode --install-extension ms-vscode.docker\n```\n\n### VS Code Configuration\nCreate `.vscode/settings.json` in your projects:\n```json\n{\n  \"editor.formatOnSave\": true,\n  \"editor.codeActionsOnSave\": {\n    \"source.fixAll.eslint\": true\n  },\n  \"typescript.preferences.importModuleSpecifier\": \"relative\",\n  \"emmet.includeLanguages\": {\n    \"typescript\": \"html\",\n    \"typescriptreact\": \"html\"\n  },\n  \"files.exclude\": {\n    \"**/node_modules\": true,\n    \"**/.git\": true,\n    \"**/dist\": true,\n    \"**/build\": true\n  }\n}\n```\n\n## Step 4: Terminal and Shell Setup\n\n### Zsh with Oh My Zsh (Recommended)\n```bash\n# Install Zsh\n# macOS: Already installed\n# Windows: Use WSL2\n# Linux: sudo apt install zsh\n\n# Install Oh My Zsh\nsh -c \"$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"\n\n# Install useful plugins\ngit clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting\ngit clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions\n\n# Update ~/.zshrc\nplugins=(git node npm docker zsh-syntax-highlighting zsh-autosuggestions)\n```\n\n### Terminal Multiplexer (tmux)\n```bash\n# Install tmux\n# macOS: brew install tmux\n# Windows: Use WSL2\n# Linux: sudo apt install tmux\n\n# Create ~/.tmux.conf\ncat > ~/.tmux.conf << 'EOF'\n# Set prefix to Ctrl-a\nset -g prefix C-a\nunbind C-b\n\n# Enable mouse mode\nset -g mouse on\n\n# Start windows and panes at 1\nset -g base-index 1\nsetw -g pane-base-index 1\n\n# Split panes using | and -\nbind | split-window -h\nbind - split-window -v\nEOF\n```\n\n## Step 5: Database Tools\n\n### PostgreSQL\n```bash\n# Install PostgreSQL\n# macOS: brew install postgresql\n# Windows: choco install postgresql\n# Linux: sudo apt install postgresql postgresql-contrib\n\n# Start PostgreSQL service\n# macOS: brew services start postgresql\n# Windows: Services -> PostgreSQL\n# Linux: sudo systemctl start postgresql\n\n# Create database user\ncreateuser --interactive --pwprompt\n```\n\n### Database GUI Tools\n```bash\n# Install database management tools\n# macOS: brew install --cask pgadmin4\n# Windows: choco install pgadmin4\n# Linux: Follow official installation guide\n\n# Alternative: Install DBeaver\n# macOS: brew install --cask dbeaver-community\n# Windows: choco install dbeaver\n```\n\n## Step 6: Cloud and DevOps Tools\n\n### AWS CLI\n```bash\n# Install AWS CLI\n# macOS: brew install awscli\n# Windows: choco install awscli\n# Linux: pip3 install awscli\n\n# Configure AWS CLI\naws configure\n```\n\n### Kubernetes Tools\n```bash\n# Install kubectl\n# macOS: brew install kubectl\n# Windows: choco install kubernetes-cli\n# Linux: Follow official installation guide\n\n# Install k9s (Kubernetes dashboard)\n# macOS: brew install k9s\n# Windows: choco install k9s\n# Linux: Follow GitHub releases\n```\n\n## Step 7: Environment Configuration\n\n### Environment Variables\nCreate `~/.env.local` for project-specific variables:\n```bash\n# Database\nDATABASE_URL=\"postgresql://user:password@localhost:5432/myapp\"\n\n# API Keys\nOPENAI_API_KEY=\"your-openai-key\"\nGITHUB_TOKEN=\"your-github-token\"\n\n# Application\nNODE_ENV=\"development\"\nPORT=\"3000\"\n```\n\n### SSH Configuration\nCreate `~/.ssh/config`:\n```\nHost github.com\n  HostName github.com\n  User git\n  IdentityFile ~/.ssh/id_ed25519\n\nHost production-server\n  HostName your-server.com\n  User deploy\n  IdentityFile ~/.ssh/production_key\n  Port 22\n```\n\n## Step 8: Verification and Testing\n\n### System Health Check\n```bash\n#!/bin/bash\necho \"🔧 Development Environment Health Check\"\necho \"========================================\"\n\n# Check core tools\necho \"Git: $(git --version)\"\necho \"Node.js: $(node --version)\"\necho \"npm: $(npm --version)\"\necho \"Python: $(python3 --version)\"\necho \"Docker: $(docker --version)\"\n\n# Check database\necho \"PostgreSQL: $(psql --version)\"\n\n# Check cloud tools\necho \"AWS CLI: $(aws --version)\"\necho \"kubectl: $(kubectl version --client)\"\n\necho \"✅ Environment setup complete!\"\n```\n\n## Troubleshooting\n\n### Common Issues\n\n**Permission Errors:**\n```bash\n# Fix npm permission issues\nsudo chown -R $(whoami) ~/.npm\nsudo chown -R $(whoami) /usr/local/lib/node_modules\n```\n\n**Port Conflicts:**\n```bash\n# Check what's using a port\nlsof -i :3000\n\n# Kill process using port\nkill -9 $(lsof -t -i:3000)\n```\n\n**Docker Issues:**\n```bash\n# Reset Docker\ndocker system prune -a --volumes\n\n# Restart Docker service\n# macOS/Windows: Restart Docker Desktop\n# Linux: sudo systemctl restart docker\n```\n\n## Next Steps\n\nAfter completing this setup:\n1. Clone your first project repository\n2. Run project-specific setup scripts\n3. Configure IDE workspace settings\n4. Set up project-specific environment variables\n5. Install project dependencies\n6. Run tests to verify everything works\n\n## Maintenance\n\n### Weekly Tasks\n- Update package managers: `brew update && brew upgrade`\n- Update Node.js: `nvm install node --reinstall-packages-from=node`\n- Update global packages: `npm update -g`\n\n### Monthly Tasks\n- Update OS and security patches\n- Clean Docker images: `docker system prune`\n- Backup SSH keys and configuration files\n- Review and update development tools",
+    "prompts/api-documentation.md": "---\ntitle: \"API Documentation Generator\"\ndescription: \"Generate comprehensive API documentation from code\"\ncategory: \"prompts\"\ntags: [\"prompts\", \"documentation\", \"api\"]\nauthor: \"System\"\ndate: \"2024-01-27\"\n---\n\n# API Documentation Generator\n\nA specialized prompt for generating comprehensive API documentation from code analysis.\n\n## Prompt Template\n\n```\nPlease analyze the provided API code and generate comprehensive documentation following these requirements:\n\n## Documentation Structure:\n1. **API Overview**: Brief description of the API's purpose and main functionality\n2. **Authentication**: Required authentication methods and security considerations\n3. **Endpoints**: Detailed documentation for each endpoint including:\n   - HTTP method and URL pattern\n   - Request parameters (path, query, body)\n   - Response format and status codes\n   - Example requests and responses\n   - Error handling and error codes\n4. **Data Models**: Schema definitions for request/response objects\n5. **Rate Limiting**: If applicable, rate limiting rules and headers\n6. **Examples**: Real-world usage examples and code samples\n\n## Format Requirements:\n- Use OpenAPI 3.0 specification format where possible\n- Include interactive examples\n- Provide code samples in multiple programming languages\n- Use clear, concise descriptions\n- Include validation rules and constraints\n\n## Code to analyze:\n[INSERT_CODE_HERE]\n\nGenerate the documentation now.\n```\n\n## Usage Examples\n\n### REST API Documentation\n```markdown\n# User Management API\n\n## Overview\nThis API provides user account management functionality including registration, authentication, and profile management.\n\n## Authentication\nAll endpoints require JWT token authentication via Authorization header:\n```\nAuthorization: Bearer <jwt_token>\n```\n\n## Endpoints\n\n### POST /api/users/register\nRegister a new user account.\n\n**Request Body:**\n```json\n{\n  \"email\": \"user@example.com\",\n  \"password\": \"securePassword123\",\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\"\n}\n```\n\n**Response (201 Created):**\n```json\n{\n  \"id\": \"user_123\",\n  \"email\": \"user@example.com\",\n  \"firstName\": \"John\",\n  \"lastName\": \"Doe\",\n  \"createdAt\": \"2024-01-27T10:00:00Z\"\n}\n```\n```\n\n## Best Practices\n\n1. **Consistency**: Ensure consistent formatting and structure across all endpoint documentation\n2. **Completeness**: Include all possible response codes and error scenarios\n3. **Examples**: Provide realistic examples that developers can copy and test\n4. **Validation**: Document all input validation rules and constraints\n5. **Versioning**: Include API version information and compatibility notes\n\n## Customization\n\nThis prompt can be customized for specific API types:\n- REST APIs\n- GraphQL APIs\n- WebSocket APIs\n- RPC APIs\n\nSimply modify the structure requirements and format specifications to match your API style and documentation standards.",
+    "example.md": "# Example Content\n\nThis is an example markdown file in the content directory. You can use this directory to store markdown files for blog posts, documentation, or other content that can be processed by Next.js.\n\n## Features\n\n- **Markdown Processing**: Perfect for blog posts and documentation\n- **Static Generation**: Content can be statically generated at build time\n- **Type Safety**: Use TypeScript for content processing utilities\n\n## Usage\n\n```typescript\n// Example of how you might process content files\nimport fs from \"fs\";\nimport path from \"path\";\n\nconst contentDirectory = path.join(process.cwd(), \"content\");\n\nexport function getContentFiles() {\n  return fs.readdirSync(contentDirectory);\n}\n```\n\nThis directory structure supports various content management patterns and can be easily extended for your needs.\n"
+  },
+  "stats": {
+    "totalFiles": 5,
+    "totalCategories": 4,
+    "totalTags": 5,
+    "categoryCount": {
+      "agents": 1,
+      "prompts": 1,
+      "commands": 1,
+      "instructions": 1
+    },
+    "tagCount": {
+      "agents": 1,
+      "prompts": 1,
+      "commands": 1,
+      "instructions": 1,
+      "markdown": 5
+    }
+  },
+  "filteredContent": {
+    "all": [
+      {
+        "name": "agents",
+        "type": "folder",
+        "path": "agents",
+        "children": [
+          {
+            "name": "code-reviewer.md",
+            "type": "file",
+            "path": "agents/code-reviewer.md",
+            "tags": [
+              "agents",
+              "markdown"
+            ],
+            "frontmatter": {},
+            "size": 2034,
+            "lastModified": "2025-08-27T23:28:17.685Z"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "name": "commands",
+        "type": "folder",
+        "path": "commands",
+        "children": [
+          {
+            "name": "deploy-automation.md",
+            "type": "file",
+            "path": "commands/deploy-automation.md",
+            "tags": [
+              "commands",
+              "markdown"
+            ],
+            "frontmatter": {},
+            "size": 4984,
+            "lastModified": "2025-08-27T23:28:58.893Z"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "name": "instructions",
+        "type": "folder",
+        "path": "instructions",
+        "children": [
+          {
+            "name": "setup-development-environment.md",
+            "type": "file",
+            "path": "instructions/setup-development-environment.md",
+            "tags": [
+              "instructions",
+              "markdown"
+            ],
+            "frontmatter": {},
+            "size": 8699,
+            "lastModified": "2025-08-27T23:29:37.239Z"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "name": "prompts",
+        "type": "folder",
+        "path": "prompts",
+        "children": [
+          {
+            "name": "api-documentation.md",
+            "type": "file",
+            "path": "prompts/api-documentation.md",
+            "tags": [
+              "prompts",
+              "markdown"
+            ],
+            "frontmatter": {},
+            "size": 2845,
+            "lastModified": "2025-08-27T23:28:33.048Z"
+          }
+        ],
+        "tags": []
+      },
+      {
+        "name": "definitions.yaml",
+        "type": "file",
+        "path": "definitions.yaml",
+        "tags": [],
+        "frontmatter": {},
+        "size": 1816,
+        "lastModified": "2025-08-27T23:27:57.885Z"
+      },
+      {
+        "name": "example.md",
+        "type": "file",
+        "path": "example.md",
+        "tags": [
+          "markdown"
+        ],
+        "frontmatter": {},
+        "size": 819,
+        "lastModified": "2025-08-27T10:35:50.742Z"
+      }
+    ],
+    "agents": [
+      {
+        "name": "agents",
+        "type": "folder",
+        "path": "agents",
+        "children": [
+          {
+            "name": "code-reviewer.md",
+            "type": "file",
+            "path": "agents/code-reviewer.md",
+            "tags": [
+              "agents",
+              "markdown"
+            ],
+            "frontmatter": {},
+            "size": 2034,
+            "lastModified": "2025-08-27T23:28:17.685Z"
+          }
+        ],
+        "tags": []
+      }
+    ],
+    "prompts": [
+      {
+        "name": "prompts",
+        "type": "folder",
+        "path": "prompts",
+        "children": [
+          {
+            "name": "api-documentation.md",
+            "type": "file",
+            "path": "prompts/api-documentation.md",
+            "tags": [
+              "prompts",
+              "markdown"
+            ],
+            "frontmatter": {},
+            "size": 2845,
+            "lastModified": "2025-08-27T23:28:33.048Z"
+          }
+        ],
+        "tags": []
+      }
+    ],
+    "commands": [
+      {
+        "name": "commands",
+        "type": "folder",
+        "path": "commands",
+        "children": [
+          {
+            "name": "deploy-automation.md",
+            "type": "file",
+            "path": "commands/deploy-automation.md",
+            "tags": [
+              "commands",
+              "markdown"
+            ],
+            "frontmatter": {},
+            "size": 4984,
+            "lastModified": "2025-08-27T23:28:58.893Z"
+          }
+        ],
+        "tags": []
+      }
+    ],
+    "instructions": [
+      {
+        "name": "instructions",
+        "type": "folder",
+        "path": "instructions",
+        "children": [
+          {
+            "name": "setup-development-environment.md",
+            "type": "file",
+            "path": "instructions/setup-development-environment.md",
+            "tags": [
+              "instructions",
+              "markdown"
+            ],
+            "frontmatter": {},
+            "size": 8699,
+            "lastModified": "2025-08-27T23:29:37.239Z"
+          }
+        ],
+        "tags": []
+      }
+    ]
+  }
+}

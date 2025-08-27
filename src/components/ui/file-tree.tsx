@@ -1,17 +1,11 @@
 "use client"
 
 import * as React from "react"
-import { ChevronDown, ChevronRight, File, Folder, FolderOpen } from "lucide-react"
+import { ChevronDown, ChevronRight, File, Folder, FolderOpen, Tag } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./collapsible"
-
-interface FileTreeItem {
-  name: string
-  type: "file" | "folder"
-  children?: FileTreeItem[]
-  isOpen?: boolean
-}
+import { FileTreeItem } from "@/lib/content-types"
 
 interface FileTreeNodeProps {
   item: FileTreeItem
@@ -29,7 +23,7 @@ interface FileTreeProps {
 
 function FileTreeNode({ item, level = 0, onSelect, selectedPath }: FileTreeNodeProps): React.JSX.Element {
   const [isOpen, setIsOpen] = React.useState(item.isOpen ?? false)
-  const isSelected = selectedPath === item.name
+  const isSelected = selectedPath === item.path
   
   const handleToggle = (): void => {
     if (item.type === "folder") {
@@ -44,14 +38,23 @@ function FileTreeNode({ item, level = 0, onSelect, selectedPath }: FileTreeNodeP
     return (
       <div
         className={cn(
-          "flex items-center gap-2 px-2 py-1 text-sm cursor-pointer rounded-md hover:bg-accent/50 transition-colors text-foreground",
+          "flex items-center gap-2 px-2 py-1 text-sm cursor-pointer rounded-md hover:bg-accent/50 transition-colors text-foreground group",
           isSelected && "bg-accent text-accent-foreground"
         )}
         style={{ paddingLeft: `${indent + 8}px` }}
         onClick={handleToggle}
       >
         <File className="h-4 w-4 text-muted-foreground shrink-0" />
-        <span className="truncate">{item.name}</span>
+        <span className="truncate flex-1">{item.name}</span>
+        {item.tags && item.tags.length > 0 && (
+          <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
+            <Tag className="h-3 w-3 text-muted-foreground" />
+            <span className="text-xs text-muted-foreground">
+              {item.tags.slice(0, 2).join(', ')}
+              {item.tags.length > 2 && '...'}
+            </span>
+          </div>
+        )}
       </div>
     )
   }

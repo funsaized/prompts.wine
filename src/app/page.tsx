@@ -2,7 +2,8 @@
 
 import * as React from "react";
 import { Button } from "@/components/ui/button";
-import { FileTree, type FileTreeItem } from "@/components/ui/file-tree";
+import { FileTree } from "@/components/ui/file-tree";
+import { ContentViewer } from "@/components/ui/content-viewer";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   Collapsible,
@@ -10,34 +11,109 @@ import {
   CollapsibleContent,
 } from "@/components/ui/collapsible";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { FileScan, Folder, Plus } from "lucide-react";
+import { FileScan, Folder, Plus, Download, Tag, Clock } from "lucide-react";
 import Image from "next/image";
+import { FileTreeItem } from "@/lib/content-types";
+// Import just the type, not the server functions
+export interface StaticContentData {
+  contentTree: FileTreeItem[];
+  definitions: {
+    categories: Record<string, any>;
+    tags: Record<string, any>;
+    patterns: any[];
+  };
+  contentMap: Record<string, string>;
+  stats: {
+    totalFiles: number;
+    totalCategories: number;
+    totalTags: number;
+    categoryCount: Record<string, number>;
+    tagCount: Record<string, number>;
+  };
+  filteredContent: {
+    all: FileTreeItem[];
+    agents: FileTreeItem[];
+    prompts: FileTreeItem[];
+    commands: FileTreeItem[];
+    instructions: FileTreeItem[];
+  };
+}
 
 export default function Prompts(): React.JSX.Element {
   const [selectedFile, setSelectedFile] = React.useState<string>("");
+  const [selectedFileContent, setSelectedFileContent] =
+    React.useState<string>("");
   const [isCollapsibleOpen, setIsCollapsibleOpen] = React.useState(false);
   const [activeFilter, setActiveFilter] = React.useState<string>("all");
+  const [contentData, setContentData] =
+    React.useState<StaticContentData | null>(null);
+  const [loading, setLoading] = React.useState(true);
+  const [error, setError] = React.useState<string | null>(null);
 
-  const handleFileSelect = React.useCallback((item: FileTreeItem) => {
-    setSelectedFile(item.name);
+  // Load static content data on mount
+  React.useEffect(() => {
+    async function loadContent() {
+      try {
+        setLoading(true);
+        const response = await fetch("/content-data.json");
+        if (!response.ok) {
+          throw new Error("Failed to load content data");
+        }
+        const data: StaticContentData = await response.json();
+        setContentData(data);
+      } catch (err) {
+        setError(err instanceof Error ? err.message : "Failed to load content");
+        console.error("Error loading content:", err);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    loadContent();
   }, []);
 
-  // Filter function for file tree based on active tab
-  const getFilteredFileTreeData = React.useCallback(() => {
-    switch (activeFilter) {
-      case "all":
-        // For now, return all data
-        return sampleFileTreeData;
-      case "agents":
-        // TODO: Filter for agent files
-        return sampleFileTreeData;
-      case "commands":
-        // TODO: Filter for command files
-        return sampleFileTreeData;
-      default:
-        return sampleFileTreeData;
+  const handleFileSelect = React.useCallback(
+    (item: FileTreeItem) => {
+      if (item.type === "file" && contentData) {
+        setSelectedFile(item.path);
+        const content =
+          contentData.contentMap[item.path] || "Content not found";
+        setSelectedFileContent(content);
+      }
+    },
+    [contentData]
+  );
+
+  const filteredTree = React.useMemo(() => {
+    if (!contentData) return [];
+    return (
+      contentData.filteredContent[
+        activeFilter as keyof typeof contentData.filteredContent
+      ] || []
+    );
+  }, [contentData, activeFilter]);
+
+  const selectedFileItem = React.useMemo(() => {
+    function findFileByPath(
+      items: FileTreeItem[],
+      path: string
+    ): FileTreeItem | null {
+      for (const item of items) {
+        if (item.path === path) {
+          return item;
+        }
+        if (item.children) {
+          const found = findFileByPath(item.children, path);
+          if (found) return found;
+        }
+      }
+      return null;
     }
-  }, [activeFilter]);
+
+    return selectedFile && contentData
+      ? findFileByPath(contentData.contentTree, selectedFile)
+      : null;
+  }, [selectedFile, contentData]);
 
   return (
     <div className="bg-background text-foreground min-h-screen">
@@ -100,16 +176,46 @@ export default function Prompts(): React.JSX.Element {
                     <h3 className="text-card-foreground text-lg font-semibold">
                       Project Explorer
                     </h3>
-                    <Button variant="ghost" size="sm">
-                      <Plus className="h-4 w-4" />
-                    </Button>
+                    <div className="flex items-center gap-2">
+                      {contentData?.stats && (
+                        <span className="text-muted-foreground text-xs">
+                          {contentData.stats.totalFiles} files
+                        </span>
+                      )}
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        onClick={() =>
+                          window.open(
+                            "https://github.com/funsaized/prompts",
+                            "_blank"
+                          )
+                        }
+                      >
+                        <Download className="h-4 w-4" />
+                      </Button>
+                    </div>
                   </div>
                   <ScrollArea className="h-96">
-                    <FileTree
-                      data={getFilteredFileTreeData()}
-                      onSelect={handleFileSelect}
-                      selectedPath={selectedFile}
-                    />
+                    {loading ? (
+                      <div className="flex items-center justify-center py-8">
+                        <div className="text-muted-foreground text-sm">
+                          Loading content...
+                        </div>
+                      </div>
+                    ) : error ? (
+                      <div className="flex items-center justify-center py-8">
+                        <div className="text-destructive text-sm">
+                          Error: {error}
+                        </div>
+                      </div>
+                    ) : (
+                      <FileTree
+                        data={filteredTree}
+                        onSelect={handleFileSelect}
+                        selectedPath={selectedFile}
+                      />
+                    )}
                   </ScrollArea>
                 </div>
               </TabsContent>
@@ -119,65 +225,89 @@ export default function Prompts(): React.JSX.Element {
           {/* Main Content Area */}
           <div className="lg:col-span-2">
             <div className="space-y-6">
-              {/* Quick Overview Card */}
-              <div className="bg-card rounded-lg border p-6">
-                <h3 className="text-card-foreground mb-4 text-lg font-semibold capitalize">
-                  {activeFilter}
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Explore the file tree to see various artifacts.
-                </p>
-                <div className="bg-muted rounded-lg p-4">
-                  <h4 className="text-foreground mb-2 font-medium">
-                    Selected: {selectedFile || "No file selected"}
-                  </h4>
-                  <p className="text-muted-foreground text-sm">
-                    Click on files in the project explorer to select them.
-                  </p>
-                </div>
-              </div>
-              <div className="space-y-4">
-                <Collapsible
-                  open={isCollapsibleOpen}
-                  onOpenChange={setIsCollapsibleOpen}
-                  className="rounded-lg border"
-                >
-                  <CollapsibleTrigger asChild>
-                    <Button
-                      variant="ghost"
-                      className="h-auto w-full justify-between p-4"
-                    >
+              {/* Content Display */}
+              {selectedFile && selectedFileItem ? (
+                <div className="bg-card rounded-lg border">
+                  {/* File Header */}
+                  <div className="border-border border-b p-4">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h3 className="text-card-foreground text-lg font-semibold">
+                          {selectedFileItem.frontmatter?.title ||
+                            selectedFileItem.name}
+                        </h3>
+                        <p className="text-muted-foreground text-sm">
+                          {selectedFile}
+                        </p>
+                      </div>
                       <div className="flex items-center gap-2">
-                        <FileScan className="h-4 w-4" />
-                        <span>Details</span>
-                      </div>
-                      <span className="text-muted-foreground text-xs">
-                        {isCollapsibleOpen ? "Collapse" : "Expand"}
-                      </span>
-                    </Button>
-                  </CollapsibleTrigger>
-                  <CollapsibleContent className="px-4 pt-2 pb-4">
-                    <div className="space-y-2 text-sm">
-                      <div className="bg-muted rounded p-3">
-                        <p className="text-foreground mb-1 font-medium">
-                          API Configuration
-                        </p>
-                        <p className="text-muted-foreground">
-                          Configure API endpoints and authentication settings.
-                        </p>
-                      </div>
-                      <div className="bg-muted rounded p-3">
-                        <p className="text-foreground mb-1 font-medium">
-                          Database Options
-                        </p>
-                        <p className="text-muted-foreground">
-                          Set up database connections and query optimization.
-                        </p>
+                        {selectedFileItem.tags &&
+                          selectedFileItem.tags.length > 0 && (
+                            <div className="flex items-center gap-1">
+                              <Tag className="text-muted-foreground h-3 w-3" />
+                              <div className="flex flex-wrap gap-1">
+                                {selectedFileItem.tags.map(tag => (
+                                  <span
+                                    key={tag}
+                                    className="bg-primary/10 text-primary rounded-md px-2 py-1 text-xs"
+                                  >
+                                    {tag}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          )}
+                        {selectedFileItem.lastModified && (
+                          <div className="text-muted-foreground flex items-center gap-1 text-xs">
+                            <Clock className="h-3 w-3" />
+                            {new Date(
+                              selectedFileItem.lastModified
+                            ).toLocaleDateString()}
+                          </div>
+                        )}
                       </div>
                     </div>
-                  </CollapsibleContent>
-                </Collapsible>
-              </div>
+                    {selectedFileItem.frontmatter?.description && (
+                      <p className="text-muted-foreground mt-2 text-sm">
+                        {selectedFileItem.frontmatter.description}
+                      </p>
+                    )}
+                  </div>
+
+                  {/* File Content */}
+                  <div className="p-6 overflow-hidden">
+                    <ContentViewer content={selectedFileContent} />
+                  </div>
+                </div>
+              ) : (
+                <div className="bg-card rounded-lg border p-6">
+                  <h3 className="text-card-foreground mb-4 text-lg font-semibold capitalize">
+                    {activeFilter}
+                  </h3>
+                  <p className="text-muted-foreground mb-4">
+                    Explore the file tree to see various prompts, agents, and
+                    tools.
+                  </p>
+                  <div className="bg-muted rounded-lg p-4">
+                    <h4 className="text-foreground mb-2 font-medium">
+                      Getting Started
+                    </h4>
+                    <p className="text-muted-foreground text-sm">
+                      Click on files in the project explorer to view their
+                      content. Use the tabs above to filter by category.
+                    </p>
+                    {contentData?.stats && (
+                      <div className="text-muted-foreground mt-3 flex items-center gap-4 text-sm">
+                        <span>{contentData.stats.totalFiles} files</span>
+                        <span>{contentData.stats.totalTags} tags</span>
+                        <span>
+                          {contentData.stats.totalCategories} categories
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -200,81 +330,3 @@ export default function Prompts(): React.JSX.Element {
     </div>
   );
 }
-
-const sampleFileTreeData: FileTreeItem[] = [
-  {
-    name: ".claude",
-    type: "folder",
-    isOpen: false,
-    children: [
-      {
-        name: "agents",
-        type: "folder",
-        isOpen: false,
-        children: [
-          {
-            name: "universal-app",
-            type: "folder",
-            children: [{ name: "CLAUDE.md", type: "file" }],
-          },
-        ],
-      },
-      {
-        name: "commands",
-        type: "folder",
-        isOpen: false,
-        children: [{ name: "fix-github-issue.md", type: "file" }],
-      },
-      { name: "settings.json", type: "file" },
-    ],
-  },
-  {
-    name: ".github",
-    type: "folder",
-    isOpen: false,
-    children: [
-      {
-        name: "chatmodes",
-        type: "folder",
-        isOpen: false,
-        children: [{ name: "4.1-Beast.chatmode.md", type: "file" }],
-      },
-      {
-        name: "instructions",
-        type: "folder",
-        isOpen: false,
-        children: [
-          {
-            name: "ai-prompt-engineering-safety-best-practices.instructions.md",
-            type: "file",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    name: ".windsurf",
-    type: "folder",
-    isOpen: false,
-    children: [
-      {
-        name: "rules",
-        type: "folder",
-        isOpen: false,
-        children: [
-          {
-            name: "universal-app",
-            type: "folder",
-            children: [
-              { name: "angular_fullstack_rules.md", type: "file" },
-              { name: "data_science_rules.md", type: "file" },
-              { name: "monorepo-tamagui.md", type: "file" },
-              { name: "project_instructions.md", type: "file" },
-              { name: "react_nextjs_rules.md", type: "file" },
-            ],
-          },
-        ],
-      },
-    ],
-  },
-];
