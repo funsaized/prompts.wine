@@ -1,13 +1,42 @@
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
-export default function Home(): React.JSX.Element {
+export default function Prompts(): React.JSX.Element {
   return (
     <div className="bg-background text-foreground min-h-screen">
-      <div className="container mx-auto flex min-h-screen flex-col items-center justify-center space-y-8 p-8">
-        <div className="space-y-4 text-center">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-            Prompts Wine
-          </h1>
+      <div className="container mx-auto flex min-h-screen flex-col items-start justify-start space-y-8 p-4">
+        <div className="space-y-4">
+          <header className="flex flex-shrink-0 flex-col font-light uppercase">
+            <h1 className="text-3xl tracking-tight sm:text-4xl">
+              /prompts.wine
+            </h1>
+            <div className="mt-1 flex items-center gap-2 pl-2">
+              <span>└─</span>
+              <h2>a directory of subagents for Claude Code</h2>
+            </div>
+            <div className="flex items-center gap-2 pl-2">
+              <span>└─</span>
+              <h2>
+                Made by{" "}
+                <a
+                  href="https://s11a.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative top-1 inline-flex items-center gap-1.5 pl-1 transition-colors hover:text-white"
+                >
+                  <Image
+                    alt="Sai Nimmagadda"
+                    width={20}
+                    height={20}
+                    className="border-foreground size-5 rounded-full border transition-colors group-hover:border-white"
+                    src="/face.png"
+                  />
+                  @funsaized
+                </a>
+              </h2>
+            </div>
+          </header>
+
           <p className="text-muted-foreground max-w-2xl text-xl">
             A Next.js 15+ project built with TypeScript, Tailwind CSS v4, and
             shadcn/ui components. Features dark theme by default, static export
@@ -22,39 +51,6 @@ export default function Home(): React.JSX.Element {
           <Button variant="outline" size="lg">
             Learn More
           </Button>
-        </div>
-
-        <div className="grid w-full max-w-4xl grid-cols-1 gap-6 md:grid-cols-3">
-          <div className="bg-card text-card-foreground rounded-lg border p-6">
-            <h3 className="mb-2 text-lg font-semibold">Next.js 15+</h3>
-            <p className="text-muted-foreground text-sm">
-              Built with the latest Next.js features including App Router and
-              Turbopack support.
-            </p>
-          </div>
-
-          <div className="bg-card text-card-foreground rounded-lg border p-6">
-            <h3 className="mb-2 text-lg font-semibold">Tailwind CSS v4</h3>
-            <p className="text-muted-foreground text-sm">
-              Styled with the latest Tailwind CSS v4 for modern utility-first
-              styling.
-            </p>
-          </div>
-
-          <div className="bg-card text-card-foreground rounded-lg border p-6">
-            <h3 className="mb-2 text-lg font-semibold">shadcn/ui</h3>
-            <p className="text-muted-foreground text-sm">
-              Includes shadcn/ui components with dark theme configured as
-              default.
-            </p>
-          </div>
-        </div>
-
-        <div className="text-muted-foreground text-center text-sm">
-          <p>
-            Ready for development • Static export configured • ESLint & Prettier
-            set up
-          </p>
         </div>
       </div>
     </div>
