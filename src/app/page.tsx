@@ -12,7 +12,10 @@ export default function Prompts(): React.JSX.Element {
             </h1>
             <div className="mt-1 flex items-center gap-2 pl-2">
               <span>└─</span>
-              <h2>a directory of subagents for Claude Code</h2>
+              <h2>
+                a directory of subagents for Claude Code that have aged like
+                fine wine 🍷
+              </h2>
             </div>
             <div className="flex items-center gap-2 pl-2">
               <span>└─</span>
