@@ -20,16 +20,18 @@
                   "type": "file",
                   "path": ".claude/agents/universal-app/CLAUDE.md",
                   "frontmatter": {},
-                  "tags": ["agents"],
+                  "tags": [
+                    "agents"
+                  ],
                   "size": 9607,
-                  "lastModified": "2025-08-28T00:13:05.247Z"
+                  "lastModified": "2025-08-28T10:03:36.096Z"
                 }
               ],
-              "lastModified": "2025-08-28T00:13:05.247Z",
+              "lastModified": "2025-08-28T10:03:36.096Z",
               "tags": []
             }
           ],
-          "lastModified": "2025-08-28T00:13:05.247Z",
+          "lastModified": "2025-08-28T10:03:36.096Z",
           "tags": []
         },
         {
@@ -42,12 +44,14 @@
               "type": "file",
               "path": ".claude/commands/fix-github-issue.md",
               "frontmatter": {},
-              "tags": ["commands"],
+              "tags": [
+                "commands"
+              ],
               "size": 487,
-              "lastModified": "2025-08-28T00:13:05.247Z"
+              "lastModified": "2025-08-28T10:03:36.096Z"
             }
           ],
-          "lastModified": "2025-08-28T00:13:05.247Z",
+          "lastModified": "2025-08-28T10:03:36.096Z",
           "tags": []
         },
         {
@@ -58,10 +62,10 @@
           "frontmatter": {},
           "tags": [],
           "size": 5,
-          "lastModified": "2025-08-28T00:13:05.247Z"
+          "lastModified": "2025-08-28T10:03:36.096Z"
         }
       ],
-      "lastModified": "2025-08-28T00:13:05.247Z",
+      "lastModified": "2025-08-28T10:03:36.096Z",
       "tags": []
     },
     {
@@ -79,18 +83,22 @@
               "type": "file",
               "path": ".windsurf/rules/angular_fullstack_rules.md",
               "frontmatter": {},
-              "tags": ["instructions"],
+              "tags": [
+                "instructions"
+              ],
               "size": 5649,
-              "lastModified": "2025-08-28T00:13:05.248Z"
+              "lastModified": "2025-08-28T10:03:36.098Z"
             },
             {
               "name": "data_science_rules.md",
               "type": "file",
               "path": ".windsurf/rules/data_science_rules.md",
               "frontmatter": {},
-              "tags": ["instructions"],
+              "tags": [
+                "instructions"
+              ],
               "size": 12048,
-              "lastModified": "2025-08-28T00:13:05.248Z"
+              "lastModified": "2025-08-28T10:03:36.098Z"
             },
             {
               "name": "monorepo-tamagui.md",
@@ -99,34 +107,40 @@
               "frontmatter": {
                 "trigger": "manual"
               },
-              "tags": ["instructions"],
+              "tags": [
+                "instructions"
+              ],
               "size": 5649,
-              "lastModified": "2025-08-28T00:13:05.248Z"
+              "lastModified": "2025-08-28T10:03:36.098Z"
             },
             {
               "name": "project_instructions.md",
               "type": "file",
               "path": ".windsurf/rules/project_instructions.md",
               "frontmatter": {},
-              "tags": ["instructions"],
+              "tags": [
+                "instructions"
+              ],
               "size": 8877,
-              "lastModified": "2025-08-28T00:13:05.248Z"
+              "lastModified": "2025-08-28T10:03:36.098Z"
             },
             {
               "name": "react_nextjs_rules.md",
               "type": "file",
               "path": ".windsurf/rules/react_nextjs_rules.md",
               "frontmatter": {},
-              "tags": ["instructions"],
+              "tags": [
+                "instructions"
+              ],
               "size": 8920,
-              "lastModified": "2025-08-28T00:13:05.248Z"
+              "lastModified": "2025-08-28T10:03:36.098Z"
             }
           ],
-          "lastModified": "2025-08-28T00:13:05.248Z",
+          "lastModified": "2025-08-28T10:03:36.098Z",
           "tags": []
         }
       ],
-      "lastModified": "2025-08-28T00:13:05.248Z",
+      "lastModified": "2025-08-28T10:03:36.097Z",
       "tags": []
     },
     {
@@ -139,12 +153,14 @@
           "type": "file",
           "path": "claude/create_prompt.md",
           "frontmatter": {},
-          "tags": ["prompts"],
+          "tags": [
+            "prompts"
+          ],
           "size": 217,
-          "lastModified": "2025-08-28T00:13:05.250Z"
+          "lastModified": "2025-08-28T10:03:36.099Z"
         }
       ],
-      "lastModified": "2025-08-28T00:13:05.249Z",
+      "lastModified": "2025-08-28T10:03:36.099Z",
       "tags": []
     }
   ],
@@ -152,8 +168,13 @@
     "categories": {
       "agents": {
         "name": "Agents",
-        "patterns": ["**/agents/**", "**/.claude/agents/**"],
-        "defaultTags": ["agents"]
+        "patterns": [
+          "**/agents/**",
+          "**/.claude/agents/**"
+        ],
+        "defaultTags": [
+          "agents"
+        ]
       },
       "commands": {
         "name": "Commands",
@@ -162,12 +183,20 @@
           "**/.claude/commands/**",
           "**/*.command.*"
         ],
-        "defaultTags": ["commands"]
+        "defaultTags": [
+          "commands"
+        ]
       },
       "prompts": {
         "name": "Prompts",
-        "patterns": ["**/prompts/**", "**/claude/**", "**/*.prompt.*"],
-        "defaultTags": ["prompts"]
+        "patterns": [
+          "**/prompts/**",
+          "**/claude/**",
+          "**/*.prompt.*"
+        ],
+        "defaultTags": [
+          "prompts"
+        ]
       },
       "instructions": {
         "name": "Instructions",
@@ -176,7 +205,9 @@
           "**/rules/**",
           "**/*.instructions.*"
         ],
-        "defaultTags": ["instructions"]
+        "defaultTags": [
+          "instructions"
+        ]
       }
     },
     "tags": {
@@ -243,16 +274,18 @@
                     "type": "file",
                     "path": ".claude/agents/universal-app/CLAUDE.md",
                     "frontmatter": {},
-                    "tags": ["agents"],
+                    "tags": [
+                      "agents"
+                    ],
                     "size": 9607,
-                    "lastModified": "2025-08-28T00:13:05.247Z"
+                    "lastModified": "2025-08-28T10:03:36.096Z"
                   }
                 ],
-                "lastModified": "2025-08-28T00:13:05.247Z",
+                "lastModified": "2025-08-28T10:03:36.096Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-28T00:13:05.247Z",
+            "lastModified": "2025-08-28T10:03:36.096Z",
             "tags": []
           },
           {
@@ -265,12 +298,14 @@
                 "type": "file",
                 "path": ".claude/commands/fix-github-issue.md",
                 "frontmatter": {},
-                "tags": ["commands"],
+                "tags": [
+                  "commands"
+                ],
                 "size": 487,
-                "lastModified": "2025-08-28T00:13:05.247Z"
+                "lastModified": "2025-08-28T10:03:36.096Z"
               }
             ],
-            "lastModified": "2025-08-28T00:13:05.247Z",
+            "lastModified": "2025-08-28T10:03:36.096Z",
             "tags": []
           },
           {
@@ -281,10 +316,10 @@
             "frontmatter": {},
             "tags": [],
             "size": 5,
-            "lastModified": "2025-08-28T00:13:05.247Z"
+            "lastModified": "2025-08-28T10:03:36.096Z"
           }
         ],
-        "lastModified": "2025-08-28T00:13:05.247Z",
+        "lastModified": "2025-08-28T10:03:36.096Z",
         "tags": []
       },
       {
@@ -302,18 +337,22 @@
                 "type": "file",
                 "path": ".windsurf/rules/angular_fullstack_rules.md",
                 "frontmatter": {},
-                "tags": ["instructions"],
+                "tags": [
+                  "instructions"
+                ],
                 "size": 5649,
-                "lastModified": "2025-08-28T00:13:05.248Z"
+                "lastModified": "2025-08-28T10:03:36.098Z"
               },
               {
                 "name": "data_science_rules.md",
                 "type": "file",
                 "path": ".windsurf/rules/data_science_rules.md",
                 "frontmatter": {},
-                "tags": ["instructions"],
+                "tags": [
+                  "instructions"
+                ],
                 "size": 12048,
-                "lastModified": "2025-08-28T00:13:05.248Z"
+                "lastModified": "2025-08-28T10:03:36.098Z"
               },
               {
                 "name": "monorepo-tamagui.md",
@@ -322,34 +361,40 @@
                 "frontmatter": {
                   "trigger": "manual"
                 },
-                "tags": ["instructions"],
+                "tags": [
+                  "instructions"
+                ],
                 "size": 5649,
-                "lastModified": "2025-08-28T00:13:05.248Z"
+                "lastModified": "2025-08-28T10:03:36.098Z"
               },
               {
                 "name": "project_instructions.md",
                 "type": "file",
                 "path": ".windsurf/rules/project_instructions.md",
                 "frontmatter": {},
-                "tags": ["instructions"],
+                "tags": [
+                  "instructions"
+                ],
                 "size": 8877,
-                "lastModified": "2025-08-28T00:13:05.248Z"
+                "lastModified": "2025-08-28T10:03:36.098Z"
               },
               {
                 "name": "react_nextjs_rules.md",
                 "type": "file",
                 "path": ".windsurf/rules/react_nextjs_rules.md",
                 "frontmatter": {},
-                "tags": ["instructions"],
+                "tags": [
+                  "instructions"
+                ],
                 "size": 8920,
-                "lastModified": "2025-08-28T00:13:05.248Z"
+                "lastModified": "2025-08-28T10:03:36.098Z"
               }
             ],
-            "lastModified": "2025-08-28T00:13:05.248Z",
+            "lastModified": "2025-08-28T10:03:36.098Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-28T00:13:05.248Z",
+        "lastModified": "2025-08-28T10:03:36.097Z",
         "tags": []
       },
       {
@@ -362,12 +407,14 @@
             "type": "file",
             "path": "claude/create_prompt.md",
             "frontmatter": {},
-            "tags": ["prompts"],
+            "tags": [
+              "prompts"
+            ],
             "size": 217,
-            "lastModified": "2025-08-28T00:13:05.250Z"
+            "lastModified": "2025-08-28T10:03:36.099Z"
           }
         ],
-        "lastModified": "2025-08-28T00:13:05.249Z",
+        "lastModified": "2025-08-28T10:03:36.099Z",
         "tags": []
       }
     ],
@@ -392,20 +439,22 @@
                     "type": "file",
                     "path": ".claude/agents/universal-app/CLAUDE.md",
                     "frontmatter": {},
-                    "tags": ["agents"],
+                    "tags": [
+                      "agents"
+                    ],
                     "size": 9607,
-                    "lastModified": "2025-08-28T00:13:05.247Z"
+                    "lastModified": "2025-08-28T10:03:36.096Z"
                   }
                 ],
-                "lastModified": "2025-08-28T00:13:05.247Z",
+                "lastModified": "2025-08-28T10:03:36.096Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-28T00:13:05.247Z",
+            "lastModified": "2025-08-28T10:03:36.096Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-28T00:13:05.247Z",
+        "lastModified": "2025-08-28T10:03:36.096Z",
         "tags": []
       }
     ],
@@ -420,12 +469,14 @@
             "type": "file",
             "path": "claude/create_prompt.md",
             "frontmatter": {},
-            "tags": ["prompts"],
+            "tags": [
+              "prompts"
+            ],
             "size": 217,
-            "lastModified": "2025-08-28T00:13:05.250Z"
+            "lastModified": "2025-08-28T10:03:36.099Z"
           }
         ],
-        "lastModified": "2025-08-28T00:13:05.249Z",
+        "lastModified": "2025-08-28T10:03:36.099Z",
         "tags": []
       }
     ],
@@ -445,16 +496,18 @@
                 "type": "file",
                 "path": ".claude/commands/fix-github-issue.md",
                 "frontmatter": {},
-                "tags": ["commands"],
+                "tags": [
+                  "commands"
+                ],
                 "size": 487,
-                "lastModified": "2025-08-28T00:13:05.247Z"
+                "lastModified": "2025-08-28T10:03:36.096Z"
               }
             ],
-            "lastModified": "2025-08-28T00:13:05.247Z",
+            "lastModified": "2025-08-28T10:03:36.096Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-28T00:13:05.247Z",
+        "lastModified": "2025-08-28T10:03:36.096Z",
         "tags": []
       }
     ],
@@ -474,18 +527,22 @@
                 "type": "file",
                 "path": ".windsurf/rules/angular_fullstack_rules.md",
                 "frontmatter": {},
-                "tags": ["instructions"],
+                "tags": [
+                  "instructions"
+                ],
                 "size": 5649,
-                "lastModified": "2025-08-28T00:13:05.248Z"
+                "lastModified": "2025-08-28T10:03:36.098Z"
               },
               {
                 "name": "data_science_rules.md",
                 "type": "file",
                 "path": ".windsurf/rules/data_science_rules.md",
                 "frontmatter": {},
-                "tags": ["instructions"],
+                "tags": [
+                  "instructions"
+                ],
                 "size": 12048,
-                "lastModified": "2025-08-28T00:13:05.248Z"
+                "lastModified": "2025-08-28T10:03:36.098Z"
               },
               {
                 "name": "monorepo-tamagui.md",
@@ -494,34 +551,40 @@
                 "frontmatter": {
                   "trigger": "manual"
                 },
-                "tags": ["instructions"],
+                "tags": [
+                  "instructions"
+                ],
                 "size": 5649,
-                "lastModified": "2025-08-28T00:13:05.248Z"
+                "lastModified": "2025-08-28T10:03:36.098Z"
               },
               {
                 "name": "project_instructions.md",
                 "type": "file",
                 "path": ".windsurf/rules/project_instructions.md",
                 "frontmatter": {},
-                "tags": ["instructions"],
+                "tags": [
+                  "instructions"
+                ],
                 "size": 8877,
-                "lastModified": "2025-08-28T00:13:05.248Z"
+                "lastModified": "2025-08-28T10:03:36.098Z"
               },
               {
                 "name": "react_nextjs_rules.md",
                 "type": "file",
                 "path": ".windsurf/rules/react_nextjs_rules.md",
                 "frontmatter": {},
-                "tags": ["instructions"],
+                "tags": [
+                  "instructions"
+                ],
                 "size": 8920,
-                "lastModified": "2025-08-28T00:13:05.248Z"
+                "lastModified": "2025-08-28T10:03:36.098Z"
               }
             ],
-            "lastModified": "2025-08-28T00:13:05.248Z",
+            "lastModified": "2025-08-28T10:03:36.098Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-28T00:13:05.248Z",
+        "lastModified": "2025-08-28T10:03:36.097Z",
         "tags": []
       }
     ]

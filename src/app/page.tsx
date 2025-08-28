@@ -9,6 +9,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Download, Tag, Clock } from "lucide-react";
 import Image from "next/image";
 import { FileTreeItem } from "@/lib/content-types";
+import { getContentTypeColorClass } from "@/lib/colors";
 // Import just the type, not the server functions
 export interface StaticContentData {
   contentTree: FileTreeItem[];
@@ -162,18 +163,27 @@ export default function Prompts(): React.JSX.Element {
                 <TabsTrigger value="all" className="px-0.5 py-1 text-xs">
                   All
                 </TabsTrigger>
-                <TabsTrigger value="agents" className="px-0.5 py-1 text-xs">
+                <TabsTrigger 
+                  value="agents" 
+                  className={`px-0.5 py-1 text-xs ${getContentTypeColorClass("agents")}`}
+                >
                   Agents
                 </TabsTrigger>
-                <TabsTrigger value="prompts" className="px-0.5 py-1 text-xs">
+                <TabsTrigger 
+                  value="prompts" 
+                  className={`px-0.5 py-1 text-xs ${getContentTypeColorClass("prompts")}`}
+                >
                   Prompts
                 </TabsTrigger>
-                <TabsTrigger value="commands" className="px-0.5 py-1 text-xs">
+                <TabsTrigger 
+                  value="commands" 
+                  className={`px-0.5 py-1 text-xs ${getContentTypeColorClass("commands")}`}
+                >
                   Cmds
                 </TabsTrigger>
                 <TabsTrigger
                   value="instructions"
-                  className="px-0.5 py-1 text-xs"
+                  className={`px-0.5 py-1 text-xs ${getContentTypeColorClass("instructions")}`}
                 >
                   Instructions
                 </TabsTrigger>
