@@ -60,22 +60,68 @@ function getDefinitions() {
 }
 
 /**
- * Parse markdown file and extract frontmatter
+ * Parse markdown file and extract frontmatter with robust error handling
  */
 function parseMarkdownFile(filePath) {
   try {
     const fileContent = fs.readFileSync(filePath, "utf8");
-    const parsed = matter(fileContent);
-
-    return {
-      content: parsed.content,
-      frontmatter: parsed.data || {},
-    };
+    
+    // First, try normal parsing
+    try {
+      const parsed = matter(fileContent);
+      return {
+        content: parsed.content,
+        frontmatter: parsed.data || {},
+      };
+    } catch (yamlError) {
+      // If YAML parsing fails, try to extract basic metadata and treat rest as content
+      console.warn(`YAML parsing failed for ${filePath}, attempting recovery...`);
+      
+      // Try to extract frontmatter manually
+      const frontmatterMatch = fileContent.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+      if (frontmatterMatch) {
+        const [, rawFrontmatter, content] = frontmatterMatch;
+        
+        // Extract simple key-value pairs, ignoring complex structures
+        const frontmatter = {};
+        const lines = rawFrontmatter.split('\n');
+        
+        for (const line of lines) {
+          const match = line.match(/^([a-zA-Z_][a-zA-Z0-9_]*)\s*:\s*(.*)$/);
+          if (match) {
+            const [, key, value] = match;
+            // Only extract simple values, skip complex multiline content
+            if (!value.includes('<') && !value.includes('\\n')) {
+              frontmatter[key] = value.replace(/^["']|["']$/g, ''); // Remove quotes
+            } else if (key === 'name' || key === 'color' || key === 'tools') {
+              // Always extract these important fields
+              frontmatter[key] = value.replace(/^["']|["']$/g, '');
+            }
+          }
+        }
+        
+        return {
+          content: content,
+          frontmatter,
+        };
+      }
+      
+      // Last resort: treat entire file as content
+      console.warn(`Could not parse frontmatter for ${filePath}, treating as plain content`);
+      return {
+        content: fileContent,
+        frontmatter: {
+          name: path.basename(filePath, '.md'), // Use filename as fallback name
+        },
+      };
+    }
   } catch (error) {
-    console.error(`Error parsing markdown file ${filePath}:`, error);
+    console.error(`Error reading markdown file ${filePath}:`, error.message);
     return {
       content: "",
-      frontmatter: {},
+      frontmatter: {
+        name: path.basename(filePath, '.md'), // Use filename as fallback name
+      },
     };
   }
 }
@@ -299,7 +345,8 @@ function filterFileTree(tree, filter) {
 function generateStaticContentData() {
   console.log("🔥 Generating static content data...");
 
-  // Load content tree with full content
+  // Load content tree with full content and robust error handling
+  console.log("📂 Loading content tree with error recovery...");
   const contentTree = loadContentTree({
     includeContent: true,
     parseMarkdown: true,
@@ -324,8 +371,10 @@ function generateStaticContentData() {
 
   collectContent(contentTree);
 
-  // Generate statistics
+  // Generate statistics with parsing health metrics
   let totalFiles = 0;
+  let parsedFiles = 0;
+  let failedFiles = 0;
   const categoryCount = {};
   const tagCount = {};
 
@@ -333,6 +382,13 @@ function generateStaticContentData() {
     for (const item of items) {
       if (item.type === "file") {
         totalFiles++;
+
+        // Track parsing success
+        if (item.frontmatter && Object.keys(item.frontmatter).length > 0) {
+          parsedFiles++;
+        } else {
+          failedFiles++;
+        }
 
         if (item.tags) {
           item.tags.forEach(tag => {
@@ -354,6 +410,9 @@ function generateStaticContentData() {
 
   const stats = {
     totalFiles,
+    parsedFiles,
+    failedFiles,
+    parseSuccessRate: Math.round((parsedFiles / totalFiles) * 100),
     totalCategories: Object.keys(categoryCount).length,
     totalTags: Object.keys(tagCount).length,
     categoryCount,
@@ -372,6 +431,12 @@ function generateStaticContentData() {
   console.log(
     `✅ Generated content data: ${totalFiles} files, ${Object.keys(contentMap).length} content entries`
   );
+  console.log(
+    `📊 Parsing health: ${parsedFiles}/${totalFiles} successful (${stats.parseSuccessRate}%)`
+  );
+  if (failedFiles > 0) {
+    console.warn(`⚠️  ${failedFiles} files had parsing issues but were recovered`);
+  }
 
   return {
     contentTree,
