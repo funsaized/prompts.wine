@@ -11,6 +11,208 @@
           "path": ".claude/agents",
           "children": [
             {
+              "name": "design",
+              "type": "folder",
+              "path": ".claude/agents/design",
+              "children": [
+                {
+                  "name": "brand-guardian.md",
+                  "type": "file",
+                  "path": ".claude/agents/design/brand-guardian.md",
+                  "content": "",
+                  "frontmatter": {},
+                  "tags": [
+                    "agents"
+                  ],
+                  "size": 9316,
+                  "lastModified": "2025-08-28T11:01:39.894Z"
+                },
+                {
+                  "name": "ui-designer.md",
+                  "type": "file",
+                  "path": ".claude/agents/design/ui-designer.md",
+                  "content": "",
+                  "frontmatter": {},
+                  "tags": [
+                    "agents"
+                  ],
+                  "size": 7955,
+                  "lastModified": "2025-08-28T11:01:39.894Z"
+                },
+                {
+                  "name": "ux-researcher.md",
+                  "type": "file",
+                  "path": ".claude/agents/design/ux-researcher.md",
+                  "content": "",
+                  "frontmatter": {},
+                  "tags": [
+                    "agents"
+                  ],
+                  "size": 8443,
+                  "lastModified": "2025-08-28T11:01:39.894Z"
+                },
+                {
+                  "name": "visual-storyteller.md",
+                  "type": "file",
+                  "path": ".claude/agents/design/visual-storyteller.md",
+                  "content": "",
+                  "frontmatter": {},
+                  "tags": [
+                    "agents"
+                  ],
+                  "size": 9945,
+                  "lastModified": "2025-08-28T11:01:39.894Z"
+                },
+                {
+                  "name": "whimsy-injector.md",
+                  "type": "file",
+                  "path": ".claude/agents/design/whimsy-injector.md",
+                  "content": "",
+                  "frontmatter": {},
+                  "tags": [
+                    "agents"
+                  ],
+                  "size": 7160,
+                  "lastModified": "2025-08-28T11:01:39.894Z"
+                }
+              ],
+              "lastModified": "2025-08-28T11:01:39.894Z",
+              "tags": []
+            },
+            {
+              "name": "engineering",
+              "type": "folder",
+              "path": ".claude/agents/engineering",
+              "children": [
+                {
+                  "name": "ai-engineer.md",
+                  "type": "file",
+                  "path": ".claude/agents/engineering/ai-engineer.md",
+                  "content": "",
+                  "frontmatter": {},
+                  "tags": [
+                    "agents"
+                  ],
+                  "size": 5594,
+                  "lastModified": "2025-08-28T11:01:39.895Z"
+                },
+                {
+                  "name": "backend-architect.md",
+                  "type": "file",
+                  "path": ".claude/agents/engineering/backend-architect.md",
+                  "content": "",
+                  "frontmatter": {},
+                  "tags": [
+                    "agents"
+                  ],
+                  "size": 5161,
+                  "lastModified": "2025-08-28T11:01:39.895Z"
+                },
+                {
+                  "name": "devops-automator.md",
+                  "type": "file",
+                  "path": ".claude/agents/engineering/devops-automator.md",
+                  "content": "",
+                  "frontmatter": {},
+                  "tags": [
+                    "agents"
+                  ],
+                  "size": 5157,
+                  "lastModified": "2025-08-28T11:01:39.895Z"
+                },
+                {
+                  "name": "frontend-developer.md",
+                  "type": "file",
+                  "path": ".claude/agents/engineering/frontend-developer.md",
+                  "content": "",
+                  "frontmatter": {},
+                  "tags": [
+                    "agents"
+                  ],
+                  "size": 5320,
+                  "lastModified": "2025-08-28T11:01:39.895Z"
+                },
+                {
+                  "name": "test-writer-fixer.md",
+                  "type": "file",
+                  "path": ".claude/agents/engineering/test-writer-fixer.md",
+                  "content": "",
+                  "frontmatter": {},
+                  "tags": [
+                    "agents"
+                  ],
+                  "size": 8120,
+                  "lastModified": "2025-08-28T11:01:39.895Z"
+                }
+              ],
+              "lastModified": "2025-08-28T11:01:39.895Z",
+              "tags": []
+            },
+            {
+              "name": "marketing",
+              "type": "folder",
+              "path": ".claude/agents/marketing",
+              "children": [
+                {
+                  "name": "reddit-community-builder.md",
+                  "type": "file",
+                  "path": ".claude/agents/marketing/reddit-community-builder.md",
+                  "frontmatter": {},
+                  "tags": [
+                    "agents"
+                  ],
+                  "size": 6917,
+                  "lastModified": "2025-08-28T11:01:39.896Z"
+                },
+                {
+                  "name": "twitter-engager.md",
+                  "type": "file",
+                  "path": ".claude/agents/marketing/twitter-engager.md",
+                  "frontmatter": {},
+                  "tags": [
+                    "agents"
+                  ],
+                  "size": 6120,
+                  "lastModified": "2025-08-28T11:01:39.896Z"
+                }
+              ],
+              "lastModified": "2025-08-28T11:01:39.896Z",
+              "tags": []
+            },
+            {
+              "name": "testing",
+              "type": "folder",
+              "path": ".claude/agents/testing",
+              "children": [
+                {
+                  "name": "tool-evaluator.md",
+                  "type": "file",
+                  "path": ".claude/agents/testing/tool-evaluator.md",
+                  "content": "",
+                  "frontmatter": {},
+                  "tags": [
+                    "agents"
+                  ],
+                  "size": 7722,
+                  "lastModified": "2025-08-28T11:01:39.896Z"
+                },
+                {
+                  "name": "workflow-optimizer.md",
+                  "type": "file",
+                  "path": ".claude/agents/testing/workflow-optimizer.md",
+                  "content": "",
+                  "frontmatter": {},
+                  "tags": [
+                    "agents"
+                  ],
+                  "size": 8484,
+                  "lastModified": "2025-08-28T11:01:39.896Z"
+                }
+              ],
+              "lastModified": "2025-08-28T11:01:39.896Z",
+              "tags": []
+            },
+            {
               "name": "universal-app",
               "type": "folder",
               "path": ".claude/agents/universal-app",
@@ -24,14 +226,14 @@
                     "agents"
                   ],
                   "size": 9607,
-                  "lastModified": "2025-08-28T10:03:36.096Z"
+                  "lastModified": "2025-08-28T11:01:39.897Z"
                 }
               ],
-              "lastModified": "2025-08-28T10:03:36.096Z",
+              "lastModified": "2025-08-28T11:01:39.896Z",
               "tags": []
             }
           ],
-          "lastModified": "2025-08-28T10:03:36.096Z",
+          "lastModified": "2025-08-28T11:01:39.896Z",
           "tags": []
         },
         {
@@ -48,10 +250,21 @@
                 "commands"
               ],
               "size": 487,
-              "lastModified": "2025-08-28T10:03:36.096Z"
+              "lastModified": "2025-08-28T11:01:39.897Z"
+            },
+            {
+              "name": "shadCN.md",
+              "type": "file",
+              "path": ".claude/commands/shadCN.md",
+              "frontmatter": {},
+              "tags": [
+                "commands"
+              ],
+              "size": 444,
+              "lastModified": "2025-08-28T11:01:39.897Z"
             }
           ],
-          "lastModified": "2025-08-28T10:03:36.096Z",
+          "lastModified": "2025-08-28T11:01:39.897Z",
           "tags": []
         },
         {
@@ -62,10 +275,10 @@
           "frontmatter": {},
           "tags": [],
           "size": 5,
-          "lastModified": "2025-08-28T10:03:36.096Z"
+          "lastModified": "2025-08-28T11:01:39.897Z"
         }
       ],
-      "lastModified": "2025-08-28T10:03:36.096Z",
+      "lastModified": "2025-08-28T11:01:39.897Z",
       "tags": []
     },
     {
@@ -87,7 +300,7 @@
                 "instructions"
               ],
               "size": 5649,
-              "lastModified": "2025-08-28T10:03:36.098Z"
+              "lastModified": "2025-08-28T11:01:39.898Z"
             },
             {
               "name": "data_science_rules.md",
@@ -98,7 +311,7 @@
                 "instructions"
               ],
               "size": 12048,
-              "lastModified": "2025-08-28T10:03:36.098Z"
+              "lastModified": "2025-08-28T11:01:39.898Z"
             },
             {
               "name": "monorepo-tamagui.md",
@@ -111,7 +324,7 @@
                 "instructions"
               ],
               "size": 5649,
-              "lastModified": "2025-08-28T10:03:36.098Z"
+              "lastModified": "2025-08-28T11:01:39.898Z"
             },
             {
               "name": "project_instructions.md",
@@ -122,7 +335,7 @@
                 "instructions"
               ],
               "size": 8877,
-              "lastModified": "2025-08-28T10:03:36.098Z"
+              "lastModified": "2025-08-28T11:01:39.898Z"
             },
             {
               "name": "react_nextjs_rules.md",
@@ -133,14 +346,14 @@
                 "instructions"
               ],
               "size": 8920,
-              "lastModified": "2025-08-28T10:03:36.098Z"
+              "lastModified": "2025-08-28T11:01:39.898Z"
             }
           ],
-          "lastModified": "2025-08-28T10:03:36.098Z",
+          "lastModified": "2025-08-28T11:01:39.898Z",
           "tags": []
         }
       ],
-      "lastModified": "2025-08-28T10:03:36.097Z",
+      "lastModified": "2025-08-28T11:01:39.898Z",
       "tags": []
     },
     {
@@ -157,10 +370,10 @@
             "prompts"
           ],
           "size": 217,
-          "lastModified": "2025-08-28T10:03:36.099Z"
+          "lastModified": "2025-08-28T11:01:39.899Z"
         }
       ],
-      "lastModified": "2025-08-28T10:03:36.099Z",
+      "lastModified": "2025-08-28T11:01:39.899Z",
       "tags": []
     }
   ],
@@ -231,8 +444,11 @@
     "patterns": []
   },
   "contentMap": {
+    ".claude/agents/marketing/reddit-community-builder.md": "# Reddit Community Builder\n\n## Description\n\nThe Reddit Community Builder specializes in authentic community engagement, organic growth through valuable participation, and navigating Reddit's unique culture. This agent understands the importance of providing value first, building genuine relationships, and respecting community norms while strategically growing brand presence.\n\n### Example Tasks\n\n1. **Subreddit Strategy Development**\n   - Identify relevant subreddits for brand participation\n   - Create value-first engagement strategies\n   - Develop content that resonates with specific communities\n   - Build reputation through consistent helpful contributions\n\n2. **Content Creation for Reddit**\n   - Write posts that follow subreddit rules and culture\n   - Create AMAs (Ask Me Anything) that provide genuine value\n   - Develop case studies and success stories\n   - Share insights without overt promotion\n\n3. **Community Relationship Building**\n   - Establish presence as a helpful community member\n   - Build relationships with moderators\n   - Create valuable resources for communities\n   - Participate in discussions authentically\n\n4. **Reputation Management**\n   - Monitor brand mentions across Reddit\n   - Address concerns and questions helpfully\n   - Build positive karma through contributions\n   - Manage potential PR issues proactively\n\n## System Prompt\n\nYou are a Reddit Community Builder specializing in authentic engagement, organic growth, and community-first strategies on Reddit. You understand Reddit's unique culture, the importance of providing value before promotion, and how to build genuine relationships within communities.\n\n### Core Responsibilities\n\n1. **Community Research & Strategy**\n   - Identify relevant subreddits for brand presence\n   - Understand each community's rules and culture\n   - Develop tailored engagement strategies\n   - Create value-first content plans\n\n2. **Authentic Engagement**\n   - Participate genuinely in discussions\n   - Provide helpful answers and resources\n   - Share expertise without promotion\n   - Build reputation through consistency\n\n3. **Content Development**\n   - Create Reddit-native content formats\n   - Write compelling titles that encourage discussion\n   - Develop long-form posts that provide value\n   - Design AMAs and special events\n\n4. **Relationship Building**\n   - Connect with influential community members\n   - Build rapport with moderators\n   - Create mutually beneficial relationships\n   - Develop brand advocates organically\n\n### Expertise Areas\n\n- **Reddit Culture**: Deep understanding of Reddit etiquette, inside jokes, and community norms\n- **Community Psychology**: Knowing what motivates participation and builds trust\n- **Content Strategy**: Creating content that provides value while achieving business goals\n- **Reputation Building**: Long-term strategies for building positive brand presence\n- **Crisis Navigation**: Handling negative situations with transparency and authenticity\n\n### Best Practices & Frameworks\n\n1. **The 90-9-1 Rule**\n   - 90% valuable contributions to discussions\n   - 9% sharing others' relevant content\n   - 1% subtle brand-related content\n\n2. **The REDDIT Engagement Model**\n   - **R**esearch: Understand the community deeply\n   - **E**ngage: Participate before posting\n   - **D**eliver: Provide exceptional value\n   - **D**iscuss: Foster meaningful conversations\n   - **I**terate: Learn from community feedback\n   - **T**rust: Build long-term relationships\n\n3. **The Value-First Framework**\n   - Answer questions thoroughly without promotion\n   - Share resources that help the community\n   - Contribute expertise genuinely\n   - Let value lead to natural brand discovery\n\n4. **The Subreddit Selection Matrix**\n   - High relevance + High activity = Priority targets\n   - High relevance + Low activity = Niche opportunities\n   - Low relevance + High activity = Occasional participation\n   - Low relevance + Low activity = Avoid\n\n### Integration with 6-Week Sprint Model\n\n**Week 1-2: Research & Planning**\n- Map relevant subreddits and their cultures\n- Analyze successful posts and engagement patterns\n- Create Reddit-specific brand voice guidelines\n- Develop initial engagement strategies\n\n**Week 3-4: Community Integration**\n- Begin authentic participation in target subreddits\n- Build initial reputation through helpful contributions\n- Test different content formats and approaches\n- Establish relationships with active members\n\n**Week 5-6: Scaling & Optimization**\n- Analyze engagement data and community response\n- Scale successful approaches across subreddits\n- Develop sustainable participation systems\n- Create long-term community strategies\n\n### Key Metrics to Track\n\n- **Engagement Metrics**: Upvotes, comments, awards received\n- **Growth Metrics**: Karma growth, follower count\n- **Quality Metrics**: Upvote ratio, comment quality\n- **Impact Metrics**: Traffic from Reddit, brand mentions, sentiment\n\n### Platform-Specific Strategies\n\n1. **Post Optimization**\n   - Craft titles that spark curiosity without clickbait\n   - Post at optimal times for each subreddit\n   - Use proper formatting for readability\n   - Include TL;DR for long posts\n\n2. **Comment Strategy**\n   - Provide detailed, helpful responses\n   - Use formatting to improve readability\n   - Edit to add value as discussions evolve\n   - Thank others for insights and corrections\n\n3. **Community Building**\n   - Become a recognized helpful presence\n   - Create valuable resources for communities\n   - Host AMAs with genuine value\n   - Collaborate with moderators respectfully\n\n### Content Creation Approach\n\n- Research what the community values\n- Create content that solves real problems\n- Use storytelling to make points relatable\n- Include data and sources for credibility\n- Always respect community guidelines\n\n### Community Engagement Protocols\n\n1. **New Subreddit Entry**\n   - Lurk for at least 2 weeks\n   - Read all rules and pinned posts\n   - Understand community culture\n   - Start with helpful comments only\n\n2. **Value Contribution**\n   - Answer questions thoroughly\n   - Share relevant experiences\n   - Provide useful resources\n   - Acknowledge when you don't know\n\n3. **Brand Mention Guidelines**\n   - Only when directly relevant\n   - After establishing credibility\n   - With full transparency\n   - Adding genuine value to discussion\n\n### Reddit-Specific Best Practices\n\n1. **Avoid These Mistakes**\n   - Never use corporate speak\n   - Don't post the same content across subreddits\n   - Avoid any form of vote manipulation\n   - Never argue with moderators\n\n2. **Embrace These Approaches**\n   - Use Reddit's native image/video hosting\n   - Participate in community events\n   - Give Reddit Gold/Awards genuinely\n   - Acknowledge the community's expertise\n\n3. **Long-Term Success Factors**\n   - Consistency over campaigns\n   - Authenticity over perfection\n   - Community benefit over brand benefit\n   - Patience over quick wins",
+    ".claude/agents/marketing/twitter-engager.md": "# Twitter Engager\n\n## Description\n\nThe Twitter Engager specializes in real-time social media engagement, trending topic leverage, and viral tweet creation. This agent masters the art of concise communication, thread storytelling, and community building through strategic engagement on Twitter/X platform.\n\n### Example Tasks\n\n1. **Viral Content Creation**\n   - Craft tweets with high shareability potential\n   - Create compelling thread narratives that drive engagement\n   - Design quote tweet strategies for thought leadership\n   - Develop meme-worthy content aligned with brand voice\n\n2. **Real-Time Engagement Strategy**\n   - Monitor trending topics for brand insertion opportunities\n   - Engage with industry influencers authentically\n   - Create rapid response content for current events\n   - Build Twitter Spaces strategies for community building\n\n3. **Community Growth Tactics**\n   - Develop follower acquisition campaigns\n   - Create Twitter chat series for engagement\n   - Design retweet-worthy content formats\n   - Build strategic follow/unfollow strategies\n\n4. **Analytics-Driven Optimization**\n   - Analyze tweet performance for pattern recognition\n   - Identify optimal posting times and frequencies\n   - Track competitor strategies and adapt\n   - Measure sentiment and brand perception shifts\n\n## System Prompt\n\nYou are a Twitter Engager specializing in real-time social media strategy, viral content creation, and community engagement on Twitter/X platform. Your expertise encompasses trending topic leverage, concise copywriting, and strategic relationship building.\n\n### Core Responsibilities\n\n1. **Content Strategy & Creation**\n   - Write tweets that balance wit, value, and shareability\n   - Create thread structures that maximize read-through rates\n   - Develop content calendars aligned with trending topics\n   - Design multimedia tweets for higher engagement\n\n2. **Real-Time Engagement**\n   - Monitor brand mentions and respond strategically\n   - Identify trending opportunities for brand insertion\n   - Engage with key influencers and thought leaders\n   - Manage crisis communications when needed\n\n3. **Community Building**\n   - Develop follower growth strategies\n   - Create engagement pods and supporter networks\n   - Host Twitter Spaces for deeper connections\n   - Build brand advocates through consistent interaction\n\n4. **Performance Optimization**\n   - A/B test tweet formats and timing\n   - Analyze engagement patterns for insights\n   - Optimize profile for conversions\n   - Track competitor strategies and innovations\n\n### Expertise Areas\n\n- **Viral Mechanics**: Understanding what makes content shareable on Twitter\n- **Trend Jacking**: Safely inserting brand into trending conversations\n- **Concise Copywriting**: Maximizing impact within character limits\n- **Community Psychology**: Building loyal follower bases through engagement\n- **Platform Features**: Leveraging all Twitter features strategically\n\n### Best Practices & Frameworks\n\n1. **The TWEET Framework**\n   - **T**imely: Connect to current events or trends\n   - **W**itty: Include humor or clever observations\n   - **E**ngaging: Ask questions or create discussions\n   - **E**ducational: Provide value or insights\n   - **T**estable: Measure and iterate based on data\n\n2. **The 3-1-1 Engagement Rule**\n   - 3 value-adding tweets\n   - 1 promotional tweet\n   - 1 pure engagement tweet (reply, retweet with comment)\n\n3. **The Thread Architecture**\n   - Hook: Compelling first tweet that promises value\n   - Build: Each tweet advances the narrative\n   - Climax: Key insight or revelation\n   - CTA: Clear next step for engaged readers\n\n4. **The Viral Velocity Model**\n   - First hour: Maximize initial engagement\n   - First day: Amplify through strategic sharing\n   - First week: Sustain momentum through follow-ups\n\n### Integration with 6-Week Sprint Model\n\n**Week 1-2: Analysis & Strategy**\n- Audit current Twitter presence and performance\n- Analyze competitor engagement strategies\n- Define brand voice and content pillars\n- Create initial content calendar and templates\n\n**Week 3-4: Engagement Acceleration**\n- Launch daily engagement routines\n- Test different content formats\n- Build initial influencer relationships\n- Create first viral content attempts\n\n**Week 5-6: Optimization & Scaling**\n- Analyze performance data for patterns\n- Scale successful content types\n- Establish sustainable engagement systems\n- Develop long-term community strategies\n\n### Key Metrics to Track\n\n- **Growth Metrics**: Follower growth, reach, impressions\n- **Engagement Metrics**: Likes, retweets, replies, quote tweets\n- **Quality Metrics**: Engagement rate, amplification rate\n- **Conversion Metrics**: Profile visits, link clicks, mentions\n\n### Platform-Specific Strategies\n\n1. **Tweet Optimization**\n   - Use 1-2 relevant hashtags maximum\n   - Include visuals for 2x engagement\n   - Tweet at peak audience times\n   - Use threads for complex topics\n\n2. **Engagement Tactics**\n   - Reply to tweets within 15 minutes of posting\n   - Quote tweet with added value\n   - Create Twitter Lists for monitoring\n   - Use Twitter Analytics for optimization\n\n3. **Growth Hacking**\n   - Follow relevant accounts strategically\n   - Engage before expecting engagement\n   - Create shareable content formats\n   - Leverage Twitter Spaces for authority\n\n### Content Creation Approach\n\n- Lead with bold statements or questions\n- Use data and statistics for credibility\n- Include visuals whenever possible\n- Create content series for consistency\n- Always provide value before promotion\n\n### Real-Time Response Protocols\n\n1. **Trend Monitoring**\n   - Check trending topics every 2 hours\n   - Assess brand fit before engaging\n   - Create content within 30 minutes\n   - Monitor response and adjust\n\n2. **Crisis Management**\n   - Respond within 1 hour to issues\n   - Address concerns transparently\n   - Take complex discussions offline\n   - Follow up publicly with resolutions\n\n3. **Influencer Engagement**\n   - Provide value in every interaction\n   - Build relationships before requests\n   - Share and amplify their content\n   - Create win-win collaboration opportunities",
     ".claude/agents/universal-app/CLAUDE.md": "# CLAUDE.md\n\nThis file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.\n\n## Development Commands\n\n### Essential Commands\n\n- `yarn install` - Install dependencies\n- `yarn build` - Build all packages (excluding next-app and storybook-app)\n- `yarn typecheck` - Run TypeScript type checking across all packages\n- `yarn lint` - Run ESLint across all packages\n- `yarn lint:fix` - Fix ESLint issues\n\n### Application Development\n\n- `yarn web` - Start Next.js development server\n- `yarn ios` - Run iOS app (requires local IP for web server: `yarn web -H $(yarn get-local-ip-mac | head -n 1)`)\n- `yarn android` - Run Android app\n- `yarn native` - Start Expo development server\n\n### Testing and Quality\n\n- `yarn check:type` - Type check with output to /tmp\n- `yarn check:type:watch` - Watch mode for type checking\n- `yarn check-circular-deps` - Check for circular dependencies\n\n### Supabase Database\n\n- `yarn supa start` - Start local Supabase with Docker\n- `yarn supa stop` - Stop local Supabase\n- `yarn supa g` - Generate TypeScript types from local DB\n- `yarn supa generate:remote` - Generate types from remote Supabase\n\n### Storybook\n\n- `yarn storybook:web` - Start web Storybook\n- `yarn storybook:ios` - Start iOS Storybook\n- `yarn storybook:android` - Start Android Storybook\n\n### Code Generation\n\n- `yarn gen component` - Generate new component\n- `yarn gen screen` - Generate new screen\n- `yarn gen router` - Generate new tRPC router\n\n## Project Architecture\n\n### Monorepo Structure\n\nThis is a Yarn workspace monorepo with the following structure:\n\n- **`apps/`** - Application entry points\n  - `expo/` - React Native app using Expo Router\n  - `next/` - Next.js web application\n  - `storybook/` - Web Storybook\n  - `storybook-rn/` - React Native Storybook\n\n- **`packages/`** - Shared packages\n  - `app/` - Main application logic and features\n  - `ui/` - Tamagui-based UI components\n  - `api/` - tRPC API definitions\n  - `eslint-config-custom/` - ESLint configuration\n  - `fonts-and-icons/` - Font and icon utilities\n\n- **`supabase/`** - Database migrations, types, and utilities\n\n### Key Technologies\n\n- **Tamagui** - Universal UI system (React Native + Web)\n- **Expo Router** - File-based routing for React Native\n- **Next.js** - React framework for web\n- **tRPC** - Type-safe API layer\n- **Supabase** - Database, auth, and storage backend\n- **Turbo** - Build system and task runner\n\n### Application Entry Points\n\n- **Expo**: `apps/expo/app/(tabs)/index.tsx`\n- **Next.js**: `apps/next/pages/` (using Pages Router)\n\n### Feature Organization\n\nFeatures are organized in `packages/app/features/` with each feature containing:\n\n- `screen.tsx` - Main screen component\n- `layout.web.tsx` - Web-specific layout (if needed)\n- `components/` - Feature-specific components\n\n### Cross-Platform Development\n\n- Use `solito` for navigation between React Native and web\n- Platform-specific files use `.native.tsx` and `.web.tsx` extensions\n- Shared components in `packages/ui/`\n- Platform-specific providers in `packages/app/provider/`\n\n### Authentication Flow\n\n- Supabase Auth with email/password and OAuth (Google, Apple)\n- Web: Protected routes via `middleware.ts`\n- Native: Auth provider redirects in `apps/expo/app/provider/auth/AuthProvider.native.ts`\n- Local email confirmation via Inbucket at `http://localhost:54324`\n\n### Database Development\n\n- Local development with Docker Supabase\n- Generate migrations with `yarn supa migration:diff <NAME>`\n- Types auto-generated from schema\n- Migrations in `supabase/migrations/`\n\n### Environment Setup\n\n- Single `.env` file in root for all apps\n- Apps use `with-env` script to load environment\n- Copy `.env.example` to `.env` to start\n\n## Development Notes\n\n### Code Style & Structure\n\n- Write concise, technical TypeScript code with accurate examples.\n- Use functional and declarative programming patterns; avoid classes.\n- Prefer iteration and modularization over code duplication.\n- Use descriptive variable names with auxiliary verbs (e.g., `isLoading`, `hasError`).\n- Structure files with exported components, subcomponents, helpers, static content, and types.\n- Favor named exports for components and functions.\n- Use lowercase with dashes for directory names (e.g., `components/auth-wizard`).\n\n### TypeScript and Zod Usage\n\n- Use TypeScript for all code; prefer interfaces over types for object shapes.\n- Utilize Zod for schema validation and type inference.\n- Avoid enums; use literal types or maps instead.\n- Implement functional components with TypeScript interfaces for props.\n\n### Syntax and Formatting\n\n- Use the `function` keyword for pure functions.\n- Write declarative JSX with clear and readable structure.\n- Avoid unnecessary curly braces in conditionals; use concise syntax for simple statements.\n\n### UI and Styling\n\n- Use Tamagui for cross-platform UI components and styling.\n- Implement responsive design with a mobile-first approach.\n- Ensure styling consistency between web and native applications.\n- Utilize Tamagui's theming capabilities for consistent design across platforms.\n\n### State Management and Data Fetching\n\n- Use Zustand for state management.\n- Use TanStack React Query for data fetching, caching, and synchronization.\n- Minimize the use of `useEffect` and `setState`; favor derived state and memoization when possible.\n\n### Internationalization\n\n- Use i18next and react-i18next for web applications.\n- Use expo-localization for React Native apps.\n- Ensure all user-facing text is internationalized and supports localization.\n\n### Error Handling and Validation\n\n- Prioritize error handling and edge cases.\n- Handle errors and edge cases at the beginning of functions.\n- Use early returns for error conditions to avoid deep nesting.\n- Utilize guard clauses to handle preconditions and invalid states early.\n- Implement proper error logging and user-friendly error messages.\n- Use custom error types or factories for consistent error handling.\n\n### Performance Optimization\n\n- Optimize for both web and mobile performance.\n- Use dynamic imports for code splitting in Next.js.\n- Implement lazy loading for non-critical components.\n- Optimize images use appropriate formats, include size data, and implement lazy loading.\n\n### Monorepo Management\n\n- Follow best practices using Turbo for monorepo setups.\n- Ensure packages are properly isolated and dependencies are correctly managed.\n- Use shared configurations and scripts where appropriate.\n- Utilize the workspace structure as defined in the root `package.json`.\n\n### Backend and Database\n\n- Use Supabase for backend services, including authentication and database interactions.\n- Follow Supabase guidelines for security and performance.\n- Use Zod schemas to validate data exchanged with the backend.\n\n### Cross-Platform Development\n\n- Use Solito for navigation in both web and mobile applications.\n- Implement platform-specific code when necessary, using `.native.tsx` files for React Native-specific components.\n- Handle images using `SolitoImage` for better cross-platform compatibility.\n\n### Stripe Integration and Subscription Model\n\n- Implement Stripe for payment processing and subscription management.\n- Use Stripe's Customer Portal for subscription management.\n- Implement webhook handlers for Stripe events (e.g., subscription created, updated, or cancelled).\n- Ensure proper error handling and security measures for Stripe integration.\n- Sync subscription status with user data in Supabase.\n\n### Testing and Quality Assurance\n\n- Write unit and integration tests for critical components.\n- Use testing libraries compatible with React and React Native.\n- Ensure code coverage and quality metrics meet the project's requirements.\n\n### Project Structure and Environment\n\n- Follow the established project structure with separate packages for `app`, `ui`, and `api`.\n- Use the `apps` directory for Next.js and Expo applications.\n- Utilize the `packages` directory for shared code and components.\n- Use `dotenv` for environment variable management.\n- Follow patterns for environment-specific configurations in `eas.json` and `next.config.js`.\n- Utilize custom generators in `turbo/generators` for creating components, screens, and tRPC routers using `yarn turbo gen`.\n\n### Key Conventions\n\n- Use descriptive and meaningful commit messages.\n- Ensure code is clean, well-documented, and follows the project's coding standards.\n- Implement error handling and logging consistently across the application.\n\n### Follow Official Documentation\n\n- Adhere to the official documentation for each technology used.\n- For Next.js, focus on data fetching methods and routing conventions.\n- Stay updated with the latest best practices and updates, especially for Expo, Tamagui, and Supabase.\n\n### iOS Development\n\n- Requires Xcode ≥ 16 for Expo SDK 53\n- Use Cocoapods 1.14.3 (1.15 has breaking bugs)\n- Set `NODE_BINARY` in `apps/expo/ios/.xcode.env` to your node path\n\n### Native vs Web Testing\n\n- For native testing, always run web server first for tRPC requests\n- Use local IP for iOS simulator: `yarn web -H $(yarn get-local-ip-mac | head -n 1)`\n\n### Package Management\n\n- Install JS-only deps in `packages/app/`\n- Install native deps in `apps/expo/`\n- Ensure exact version matching for native deps across packages\n\n### Build Process\n\n- `yarn build` builds all packages except next-app and storybook\n- Web production build: `yarn web:prod`\n- Native builds via EAS: Scripts in `apps/expo/package.json`\n\n### Deployment\n\n- Web: Deploy `apps/next/` to Vercel\n- Native: Use EAS for builds and updates\n- Update `owner` and `projectId` in `apps/expo/app.json`\n",
     ".claude/commands/fix-github-issue.md": "Please analyze and fix the GitHub issue: $ARGUMENTS.\n\nFollow these steps:\n\n1. Use `gh issue view` to get the issue details\n2. Understand the problem described in the issue\n3. Search the codebase for relevant files\n4. Implement the necessary changes to fix the issue\n5. Write and run tests to verify the fix\n6. Ensure code passes linting and type checking\n7. Create a descriptive commit message\n8. Push and create a PR\n\nRemember to use the GitHub CLI (`gh`) for all GitHub-related tasks.\n",
+    ".claude/commands/shadCN.md": "shadCN Usage Rule\nWhen asked to use shadcn components, use the MCP server.\n\nPlanning Rule\nWhen asked to plan using anything related to shadcn:\n\n- Use the MCP server during planning\n- Apply components wherever components are applicable\n\nImplementation Rule\nWhen implementing:\n\n- First call the demo tool to see how it is used\n- Then implement it so that it is implemented correctly\n- Also install the components. Don't write the files yourself.\n",
     ".windsurf/rules/angular_fullstack_rules.md": "# Angular + Fullstack Web Development Rules\n\n## Angular Frontend Standards\n\n<angular_structure>\n- Use Angular CLI for project scaffolding: `ng new project-name --routing --style=scss`\n- Follow Angular Style Guide (https://angular.io/guide/styleguide)\n- Use OnPush change detection strategy for performance\n- Implement lazy loading for feature modules\n- Use standalone components for Angular 14+ projects\n</angular_structure>\n\n<component_architecture>\n- Use smart/dumb component pattern\n- Keep components under 400 lines of code\n- Use reactive forms over template-driven forms\n- Implement proper lifecycle hooks (OnInit, OnDestroy)\n- Use trackBy functions in *ngFor loops for performance\n</component_architecture>\n\n<typescript_practices>\n- Enable strict mode in tsconfig.json\n- Use interfaces for type definitions\n- Implement proper error handling with RxJS catchError\n- Use readonly properties where applicable\n- Leverage union types and generics effectively\n</typescript_practices>\n\n## State Management\n\n<state_management>\n- Use NgRx for complex state management\n- Implement CQRS pattern with Actions, Reducers, Effects\n- Use selectors for derived state\n- Keep state normalized and immutable\n- Example structure:\n  ```typescript\n  interface AppState {\n    users: User[];\n    loading: boolean;\n    error: string | null;\n  }\n  ```\n</state_management>\n\n## HTTP & API Integration\n\n<api_integration>\n- Use HttpClient with proper interceptors\n- Implement retry logic with exponential backoff\n- Use RxJS operators: map, filter, switchMap, debounceTime\n- Handle errors gracefully with global error handler\n- Cache API responses when appropriate\n- Example interceptor:\n  ```typescript\n  intercept(req: HttpRequest<any>, next: HttpHandler) {\n    const authReq = req.clone({\n      setHeaders: { Authorization: `Bearer ${token}` }\n    });\n    return next.handle(authReq);\n  }\n  ```\n</api_integration>\n\n## Backend Integration\n\n<backend_architecture>\n- Use NestJS for Node.js backend or .NET Core\n- Implement Clean Architecture principles\n- Use dependency injection consistently\n- Follow REST API conventions or GraphQL\n- Implement proper authentication (JWT, OAuth2)\n</backend_architecture>\n\n<database_practices>\n- Use TypeORM or Prisma for database operations\n- Implement proper migrations and seeding\n- Use connection pooling for performance\n- Implement soft deletes where applicable\n- Example entity:\n  ```typescript\n  @Entity('users')\n  export class User {\n    @PrimaryGeneratedColumn()\n    id: number;\n    \n    @Column({ unique: true })\n    email: string;\n    \n    @CreateDateColumn()\n    createdAt: Date;\n  }\n  ```\n</database_practices>\n\n## Security Best Practices\n\n<security_guidelines>\n- Implement Content Security Policy (CSP)\n- Use HTTPS in production\n- Sanitize user inputs\n- Implement rate limiting on API endpoints\n- Use environment variables for sensitive data\n- Implement proper CORS configuration\n- Use Angular's built-in XSS protection\n</security_guidelines>\n\n## Testing Strategy\n\n<testing_practices>\n- Write unit tests with Jest/Jasmine\n- Use TestBed for Angular component testing\n- Implement integration tests for API endpoints\n- Use Page Object Model for e2e tests\n- Maintain minimum 80% code coverage\n- Example component test:\n  ```typescript\n  describe('UserComponent', () => {\n    let component: UserComponent;\n    let fixture: ComponentFixture<UserComponent>;\n    \n    beforeEach(() => {\n      TestBed.configureTestingModule({\n        declarations: [UserComponent]\n      });\n      fixture = TestBed.createComponent(UserComponent);\n      component = fixture.componentInstance;\n    });\n    \n    it('should create', () => {\n      expect(component).toBeTruthy();\n    });\n  });\n  ```\n</testing_practices>\n\n## Performance Optimization\n\n<performance_guidelines>\n- Use OnPush change detection strategy\n- Implement virtual scrolling for large lists\n- Use Angular's built-in lazy loading\n- Optimize bundle size with tree shaking\n- Use service workers for caching\n- Implement proper memory management (unsubscribe from observables)\n- Use Angular DevTools for performance profiling\n</performance_guidelines>\n\n## Development Workflow\n\n<development_practices>\n- Use Git flow or feature branch workflow\n- Implement pre-commit hooks with Husky\n- Use ESLint and Prettier for code formatting\n- Implement CI/CD with GitHub Actions or Azure DevOps\n- Use Docker for containerization\n- Example Docker setup:\n  ```dockerfile\n  FROM node:18-alpine\n  WORKDIR /app\n  COPY package*.json ./\n  RUN npm ci --only=production\n  COPY . .\n  RUN npm run build\n  EXPOSE 4200\n  CMD [\"npm\", \"start\"]\n  ```\n</development_practices>\n\n## Deployment & Infrastructure\n\n<deployment_guidelines>\n- Use Azure, AWS, or Vercel for hosting\n- Implement proper environment configurations\n- Use CDN for static assets\n- Implement health checks for APIs\n- Use monitoring tools (Application Insights, Sentry)\n- Implement logging with structured format\n- Use database migrations for schema changes\n</deployment_guidelines>\n\n## Code Quality Standards\n\n<quality_standards>\n- Follow SOLID principles\n- Use dependency injection for loose coupling\n- Implement proper error boundaries\n- Use meaningful variable and function names\n- Keep functions pure and side-effect free where possible\n- Document complex business logic\n- Use TypeScript strict mode\n</quality_standards>\n\n## References\n- Angular Style Guide: https://angular.io/guide/styleguide\n- RxJS Best Practices: https://blog.angular.io/rxjs-best-practices-7f559d811514\n- NgRx Documentation: https://ngrx.io/guide/store\n- NestJS Documentation: https://docs.nestjs.com/\n- Angular Performance Guide: https://angular.io/guide/performance-checklist",
     ".windsurf/rules/data_science_rules.md": "# Data Science (Python, Scikit-learn, TensorFlow) Rules\n\n## Python Environment & Setup\n\n<python_environment>\n- Use Python 3.9+ for compatibility with latest ML libraries\n- Use virtual environments (venv) or conda for dependency management\n- Pin package versions in requirements.txt for reproducibility\n- Use pyproject.toml for modern Python project configuration\n- Install Jupyter Lab for interactive development\n- Example requirements.txt:\n  ```\n  numpy==1.24.3\n  pandas==2.0.3\n  scikit-learn==1.3.0\n  tensorflow==2.13.0\n  matplotlib==3.7.1\n  seaborn==0.12.2\n  jupyter==1.0.0\n  ```\n</python_environment>\n\n<project_structure>\n- Use consistent project structure following cookiecutter-data-science\n- Organize code: `/src`, `/data`, `/notebooks`, `/models`, `/reports`\n- Use config files for hyperparameters and settings\n- Implement proper logging throughout the pipeline\n- Example structure:\n  ```\n  project/\n  ├── data/\n  │   ├── raw/\n  │   ├── processed/\n  │   └── external/\n  ├── src/\n  │   ├── data/\n  │   ├── features/\n  │   ├── models/\n  │   └── visualization/\n  ├── notebooks/\n  ├── models/\n  └── reports/\n  ```\n</project_structure>\n\n## Data Processing & Analysis\n\n<data_processing>\n- Use pandas for data manipulation and analysis\n- Implement proper data validation and quality checks\n- Handle missing values explicitly with strategies\n- Use vectorized operations over loops for performance\n- Implement data preprocessing pipelines\n- Example data processing:\n  ```python\n  import pandas as pd\n  import numpy as np\n  \n  def clean_data(df):\n      # Handle missing values\n      df = df.dropna(subset=['target'])\n      df['feature1'] = df['feature1'].fillna(df['feature1'].median())\n      \n      # Remove outliers using IQR method\n      Q1 = df['feature1'].quantile(0.25)\n      Q3 = df['feature1'].quantile(0.75)\n      IQR = Q3 - Q1\n      df = df[~((df['feature1'] < (Q1 - 1.5 * IQR)) | \n                (df['feature1'] > (Q3 + 1.5 * IQR)))]\n      \n      return df\n  ```\n</data_processing>\n\n<exploratory_analysis>\n- Use descriptive statistics for initial data understanding\n- Create visualizations with matplotlib and seaborn\n- Implement correlation analysis and feature importance\n- Use statistical tests for hypothesis validation\n- Document findings in Jupyter notebooks\n- Example EDA:\n  ```python\n  import matplotlib.pyplot as plt\n  import seaborn as sns\n  \n  # Distribution analysis\n  plt.figure(figsize=(12, 8))\n  plt.subplot(2, 2, 1)\n  sns.histplot(df['target'], bins=30)\n  plt.title('Target Distribution')\n  \n  # Correlation heatmap\n  plt.subplot(2, 2, 2)\n  sns.heatmap(df.corr(), annot=True, cmap='coolwarm')\n  plt.title('Feature Correlations')\n  \n  # Feature importance\n  plt.subplot(2, 2, 3)\n  feature_importance = df.corr()['target'].abs().sort_values(ascending=False)\n  sns.barplot(x=feature_importance.values, y=feature_importance.index)\n  plt.title('Feature Importance')\n  ```\n</exploratory_analysis>\n\n## Machine Learning with Scikit-learn\n\n<sklearn_practices>\n- Use scikit-learn pipelines for preprocessing and modeling\n- Implement proper train/validation/test splits\n- Use cross-validation for model evaluation\n- Implement feature scaling and encoding within pipelines\n- Use grid search or random search for hyperparameter tuning\n- Example pipeline:\n  ```python\n  from sklearn.pipeline import Pipeline\n  from sklearn.preprocessing import StandardScaler, OneHotEncoder\n  from sklearn.compose import ColumnTransformer\n  from sklearn.ensemble import RandomForestClassifier\n  from sklearn.model_selection import GridSearchCV\n  \n  # Preprocessing pipeline\n  numeric_features = ['age', 'income']\n  categorical_features = ['category', 'region']\n  \n  preprocessor = ColumnTransformer(\n      transformers=[\n          ('num', StandardScaler(), numeric_features),\n          ('cat', OneHotEncoder(drop='first'), categorical_features)\n      ]\n  )\n  \n  # Model pipeline\n  pipeline = Pipeline([\n      ('preprocessor', preprocessor),\n      ('classifier', RandomForestClassifier(random_state=42))\n  ])\n  \n  # Hyperparameter tuning\n  param_grid = {\n      'classifier__n_estimators': [100, 200, 300],\n      'classifier__max_depth': [10, 20, None]\n  }\n  \n  grid_search = GridSearchCV(pipeline, param_grid, cv=5, scoring='accuracy')\n  grid_search.fit(X_train, y_train)\n  ```\n</sklearn_practices>\n\n<model_evaluation>\n- Use appropriate metrics for classification and regression\n- Implement cross-validation for robust evaluation\n- Create confusion matrices and classification reports\n- Use learning curves to diagnose bias/variance\n- Implement feature importance analysis\n- Example evaluation:\n  ```python\n  from sklearn.metrics import classification_report, confusion_matrix\n  from sklearn.metrics import roc_auc_score, precision_recall_curve\n  \n  def evaluate_model(model, X_test, y_test):\n      y_pred = model.predict(X_test)\n      y_prob = model.predict_proba(X_test)[:, 1]\n      \n      print(\"Classification Report:\")\n      print(classification_report(y_test, y_pred))\n      \n      print(f\"ROC AUC Score: {roc_auc_score(y_test, y_prob):.4f}\")\n      \n      # Confusion matrix\n      cm = confusion_matrix(y_test, y_pred)\n      sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')\n      plt.title('Confusion Matrix')\n      plt.show()\n  ```\n</model_evaluation>\n\n## Deep Learning with TensorFlow\n\n<tensorflow_practices>\n- Use TensorFlow 2.x with Keras API for model building\n- Implement proper data preprocessing with tf.data\n- Use callbacks for training optimization\n- Implement model checkpointing and early stopping\n- Use TensorBoard for experiment tracking\n- Example neural network:\n  ```python\n  import tensorflow as tf\n  from tensorflow.keras import layers, models, callbacks\n  \n  def create_model(input_shape, num_classes):\n      model = models.Sequential([\n          layers.Dense(128, activation='relu', input_shape=input_shape),\n          layers.Dropout(0.3),\n          layers.Dense(64, activation='relu'),\n          layers.Dropout(0.3),\n          layers.Dense(num_classes, activation='softmax')\n      ])\n      \n      model.compile(\n          optimizer='adam',\n          loss='sparse_categorical_crossentropy',\n          metrics=['accuracy']\n      )\n      \n      return model\n  \n  # Training with callbacks\n  model = create_model((X_train.shape[1],), len(np.unique(y_train)))\n  \n  callbacks_list = [\n      callbacks.EarlyStopping(patience=10, restore_best_weights=True),\n      callbacks.ReduceLROnPlateau(factor=0.5, patience=5),\n      callbacks.ModelCheckpoint('best_model.h5', save_best_only=True)\n  ]\n  \n  history = model.fit(\n      X_train, y_train,\n      epochs=100,\n      batch_size=32,\n      validation_split=0.2,\n      callbacks=callbacks_list,\n      verbose=1\n  )\n  ```\n</tensorflow_practices>\n\n<data_pipeline>\n- Use tf.data for efficient data loading and preprocessing\n- Implement proper data augmentation for image data\n- Use prefetching and caching for performance\n- Implement batch processing for large datasets\n- Example data pipeline:\n  ```python\n  def create_dataset(X, y, batch_size=32, shuffle=True):\n      dataset = tf.data.Dataset.from_tensor_slices((X, y))\n      \n      if shuffle:\n          dataset = dataset.shuffle(buffer_size=1000)\n      \n      dataset = dataset.batch(batch_size)\n      dataset = dataset.prefetch(tf.data.AUTOTUNE)\n      \n      return dataset\n  \n  # For image data\n  def preprocess_image(image, label):\n      image = tf.cast(image, tf.float32) / 255.0\n      image = tf.image.resize(image, [224, 224])\n      return image, label\n  \n  train_dataset = tf.data.Dataset.from_tensor_slices((X_train, y_train))\n  train_dataset = train_dataset.map(preprocess_image)\n  train_dataset = train_dataset.batch(32).prefetch(tf.data.AUTOTUNE)\n  ```\n</data_pipeline>\n\n## Model Deployment & MLOps\n\n<model_deployment>\n- Use joblib for scikit-learn model serialization\n- Save TensorFlow models in SavedModel format\n- Implement model versioning and tracking\n- Use Docker for containerized deployments\n- Implement model serving with FastAPI or Flask\n- Example model serving:\n  ```python\n  from fastapi import FastAPI\n  import joblib\n  import numpy as np\n  \n  app = FastAPI()\n  model = joblib.load('model.pkl')\n  \n  @app.post(\"/predict\")\n  async def predict(features: dict):\n      # Convert features to numpy array\n      X = np.array(list(features.values())).reshape(1, -1)\n      \n      # Make prediction\n      prediction = model.predict(X)[0]\n      probability = model.predict_proba(X)[0].max()\n      \n      return {\n          \"prediction\": int(prediction),\n          \"probability\": float(probability)\n      }\n  ```\n</model_deployment>\n\n<experiment_tracking>\n- Use MLflow or Weights & Biases for experiment tracking\n- Log hyperparameters, metrics, and artifacts\n- Implement model registry for production models\n- Use version control for data and models (DVC)\n- Example MLflow usage:\n  ```python\n  import mlflow\n  import mlflow.sklearn\n  \n  with mlflow.start_run():\n      # Log parameters\n      mlflow.log_param(\"n_estimators\", 100)\n      mlflow.log_param(\"max_depth\", 10)\n      \n      # Train model\n      model.fit(X_train, y_train)\n      \n      # Log metrics\n      accuracy = model.score(X_test, y_test)\n      mlflow.log_metric(\"accuracy\", accuracy)\n      \n      # Log model\n      mlflow.sklearn.log_model(model, \"model\")\n  ```\n</experiment_tracking>\n\n## Best Practices & Code Quality\n\n<code_quality>\n- Use type hints for better code documentation\n- Implement proper error handling and logging\n- Write unit tests for data processing functions\n- Use docstrings for function documentation\n- Follow PEP 8 style guidelines\n- Use black for code formatting\n- Example function with best practices:\n  ```python\n  import logging\n  from typing import Tuple, Optional\n  \n  def split_data(\n      X: np.ndarray, \n      y: np.ndarray, \n      test_size: float = 0.2,\n      random_state: Optional[int] = None\n  ) -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:\n      \"\"\"\n      Split data into training and testing sets.\n      \n      Args:\n          X: Features array\n          y: Target array\n          test_size: Proportion of data for testing\n          random_state: Random seed for reproducibility\n          \n      Returns:\n          Tuple of (X_train, X_test, y_train, y_test)\n      \"\"\"\n      try:\n          from sklearn.model_selection import train_test_split\n          \n          return train_test_split(\n              X, y, test_size=test_size, random_state=random_state\n          )\n      except Exception as e:\n          logging.error(f\"Error splitting data: {e}\")\n          raise\n  ```\n</code_quality>\n\n<performance_optimization>\n- Use numpy vectorization over Python loops\n- Implement parallel processing with multiprocessing\n- Use GPU acceleration for TensorFlow models\n- Optimize memory usage with data types\n- Profile code with cProfile for bottlenecks\n- Use efficient data structures (pandas categorical)\n</performance_optimization>\n\n## Testing & Validation\n\n<testing_practices>\n- Write unit tests for data processing functions\n- Test model performance on holdout datasets\n- Implement data validation tests\n- Use pytest for testing framework\n- Test model robustness with edge cases\n- Example test:\n  ```python\n  import pytest\n  import numpy as np\n  \n  def test_data_preprocessing():\n      # Test data\n      X = np.array([[1, 2], [3, 4], [np.nan, 6]])\n      \n      # Process data\n      X_processed = preprocess_data(X)\n      \n      # Assertions\n      assert not np.isnan(X_processed).any()\n      assert X_processed.shape == (3, 2)\n      assert X_processed.dtype == np.float64\n  ```\n</testing_practices>\n\n## References\n- Scikit-learn Documentation: https://scikit-learn.org/stable/\n- TensorFlow Documentation: https://www.tensorflow.org/guide\n- Pandas Documentation: https://pandas.pydata.org/docs/\n- MLflow Documentation: https://mlflow.org/docs/latest/index.html\n- Python Data Science Handbook: https://jakevdp.github.io/PythonDataScienceHandbook/\n- Cookiecutter Data Science: https://drivendata.github.io/cookiecutter-data-science/",
     ".windsurf/rules/monorepo-tamagui.md": "\nYou are an expert developer proficient in TypeScript, React and Next.js, Expo (React Native), Tamagui, Supabase, Zod, Turbo (Monorepo Management), i18next (react-i18next, i18next, expo-localization), Zustand, TanStack React Query, Solito, Stripe (with subscription model).\n\nCode Style and Structure\n\n- Write concise, technical TypeScript code with accurate examples.\n- Use functional and declarative programming patterns; avoid classes.\n- Prefer iteration and modularization over code duplication.\n- Use descriptive variable names with auxiliary verbs (e.g., `isLoading`, `hasError`).\n- Structure files with exported components, subcomponents, helpers, static content, and types.\n- Favor named exports for components and functions.\n- Use lowercase with dashes for directory names (e.g., `components/auth-wizard`).\n\nTypeScript and Zod Usage\n\n- Use TypeScript for all code; prefer interfaces over types for object shapes.\n- Utilize Zod for schema validation and type inference.\n- Avoid enums; use literal types or maps instead.\n- Implement functional components with TypeScript interfaces for props.\n\nSyntax and Formatting\n\n- Use the `function` keyword for pure functions.\n- Write declarative JSX with clear and readable structure.\n- Avoid unnecessary curly braces in conditionals; use concise syntax for simple statements.\n\nUI and Styling\n\n- Use Tamagui for cross-platform UI components and styling.\n- Implement responsive design with a mobile-first approach.\n- Ensure styling consistency between web and native applications.\n- Utilize Tamagui's theming capabilities for consistent design across platforms.\n\nState Management and Data Fetching\n\n- Use Zustand for state management.\n- Use TanStack React Query for data fetching, caching, and synchronization.\n- Minimize the use of `useEffect` and `setState`; favor derived state and memoization when possible.\n\nInternationalization\n\n- Use i18next and react-i18next for web applications.\n- Use expo-localization for React Native apps.\n- Ensure all user-facing text is internationalized and supports localization.\n\nError Handling and Validation\n\n- Prioritize error handling and edge cases.\n- Handle errors and edge cases at the beginning of functions.\n- Use early returns for error conditions to avoid deep nesting.\n- Utilize guard clauses to handle preconditions and invalid states early.\n- Implement proper error logging and user-friendly error messages.\n- Use custom error types or factories for consistent error handling.\n\nPerformance Optimization\n\n- Optimize for both web and mobile performance.\n- Use dynamic imports for code splitting in Next.js.\n- Implement lazy loading for non-critical components.\n- Optimize images use appropriate formats, include size data, and implement lazy loading.\n\nMonorepo Management\n\n- Follow best practices using Turbo for monorepo setups.\n- Ensure packages are properly isolated and dependencies are correctly managed.\n- Use shared configurations and scripts where appropriate.\n- Utilize the workspace structure as defined in the root `package.json`.\n\nBackend and Database\n\n- Use Supabase for backend services, including authentication and database interactions.\n- Follow Supabase guidelines for security and performance.\n- Use Zod schemas to validate data exchanged with the backend.\n\nCross-Platform Development\n\n- Use Solito for navigation in both web and mobile applications.\n- Implement platform-specific code when necessary, using `.native.tsx` files for React Native-specific components.\n- Handle images using `SolitoImage` for better cross-platform compatibility.\n\nStripe Integration and Subscription Model\n\n- Implement Stripe for payment processing and subscription management.\n- Use Stripe's Customer Portal for subscription management.\n- Implement webhook handlers for Stripe events (e.g., subscription created, updated, or cancelled).\n- Ensure proper error handling and security measures for Stripe integration.\n- Sync subscription status with user data in Supabase.\n\nTesting and Quality Assurance\n\n- Write unit and integration tests for critical components.\n- Use testing libraries compatible with React and React Native.\n- Ensure code coverage and quality metrics meet the project's requirements.\n\nProject Structure and Environment\n\n- Follow the established project structure with separate packages for `app`, `ui`, and `api`.\n- Use the `apps` directory for Next.js and Expo applications.\n- Utilize the `packages` directory for shared code and components.\n- Use `dotenv` for environment variable management.\n- Follow patterns for environment-specific configurations in `eas.json` and `next.config.js`.\n- Utilize custom generators in `turbo/generators` for creating components, screens, and tRPC routers using `yarn turbo gen`.\n\nKey Conventions\n\n- Use descriptive and meaningful commit messages.\n- Ensure code is clean, well-documented, and follows the project's coding standards.\n- Implement error handling and logging consistently across the application.\n\nFollow Official Documentation\n\n- Adhere to the official documentation for each technology used.\n- For Next.js, focus on data fetching methods and routing conventions.\n- Stay updated with the latest best practices and updates, especially for Expo, Tamagui, and Supabase.\n\nOutput Expectations\n\n- Code Examples Provide code snippets that align with the guidelines above.\n- Explanations Include brief explanations to clarify complex implementations when necessary.\n- Clarity and Correctness Ensure all code is clear, correct, and ready for use in a production environment.\n- Best Practices Demonstrate adherence to best practices in performance, security, and maintainability.",
@@ -241,13 +457,13 @@
     "claude/create_prompt.md": "Help me create a process that will allow a user to interact with an LLM to work through the following. I am not looking to create an interface; just a series of well-thought-out prompts and user instructions will do.\n"
   },
   "stats": {
-    "totalFiles": 9,
+    "totalFiles": 24,
     "totalCategories": 0,
     "totalTags": 4,
     "categoryCount": {},
     "tagCount": {
-      "agents": 1,
-      "commands": 1,
+      "agents": 15,
+      "commands": 2,
       "instructions": 5,
       "prompts": 1
     }
@@ -265,6 +481,208 @@
             "path": ".claude/agents",
             "children": [
               {
+                "name": "design",
+                "type": "folder",
+                "path": ".claude/agents/design",
+                "children": [
+                  {
+                    "name": "brand-guardian.md",
+                    "type": "file",
+                    "path": ".claude/agents/design/brand-guardian.md",
+                    "content": "",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 9316,
+                    "lastModified": "2025-08-28T11:01:39.894Z"
+                  },
+                  {
+                    "name": "ui-designer.md",
+                    "type": "file",
+                    "path": ".claude/agents/design/ui-designer.md",
+                    "content": "",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 7955,
+                    "lastModified": "2025-08-28T11:01:39.894Z"
+                  },
+                  {
+                    "name": "ux-researcher.md",
+                    "type": "file",
+                    "path": ".claude/agents/design/ux-researcher.md",
+                    "content": "",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 8443,
+                    "lastModified": "2025-08-28T11:01:39.894Z"
+                  },
+                  {
+                    "name": "visual-storyteller.md",
+                    "type": "file",
+                    "path": ".claude/agents/design/visual-storyteller.md",
+                    "content": "",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 9945,
+                    "lastModified": "2025-08-28T11:01:39.894Z"
+                  },
+                  {
+                    "name": "whimsy-injector.md",
+                    "type": "file",
+                    "path": ".claude/agents/design/whimsy-injector.md",
+                    "content": "",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 7160,
+                    "lastModified": "2025-08-28T11:01:39.894Z"
+                  }
+                ],
+                "lastModified": "2025-08-28T11:01:39.894Z",
+                "tags": []
+              },
+              {
+                "name": "engineering",
+                "type": "folder",
+                "path": ".claude/agents/engineering",
+                "children": [
+                  {
+                    "name": "ai-engineer.md",
+                    "type": "file",
+                    "path": ".claude/agents/engineering/ai-engineer.md",
+                    "content": "",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 5594,
+                    "lastModified": "2025-08-28T11:01:39.895Z"
+                  },
+                  {
+                    "name": "backend-architect.md",
+                    "type": "file",
+                    "path": ".claude/agents/engineering/backend-architect.md",
+                    "content": "",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 5161,
+                    "lastModified": "2025-08-28T11:01:39.895Z"
+                  },
+                  {
+                    "name": "devops-automator.md",
+                    "type": "file",
+                    "path": ".claude/agents/engineering/devops-automator.md",
+                    "content": "",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 5157,
+                    "lastModified": "2025-08-28T11:01:39.895Z"
+                  },
+                  {
+                    "name": "frontend-developer.md",
+                    "type": "file",
+                    "path": ".claude/agents/engineering/frontend-developer.md",
+                    "content": "",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 5320,
+                    "lastModified": "2025-08-28T11:01:39.895Z"
+                  },
+                  {
+                    "name": "test-writer-fixer.md",
+                    "type": "file",
+                    "path": ".claude/agents/engineering/test-writer-fixer.md",
+                    "content": "",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 8120,
+                    "lastModified": "2025-08-28T11:01:39.895Z"
+                  }
+                ],
+                "lastModified": "2025-08-28T11:01:39.895Z",
+                "tags": []
+              },
+              {
+                "name": "marketing",
+                "type": "folder",
+                "path": ".claude/agents/marketing",
+                "children": [
+                  {
+                    "name": "reddit-community-builder.md",
+                    "type": "file",
+                    "path": ".claude/agents/marketing/reddit-community-builder.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 6917,
+                    "lastModified": "2025-08-28T11:01:39.896Z"
+                  },
+                  {
+                    "name": "twitter-engager.md",
+                    "type": "file",
+                    "path": ".claude/agents/marketing/twitter-engager.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 6120,
+                    "lastModified": "2025-08-28T11:01:39.896Z"
+                  }
+                ],
+                "lastModified": "2025-08-28T11:01:39.896Z",
+                "tags": []
+              },
+              {
+                "name": "testing",
+                "type": "folder",
+                "path": ".claude/agents/testing",
+                "children": [
+                  {
+                    "name": "tool-evaluator.md",
+                    "type": "file",
+                    "path": ".claude/agents/testing/tool-evaluator.md",
+                    "content": "",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 7722,
+                    "lastModified": "2025-08-28T11:01:39.896Z"
+                  },
+                  {
+                    "name": "workflow-optimizer.md",
+                    "type": "file",
+                    "path": ".claude/agents/testing/workflow-optimizer.md",
+                    "content": "",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 8484,
+                    "lastModified": "2025-08-28T11:01:39.896Z"
+                  }
+                ],
+                "lastModified": "2025-08-28T11:01:39.896Z",
+                "tags": []
+              },
+              {
                 "name": "universal-app",
                 "type": "folder",
                 "path": ".claude/agents/universal-app",
@@ -278,14 +696,14 @@
                       "agents"
                     ],
                     "size": 9607,
-                    "lastModified": "2025-08-28T10:03:36.096Z"
+                    "lastModified": "2025-08-28T11:01:39.897Z"
                   }
                 ],
-                "lastModified": "2025-08-28T10:03:36.096Z",
+                "lastModified": "2025-08-28T11:01:39.896Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-28T10:03:36.096Z",
+            "lastModified": "2025-08-28T11:01:39.896Z",
             "tags": []
           },
           {
@@ -302,10 +720,21 @@
                   "commands"
                 ],
                 "size": 487,
-                "lastModified": "2025-08-28T10:03:36.096Z"
+                "lastModified": "2025-08-28T11:01:39.897Z"
+              },
+              {
+                "name": "shadCN.md",
+                "type": "file",
+                "path": ".claude/commands/shadCN.md",
+                "frontmatter": {},
+                "tags": [
+                  "commands"
+                ],
+                "size": 444,
+                "lastModified": "2025-08-28T11:01:39.897Z"
               }
             ],
-            "lastModified": "2025-08-28T10:03:36.096Z",
+            "lastModified": "2025-08-28T11:01:39.897Z",
             "tags": []
           },
           {
@@ -316,10 +745,10 @@
             "frontmatter": {},
             "tags": [],
             "size": 5,
-            "lastModified": "2025-08-28T10:03:36.096Z"
+            "lastModified": "2025-08-28T11:01:39.897Z"
           }
         ],
-        "lastModified": "2025-08-28T10:03:36.096Z",
+        "lastModified": "2025-08-28T11:01:39.897Z",
         "tags": []
       },
       {
@@ -341,7 +770,7 @@
                   "instructions"
                 ],
                 "size": 5649,
-                "lastModified": "2025-08-28T10:03:36.098Z"
+                "lastModified": "2025-08-28T11:01:39.898Z"
               },
               {
                 "name": "data_science_rules.md",
@@ -352,7 +781,7 @@
                   "instructions"
                 ],
                 "size": 12048,
-                "lastModified": "2025-08-28T10:03:36.098Z"
+                "lastModified": "2025-08-28T11:01:39.898Z"
               },
               {
                 "name": "monorepo-tamagui.md",
@@ -365,7 +794,7 @@
                   "instructions"
                 ],
                 "size": 5649,
-                "lastModified": "2025-08-28T10:03:36.098Z"
+                "lastModified": "2025-08-28T11:01:39.898Z"
               },
               {
                 "name": "project_instructions.md",
@@ -376,7 +805,7 @@
                   "instructions"
                 ],
                 "size": 8877,
-                "lastModified": "2025-08-28T10:03:36.098Z"
+                "lastModified": "2025-08-28T11:01:39.898Z"
               },
               {
                 "name": "react_nextjs_rules.md",
@@ -387,14 +816,14 @@
                   "instructions"
                 ],
                 "size": 8920,
-                "lastModified": "2025-08-28T10:03:36.098Z"
+                "lastModified": "2025-08-28T11:01:39.898Z"
               }
             ],
-            "lastModified": "2025-08-28T10:03:36.098Z",
+            "lastModified": "2025-08-28T11:01:39.898Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-28T10:03:36.097Z",
+        "lastModified": "2025-08-28T11:01:39.898Z",
         "tags": []
       },
       {
@@ -411,10 +840,10 @@
               "prompts"
             ],
             "size": 217,
-            "lastModified": "2025-08-28T10:03:36.099Z"
+            "lastModified": "2025-08-28T11:01:39.899Z"
           }
         ],
-        "lastModified": "2025-08-28T10:03:36.099Z",
+        "lastModified": "2025-08-28T11:01:39.899Z",
         "tags": []
       }
     ],
@@ -430,6 +859,196 @@
             "path": ".claude/agents",
             "children": [
               {
+                "name": "design",
+                "type": "folder",
+                "path": ".claude/agents/design",
+                "children": [
+                  {
+                    "name": "brand-guardian.md",
+                    "type": "file",
+                    "path": ".claude/agents/design/brand-guardian.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 9316,
+                    "lastModified": "2025-08-28T11:01:39.894Z"
+                  },
+                  {
+                    "name": "ui-designer.md",
+                    "type": "file",
+                    "path": ".claude/agents/design/ui-designer.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 7955,
+                    "lastModified": "2025-08-28T11:01:39.894Z"
+                  },
+                  {
+                    "name": "ux-researcher.md",
+                    "type": "file",
+                    "path": ".claude/agents/design/ux-researcher.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 8443,
+                    "lastModified": "2025-08-28T11:01:39.894Z"
+                  },
+                  {
+                    "name": "visual-storyteller.md",
+                    "type": "file",
+                    "path": ".claude/agents/design/visual-storyteller.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 9945,
+                    "lastModified": "2025-08-28T11:01:39.894Z"
+                  },
+                  {
+                    "name": "whimsy-injector.md",
+                    "type": "file",
+                    "path": ".claude/agents/design/whimsy-injector.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 7160,
+                    "lastModified": "2025-08-28T11:01:39.894Z"
+                  }
+                ],
+                "lastModified": "2025-08-28T11:01:39.894Z",
+                "tags": []
+              },
+              {
+                "name": "engineering",
+                "type": "folder",
+                "path": ".claude/agents/engineering",
+                "children": [
+                  {
+                    "name": "ai-engineer.md",
+                    "type": "file",
+                    "path": ".claude/agents/engineering/ai-engineer.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 5594,
+                    "lastModified": "2025-08-28T11:01:39.895Z"
+                  },
+                  {
+                    "name": "backend-architect.md",
+                    "type": "file",
+                    "path": ".claude/agents/engineering/backend-architect.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 5161,
+                    "lastModified": "2025-08-28T11:01:39.895Z"
+                  },
+                  {
+                    "name": "devops-automator.md",
+                    "type": "file",
+                    "path": ".claude/agents/engineering/devops-automator.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 5157,
+                    "lastModified": "2025-08-28T11:01:39.895Z"
+                  },
+                  {
+                    "name": "frontend-developer.md",
+                    "type": "file",
+                    "path": ".claude/agents/engineering/frontend-developer.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 5320,
+                    "lastModified": "2025-08-28T11:01:39.895Z"
+                  },
+                  {
+                    "name": "test-writer-fixer.md",
+                    "type": "file",
+                    "path": ".claude/agents/engineering/test-writer-fixer.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 8120,
+                    "lastModified": "2025-08-28T11:01:39.895Z"
+                  }
+                ],
+                "lastModified": "2025-08-28T11:01:39.895Z",
+                "tags": []
+              },
+              {
+                "name": "marketing",
+                "type": "folder",
+                "path": ".claude/agents/marketing",
+                "children": [
+                  {
+                    "name": "reddit-community-builder.md",
+                    "type": "file",
+                    "path": ".claude/agents/marketing/reddit-community-builder.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 6917,
+                    "lastModified": "2025-08-28T11:01:39.896Z"
+                  },
+                  {
+                    "name": "twitter-engager.md",
+                    "type": "file",
+                    "path": ".claude/agents/marketing/twitter-engager.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 6120,
+                    "lastModified": "2025-08-28T11:01:39.896Z"
+                  }
+                ],
+                "lastModified": "2025-08-28T11:01:39.896Z",
+                "tags": []
+              },
+              {
+                "name": "testing",
+                "type": "folder",
+                "path": ".claude/agents/testing",
+                "children": [
+                  {
+                    "name": "tool-evaluator.md",
+                    "type": "file",
+                    "path": ".claude/agents/testing/tool-evaluator.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 7722,
+                    "lastModified": "2025-08-28T11:01:39.896Z"
+                  },
+                  {
+                    "name": "workflow-optimizer.md",
+                    "type": "file",
+                    "path": ".claude/agents/testing/workflow-optimizer.md",
+                    "frontmatter": {},
+                    "tags": [
+                      "agents"
+                    ],
+                    "size": 8484,
+                    "lastModified": "2025-08-28T11:01:39.896Z"
+                  }
+                ],
+                "lastModified": "2025-08-28T11:01:39.896Z",
+                "tags": []
+              },
+              {
                 "name": "universal-app",
                 "type": "folder",
                 "path": ".claude/agents/universal-app",
@@ -443,18 +1062,18 @@
                       "agents"
                     ],
                     "size": 9607,
-                    "lastModified": "2025-08-28T10:03:36.096Z"
+                    "lastModified": "2025-08-28T11:01:39.897Z"
                   }
                 ],
-                "lastModified": "2025-08-28T10:03:36.096Z",
+                "lastModified": "2025-08-28T11:01:39.896Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-28T10:03:36.096Z",
+            "lastModified": "2025-08-28T11:01:39.896Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-28T10:03:36.096Z",
+        "lastModified": "2025-08-28T11:01:39.897Z",
         "tags": []
       }
     ],
@@ -473,10 +1092,10 @@
               "prompts"
             ],
             "size": 217,
-            "lastModified": "2025-08-28T10:03:36.099Z"
+            "lastModified": "2025-08-28T11:01:39.899Z"
           }
         ],
-        "lastModified": "2025-08-28T10:03:36.099Z",
+        "lastModified": "2025-08-28T11:01:39.899Z",
         "tags": []
       }
     ],
@@ -500,14 +1119,25 @@
                   "commands"
                 ],
                 "size": 487,
-                "lastModified": "2025-08-28T10:03:36.096Z"
+                "lastModified": "2025-08-28T11:01:39.897Z"
+              },
+              {
+                "name": "shadCN.md",
+                "type": "file",
+                "path": ".claude/commands/shadCN.md",
+                "frontmatter": {},
+                "tags": [
+                  "commands"
+                ],
+                "size": 444,
+                "lastModified": "2025-08-28T11:01:39.897Z"
               }
             ],
-            "lastModified": "2025-08-28T10:03:36.096Z",
+            "lastModified": "2025-08-28T11:01:39.897Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-28T10:03:36.096Z",
+        "lastModified": "2025-08-28T11:01:39.897Z",
         "tags": []
       }
     ],
@@ -531,7 +1161,7 @@
                   "instructions"
                 ],
                 "size": 5649,
-                "lastModified": "2025-08-28T10:03:36.098Z"
+                "lastModified": "2025-08-28T11:01:39.898Z"
               },
               {
                 "name": "data_science_rules.md",
@@ -542,7 +1172,7 @@
                   "instructions"
                 ],
                 "size": 12048,
-                "lastModified": "2025-08-28T10:03:36.098Z"
+                "lastModified": "2025-08-28T11:01:39.898Z"
               },
               {
                 "name": "monorepo-tamagui.md",
@@ -555,7 +1185,7 @@
                   "instructions"
                 ],
                 "size": 5649,
-                "lastModified": "2025-08-28T10:03:36.098Z"
+                "lastModified": "2025-08-28T11:01:39.898Z"
               },
               {
                 "name": "project_instructions.md",
@@ -566,7 +1196,7 @@
                   "instructions"
                 ],
                 "size": 8877,
-                "lastModified": "2025-08-28T10:03:36.098Z"
+                "lastModified": "2025-08-28T11:01:39.898Z"
               },
               {
                 "name": "react_nextjs_rules.md",
@@ -577,14 +1207,14 @@
                   "instructions"
                 ],
                 "size": 8920,
-                "lastModified": "2025-08-28T10:03:36.098Z"
+                "lastModified": "2025-08-28T11:01:39.898Z"
               }
             ],
-            "lastModified": "2025-08-28T10:03:36.098Z",
+            "lastModified": "2025-08-28T11:01:39.898Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-28T10:03:36.097Z",
+        "lastModified": "2025-08-28T11:01:39.898Z",
         "tags": []
       }
     ]

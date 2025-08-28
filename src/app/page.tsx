@@ -313,15 +313,23 @@ export default function Prompts(): React.JSX.Element {
                     </h4>
                     <p className="text-muted-foreground text-sm">
                       Click on files in the project explorer to view their
-                      content. Use the tabs above to filter by category.
+                      content. Use the tabs above to filter by{" "}
+                      <span 
+                        className="bg-clip-text text-transparent font-medium"
+                        style={{ 
+                          backgroundImage: 'linear-gradient(90deg, #3b82f6 0%, #eab308 25%, #10b981 50%, #8b5cf6 75%)'
+                        }}
+                      >
+                        category
+                      </span>.
                     </p>
                     {contentData?.stats && (
                       <div className="text-muted-foreground mt-3 flex items-center gap-4 text-sm">
                         <span>{contentData.stats.totalFiles} files</span>
                         <span>{contentData.stats.totalTags} tags</span>
-                        <span>
+                        {/*<span>
                           {contentData.stats.totalCategories} categories
-                        </span>
+                        </span>*/}
                       </div>
                     )}
                   </div>
