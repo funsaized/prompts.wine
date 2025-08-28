@@ -163,20 +163,20 @@ export default function Prompts(): React.JSX.Element {
                 <TabsTrigger value="all" className="px-0.5 py-1 text-xs">
                   All
                 </TabsTrigger>
-                <TabsTrigger 
-                  value="agents" 
+                <TabsTrigger
+                  value="agents"
                   className={`px-0.5 py-1 text-xs ${getContentTypeColorClass("agents")}`}
                 >
                   Agents
                 </TabsTrigger>
-                <TabsTrigger 
-                  value="prompts" 
+                <TabsTrigger
+                  value="prompts"
                   className={`px-0.5 py-1 text-xs ${getContentTypeColorClass("prompts")}`}
                 >
                   Prompts
                 </TabsTrigger>
-                <TabsTrigger 
-                  value="commands" 
+                <TabsTrigger
+                  value="commands"
                   className={`px-0.5 py-1 text-xs ${getContentTypeColorClass("commands")}`}
                 >
                   Cmds
@@ -331,7 +331,7 @@ export default function Prompts(): React.JSX.Element {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 sm:flex-row">
+        {/*<div className="flex flex-col gap-4 sm:flex-row">
           <Button variant="default" size="lg" asChild>
             <a href="/components">View Components</a>
           </Button>
@@ -344,7 +344,7 @@ export default function Prompts(): React.JSX.Element {
               Learn More
             </a>
           </Button>
-        </div>
+        </div>*/}
       </div>
     </div>
   );
