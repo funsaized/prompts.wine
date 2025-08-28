@@ -1,62 +1,78 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { ChevronDown, ChevronRight, File, Folder, FolderOpen, Tag } from "lucide-react"
+import * as React from "react";
+import {
+  ChevronDown,
+  ChevronRight,
+  File,
+  Folder,
+  FolderOpen,
+  Tag,
+} from "lucide-react";
 
-import { cn } from "@/lib/utils"
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./collapsible"
-import { FileTreeItem } from "@/lib/content-types"
+import { cn } from "@/lib/utils";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "./collapsible";
+import { FileTreeItem } from "@/lib/content-types";
 
 interface FileTreeNodeProps {
-  item: FileTreeItem
-  level?: number
-  onSelect?: (item: FileTreeItem) => void
-  selectedPath?: string
+  item: FileTreeItem;
+  level?: number;
+  onSelect?: (item: FileTreeItem) => void;
+  selectedPath?: string;
 }
 
 interface FileTreeProps {
-  data: FileTreeItem[]
-  onSelect?: (item: FileTreeItem) => void
-  selectedPath?: string
-  className?: string
+  data: FileTreeItem[];
+  onSelect?: (item: FileTreeItem) => void;
+  selectedPath?: string;
+  className?: string;
 }
 
-function FileTreeNode({ item, level = 0, onSelect, selectedPath }: FileTreeNodeProps): React.JSX.Element {
-  const [isOpen, setIsOpen] = React.useState(item.isOpen ?? false)
-  const isSelected = selectedPath === item.path
-  
+function FileTreeNode({
+  item,
+  level = 0,
+  onSelect,
+  selectedPath,
+}: FileTreeNodeProps): React.JSX.Element {
+  const [isOpen, setIsOpen] = React.useState(item.isOpen ?? false);
+  const isSelected = selectedPath === item.path;
+
   const handleToggle = (): void => {
     if (item.type === "folder") {
-      setIsOpen(!isOpen)
+      setIsOpen(!isOpen);
     }
-    onSelect?.(item)
-  }
+    onSelect?.(item);
+  };
 
-  const indent = level * 16
+  const indent = level * 16;
 
   if (item.type === "file") {
     return (
       <div
         className={cn(
-          "flex items-center gap-2 px-2 py-1 text-sm cursor-pointer rounded-md hover:bg-accent/50 transition-colors text-foreground group",
+          "hover:bg-accent/50 text-foreground group flex cursor-pointer items-center gap-2 rounded-md px-2 py-1 text-sm transition-colors",
           isSelected && "bg-accent text-accent-foreground"
         )}
         style={{ paddingLeft: `${indent + 8}px` }}
         onClick={handleToggle}
       >
-        <File className="h-4 w-4 text-muted-foreground shrink-0" />
-        <span className="truncate flex-1">{item.name}</span>
+        <File className="text-muted-foreground h-4 w-4 shrink-0" />
+        <span className="flex-1 truncate">{item.name}</span>
         {item.tags && item.tags.length > 0 && (
-          <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
-            <Tag className="h-3 w-3 text-muted-foreground" />
-            <span className="text-xs text-muted-foreground">
-              {item.tags.slice(0, 2).join(', ')}
-              {item.tags.length > 2 && '...'}
+          <div className="flex items-center gap-1 opacity-0 transition-opacity group-hover:opacity-100">
+            <Tag className="text-muted-foreground h-3 w-3" />
+            <span className="text-muted-foreground text-xs">
+              {item.tags.slice(0, 2).join(", ")}
+              {item.tags.length > 2 && "..."}
             </span>
           </div>
         )}
       </div>
-    )
+    );
   }
 
   return (
@@ -64,21 +80,21 @@ function FileTreeNode({ item, level = 0, onSelect, selectedPath }: FileTreeNodeP
       <CollapsibleTrigger asChild>
         <div
           className={cn(
-            "flex items-center gap-2 px-2 py-1 text-sm cursor-pointer rounded-md hover:bg-accent/50 transition-colors w-full text-foreground",
+            "hover:bg-accent/50 text-foreground flex w-full cursor-pointer items-center gap-2 rounded-md px-2 py-1 text-sm transition-colors",
             isSelected && "bg-accent text-accent-foreground"
           )}
           style={{ paddingLeft: `${indent + 8}px` }}
           onClick={handleToggle}
         >
           {isOpen ? (
-            <ChevronDown className="h-4 w-4 text-primary shrink-0" />
+            <ChevronDown className="text-primary h-4 w-4 shrink-0" />
           ) : (
-            <ChevronRight className="h-4 w-4 text-muted-foreground shrink-0" />
+            <ChevronRight className="text-muted-foreground h-4 w-4 shrink-0" />
           )}
           {isOpen ? (
-            <FolderOpen className="h-4 w-4 text-primary shrink-0" />
+            <FolderOpen className="text-primary h-4 w-4 shrink-0" />
           ) : (
-            <Folder className="h-4 w-4 text-muted-foreground shrink-0" />
+            <Folder className="text-muted-foreground h-4 w-4 shrink-0" />
           )}
           <span className="truncate font-medium">{item.name}</span>
         </div>
@@ -95,12 +111,17 @@ function FileTreeNode({ item, level = 0, onSelect, selectedPath }: FileTreeNodeP
         ))}
       </CollapsibleContent>
     </Collapsible>
-  )
+  );
 }
 
-export function FileTree({ data, onSelect, selectedPath, className }: FileTreeProps): React.JSX.Element {
+export function FileTree({
+  data,
+  onSelect,
+  selectedPath,
+  className,
+}: FileTreeProps): React.JSX.Element {
   return (
-    <div className={cn("space-y-1 p-2 text-foreground", className)}>
+    <div className={cn("text-foreground space-y-1 p-2", className)}>
       {data.map((item, index) => (
         <FileTreeNode
           key={`${item.name}-${index}`}
@@ -110,7 +131,7 @@ export function FileTree({ data, onSelect, selectedPath, className }: FileTreePr
         />
       ))}
     </div>
-  )
+  );
 }
 
-export type { FileTreeItem, FileTreeProps }
+export type { FileTreeItem, FileTreeProps };

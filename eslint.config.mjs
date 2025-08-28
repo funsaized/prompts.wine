@@ -16,7 +16,7 @@ const eslintConfig = [
     ignores: [
       "node_modules/**",
       ".next/**",
-      "out/**", 
+      "out/**",
       "build/**",
       "next-env.d.ts",
       "*.config.*",
@@ -27,45 +27,45 @@ const eslintConfig = [
       "test-content.js",
     ],
   },
-  
+
   // Apply Next.js recommended configs to all relevant files
   ...compat.extends("next/core-web-vitals").map(config => ({
     ...config,
-    files: ["**/*.{js,jsx,ts,tsx}"]
+    files: ["**/*.{js,jsx,ts,tsx}"],
   })),
-  
+
   // TypeScript specific configs
   ...compat.extends("next/typescript").map(config => ({
     ...config,
-    files: ["**/*.{ts,tsx}"]
+    files: ["**/*.{ts,tsx}"],
   })),
-  
+
   // Prettier config (should come last to override conflicting rules)
   ...compat.extends("prettier").map(config => ({
     ...config,
-    files: ["**/*.{js,jsx,ts,tsx}"]
+    files: ["**/*.{js,jsx,ts,tsx}"],
   })),
-  
+
   // Custom rules
   {
     files: ["**/*.{js,jsx,ts,tsx}"],
     rules: {
       // General rules
       "no-console": "warn",
-      "prefer-const": "error", 
+      "prefer-const": "error",
       "no-var": "error",
 
       // React specific
       "react/jsx-key": "error",
       "react/self-closing-comp": "error",
-      
+
       // TypeScript rules - make them warnings for now
       "@typescript-eslint/no-explicit-any": "warn",
       "@typescript-eslint/no-unused-vars": "warn",
-      
+
       // Next.js specific rules
       "@next/next/no-html-link-for-pages": "error",
-      "@next/next/no-img-element": "warn",
+      "@next/next/no-img-element": "error",
     },
   },
 ];

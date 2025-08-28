@@ -41,7 +41,13 @@ const sampleFileTreeData: FileTreeItem[] = [
             name: "components",
             type: "folder",
             path: "app/components",
-            children: [{ name: "page.tsx", type: "file", path: "app/components/page.tsx" }],
+            children: [
+              {
+                name: "page.tsx",
+                type: "file",
+                path: "app/components/page.tsx",
+              },
+            ],
           },
         ],
       },
@@ -57,11 +63,31 @@ const sampleFileTreeData: FileTreeItem[] = [
             path: "components/ui",
             isOpen: true,
             children: [
-              { name: "button.tsx", type: "file", path: "components/ui/button.tsx" },
-              { name: "tabs.tsx", type: "file", path: "components/ui/tabs.tsx" },
-              { name: "scroll-area.tsx", type: "file", path: "components/ui/scroll-area.tsx" },
-              { name: "collapsible.tsx", type: "file", path: "components/ui/collapsible.tsx" },
-              { name: "file-tree.tsx", type: "file", path: "components/ui/file-tree.tsx" },
+              {
+                name: "button.tsx",
+                type: "file",
+                path: "components/ui/button.tsx",
+              },
+              {
+                name: "tabs.tsx",
+                type: "file",
+                path: "components/ui/tabs.tsx",
+              },
+              {
+                name: "scroll-area.tsx",
+                type: "file",
+                path: "components/ui/scroll-area.tsx",
+              },
+              {
+                name: "collapsible.tsx",
+                type: "file",
+                path: "components/ui/collapsible.tsx",
+              },
+              {
+                name: "file-tree.tsx",
+                type: "file",
+                path: "components/ui/file-tree.tsx",
+              },
             ],
           },
         ],

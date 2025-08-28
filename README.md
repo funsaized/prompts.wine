@@ -26,12 +26,14 @@ A modern Next.js 15+ project showcasing a beautiful component library with shadc
 ### Installation
 
 1. Clone the repository
+
 ```bash
 git clone <repository-url>
 cd prompts-wine
 ```
 
 2. Install dependencies
+
 ```bash
 npm install
 # or
@@ -41,6 +43,7 @@ pnpm install
 ```
 
 3. Run the development server
+
 ```bash
 npm run dev
 # or
@@ -106,6 +109,7 @@ Visit `/components` to see all components in action with live examples.
 ### Static Export
 
 This project is configured for static export with:
+
 - `output: "export"` in `next.config.ts`
 - `trailingSlash: true` for proper routing
 - `unoptimized: true` for images
@@ -113,6 +117,7 @@ This project is configured for static export with:
 ### Tailwind CSS v4
 
 Using the latest Tailwind CSS v4 with:
+
 - CSS variables for theming
 - Custom color palette
 - Dark theme as default
@@ -121,6 +126,7 @@ Using the latest Tailwind CSS v4 with:
 ### shadcn/ui
 
 Components are configured with:
+
 - TypeScript support
 - CSS variables for theming
 - Custom aliases for imports
@@ -129,6 +135,7 @@ Components are configured with:
 ## 🎨 Theming
 
 The project uses a comprehensive theming system with CSS variables:
+
 - Dark theme by default
 - Green accent colors
 - Comprehensive semantic color tokens
@@ -137,6 +144,7 @@ The project uses a comprehensive theming system with CSS variables:
 ## 📱 Responsive Design
 
 Built with mobile-first responsive design:
+
 - Breakpoints: sm (640px), md (768px), lg (1024px), xl (1280px)
 - Flexible grid layouts
 - Responsive typography
@@ -147,6 +155,7 @@ Built with mobile-first responsive design:
 ### Static Export
 
 The project is configured for static export and can be deployed to:
+
 - GitHub Pages
 - Netlify
 - Vercel
@@ -154,12 +163,12 @@ The project is configured for static export and can be deployed to:
 - Any static hosting service
 
 Build command:
+
 ```bash
 npm run build
 ```
 
 The built files will be in the `out/` directory.
-
 
 ## 🤝 Contributing
 

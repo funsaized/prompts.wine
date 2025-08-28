@@ -22,12 +22,12 @@ export function ContentViewer({ content, className }: ContentViewerProps) {
   return (
     <div className={cn("relative w-full overflow-hidden", className)}>
       {/* Content Block */}
-      <div className="group relative rounded-lg border border-border bg-muted/30">
+      <div className="group border-border bg-muted/30 relative rounded-lg border">
         {/* Copy Button */}
         <Button
           variant="ghost"
           size="sm"
-          className="absolute right-2 top-2 z-10 opacity-0 transition-opacity group-hover:opacity-100 hover:opacity-100"
+          className="absolute top-2 right-2 z-10 opacity-0 transition-opacity group-hover:opacity-100 hover:opacity-100"
           onClick={handleCopy}
         >
           {copied ? (
@@ -39,7 +39,7 @@ export function ContentViewer({ content, className }: ContentViewerProps) {
         </Button>
 
         {/* Content */}
-        <pre className="whitespace-pre-wrap break-words overflow-hidden p-4 pr-12 text-sm font-mono leading-relaxed text-foreground">
+        <pre className="text-foreground overflow-hidden p-4 pr-12 font-mono text-sm leading-relaxed break-words whitespace-pre-wrap">
           {content}
         </pre>
       </div>

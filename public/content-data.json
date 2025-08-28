@@ -20,9 +20,7 @@
                   "type": "file",
                   "path": ".claude/agents/universal-app/CLAUDE.md",
                   "frontmatter": {},
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 9607,
                   "lastModified": "2025-08-28T00:13:05.247Z"
                 }
@@ -44,9 +42,7 @@
               "type": "file",
               "path": ".claude/commands/fix-github-issue.md",
               "frontmatter": {},
-              "tags": [
-                "commands"
-              ],
+              "tags": ["commands"],
               "size": 487,
               "lastModified": "2025-08-28T00:13:05.247Z"
             }
@@ -83,9 +79,7 @@
               "type": "file",
               "path": ".windsurf/rules/angular_fullstack_rules.md",
               "frontmatter": {},
-              "tags": [
-                "instructions"
-              ],
+              "tags": ["instructions"],
               "size": 5649,
               "lastModified": "2025-08-28T00:13:05.248Z"
             },
@@ -94,9 +88,7 @@
               "type": "file",
               "path": ".windsurf/rules/data_science_rules.md",
               "frontmatter": {},
-              "tags": [
-                "instructions"
-              ],
+              "tags": ["instructions"],
               "size": 12048,
               "lastModified": "2025-08-28T00:13:05.248Z"
             },
@@ -107,9 +99,7 @@
               "frontmatter": {
                 "trigger": "manual"
               },
-              "tags": [
-                "instructions"
-              ],
+              "tags": ["instructions"],
               "size": 5649,
               "lastModified": "2025-08-28T00:13:05.248Z"
             },
@@ -118,9 +108,7 @@
               "type": "file",
               "path": ".windsurf/rules/project_instructions.md",
               "frontmatter": {},
-              "tags": [
-                "instructions"
-              ],
+              "tags": ["instructions"],
               "size": 8877,
               "lastModified": "2025-08-28T00:13:05.248Z"
             },
@@ -129,9 +117,7 @@
               "type": "file",
               "path": ".windsurf/rules/react_nextjs_rules.md",
               "frontmatter": {},
-              "tags": [
-                "instructions"
-              ],
+              "tags": ["instructions"],
               "size": 8920,
               "lastModified": "2025-08-28T00:13:05.248Z"
             }
@@ -153,9 +139,7 @@
           "type": "file",
           "path": "claude/create_prompt.md",
           "frontmatter": {},
-          "tags": [
-            "prompts"
-          ],
+          "tags": ["prompts"],
           "size": 217,
           "lastModified": "2025-08-28T00:13:05.250Z"
         }
@@ -168,13 +152,8 @@
     "categories": {
       "agents": {
         "name": "Agents",
-        "patterns": [
-          "**/agents/**",
-          "**/.claude/agents/**"
-        ],
-        "defaultTags": [
-          "agents"
-        ]
+        "patterns": ["**/agents/**", "**/.claude/agents/**"],
+        "defaultTags": ["agents"]
       },
       "commands": {
         "name": "Commands",
@@ -183,20 +162,12 @@
           "**/.claude/commands/**",
           "**/*.command.*"
         ],
-        "defaultTags": [
-          "commands"
-        ]
+        "defaultTags": ["commands"]
       },
       "prompts": {
         "name": "Prompts",
-        "patterns": [
-          "**/prompts/**",
-          "**/claude/**",
-          "**/*.prompt.*"
-        ],
-        "defaultTags": [
-          "prompts"
-        ]
+        "patterns": ["**/prompts/**", "**/claude/**", "**/*.prompt.*"],
+        "defaultTags": ["prompts"]
       },
       "instructions": {
         "name": "Instructions",
@@ -205,9 +176,7 @@
           "**/rules/**",
           "**/*.instructions.*"
         ],
-        "defaultTags": [
-          "instructions"
-        ]
+        "defaultTags": ["instructions"]
       }
     },
     "tags": {
@@ -274,9 +243,7 @@
                     "type": "file",
                     "path": ".claude/agents/universal-app/CLAUDE.md",
                     "frontmatter": {},
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 9607,
                     "lastModified": "2025-08-28T00:13:05.247Z"
                   }
@@ -298,9 +265,7 @@
                 "type": "file",
                 "path": ".claude/commands/fix-github-issue.md",
                 "frontmatter": {},
-                "tags": [
-                  "commands"
-                ],
+                "tags": ["commands"],
                 "size": 487,
                 "lastModified": "2025-08-28T00:13:05.247Z"
               }
@@ -337,9 +302,7 @@
                 "type": "file",
                 "path": ".windsurf/rules/angular_fullstack_rules.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 5649,
                 "lastModified": "2025-08-28T00:13:05.248Z"
               },
@@ -348,9 +311,7 @@
                 "type": "file",
                 "path": ".windsurf/rules/data_science_rules.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 12048,
                 "lastModified": "2025-08-28T00:13:05.248Z"
               },
@@ -361,9 +322,7 @@
                 "frontmatter": {
                   "trigger": "manual"
                 },
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 5649,
                 "lastModified": "2025-08-28T00:13:05.248Z"
               },
@@ -372,9 +331,7 @@
                 "type": "file",
                 "path": ".windsurf/rules/project_instructions.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 8877,
                 "lastModified": "2025-08-28T00:13:05.248Z"
               },
@@ -383,9 +340,7 @@
                 "type": "file",
                 "path": ".windsurf/rules/react_nextjs_rules.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 8920,
                 "lastModified": "2025-08-28T00:13:05.248Z"
               }
@@ -407,9 +362,7 @@
             "type": "file",
             "path": "claude/create_prompt.md",
             "frontmatter": {},
-            "tags": [
-              "prompts"
-            ],
+            "tags": ["prompts"],
             "size": 217,
             "lastModified": "2025-08-28T00:13:05.250Z"
           }
@@ -439,9 +392,7 @@
                     "type": "file",
                     "path": ".claude/agents/universal-app/CLAUDE.md",
                     "frontmatter": {},
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 9607,
                     "lastModified": "2025-08-28T00:13:05.247Z"
                   }
@@ -469,9 +420,7 @@
             "type": "file",
             "path": "claude/create_prompt.md",
             "frontmatter": {},
-            "tags": [
-              "prompts"
-            ],
+            "tags": ["prompts"],
             "size": 217,
             "lastModified": "2025-08-28T00:13:05.250Z"
           }
@@ -496,9 +445,7 @@
                 "type": "file",
                 "path": ".claude/commands/fix-github-issue.md",
                 "frontmatter": {},
-                "tags": [
-                  "commands"
-                ],
+                "tags": ["commands"],
                 "size": 487,
                 "lastModified": "2025-08-28T00:13:05.247Z"
               }
@@ -527,9 +474,7 @@
                 "type": "file",
                 "path": ".windsurf/rules/angular_fullstack_rules.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 5649,
                 "lastModified": "2025-08-28T00:13:05.248Z"
               },
@@ -538,9 +483,7 @@
                 "type": "file",
                 "path": ".windsurf/rules/data_science_rules.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 12048,
                 "lastModified": "2025-08-28T00:13:05.248Z"
               },
@@ -551,9 +494,7 @@
                 "frontmatter": {
                   "trigger": "manual"
                 },
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 5649,
                 "lastModified": "2025-08-28T00:13:05.248Z"
               },
@@ -562,9 +503,7 @@
                 "type": "file",
                 "path": ".windsurf/rules/project_instructions.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 8877,
                 "lastModified": "2025-08-28T00:13:05.248Z"
               },
@@ -573,9 +512,7 @@
                 "type": "file",
                 "path": ".windsurf/rules/react_nextjs_rules.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 8920,
                 "lastModified": "2025-08-28T00:13:05.248Z"
               }

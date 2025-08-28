@@ -6,16 +6,16 @@ import { FileTree } from "@/components/ui/file-tree";
 import { ContentViewer } from "@/components/ui/content-viewer";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { FileScan, Folder, Plus, Download, Tag, Clock } from "lucide-react";
+import { Download, Tag, Clock } from "lucide-react";
 import Image from "next/image";
 import { FileTreeItem } from "@/lib/content-types";
 // Import just the type, not the server functions
 export interface StaticContentData {
   contentTree: FileTreeItem[];
   definitions: {
-    categories: Record<string, any>;
-    tags: Record<string, any>;
-    patterns: any[];
+    categories: Record<string, unknown>;
+    tags: Record<string, unknown>;
+    patterns: unknown[];
   };
   contentMap: Record<string, string>;
   stats: {
@@ -57,6 +57,7 @@ export default function Prompts(): React.JSX.Element {
         setContentData(data);
       } catch (err) {
         setError(err instanceof Error ? err.message : "Failed to load content");
+        // eslint-disable-next-line no-console
         console.error("Error loading content:", err);
       } finally {
         setLoading(false);

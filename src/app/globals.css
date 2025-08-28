@@ -38,5 +38,7 @@
 }
 
 body {
-  font-family: var(--font-geist-mono), ui-monospace, "SF Mono", "Consolas", "Liberation Mono", "Menlo", monospace;
+  font-family:
+    var(--font-geist-mono), ui-monospace, "SF Mono", "Consolas",
+    "Liberation Mono", "Menlo", monospace;
 }

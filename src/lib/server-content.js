@@ -3,11 +3,11 @@
  * This file can only be imported in Node.js environment
  */
 
-const fs = require('fs');
-const path = require('path');
-const matter = require('gray-matter');
+const fs = require("fs");
+const path = require("path");
+const matter = require("gray-matter");
 
-const CONTENT_DIR = path.join(process.cwd(), 'content');
+const CONTENT_DIR = path.join(process.cwd(), "content");
 
 /**
  * Get built-in tagging definitions based on content patterns
@@ -15,34 +15,47 @@ const CONTENT_DIR = path.join(process.cwd(), 'content');
 function getDefinitions() {
   return {
     categories: {
-      agents: { 
-        name: 'Agents', 
-        patterns: ['**/agents/**', '**/.claude/agents/**'], 
-        defaultTags: ['agents'] 
+      agents: {
+        name: "Agents",
+        patterns: ["**/agents/**", "**/.claude/agents/**"],
+        defaultTags: ["agents"],
       },
-      commands: { 
-        name: 'Commands', 
-        patterns: ['**/commands/**', '**/.claude/commands/**', '**/*.command.*'], 
-        defaultTags: ['commands'] 
+      commands: {
+        name: "Commands",
+        patterns: [
+          "**/commands/**",
+          "**/.claude/commands/**",
+          "**/*.command.*",
+        ],
+        defaultTags: ["commands"],
       },
-      prompts: { 
-        name: 'Prompts', 
-        patterns: ['**/prompts/**', '**/claude/**', '**/*.prompt.*'], 
-        defaultTags: ['prompts'] 
+      prompts: {
+        name: "Prompts",
+        patterns: ["**/prompts/**", "**/claude/**", "**/*.prompt.*"],
+        defaultTags: ["prompts"],
       },
-      instructions: { 
-        name: 'Instructions', 
-        patterns: ['**/instructions/**', '**/rules/**', '**/*.instructions.*'], 
-        defaultTags: ['instructions'] 
+      instructions: {
+        name: "Instructions",
+        patterns: ["**/instructions/**", "**/rules/**", "**/*.instructions.*"],
+        defaultTags: ["instructions"],
       },
     },
     tags: {
-      agents: { name: 'Agents', description: 'AI agent configurations and prompts' },
-      commands: { name: 'Commands', description: 'Command definitions and workflows' },
-      prompts: { name: 'Prompts', description: 'Reusable prompt templates' },
-      instructions: { name: 'Instructions', description: 'Setup guides and configuration instructions' },
+      agents: {
+        name: "Agents",
+        description: "AI agent configurations and prompts",
+      },
+      commands: {
+        name: "Commands",
+        description: "Command definitions and workflows",
+      },
+      prompts: { name: "Prompts", description: "Reusable prompt templates" },
+      instructions: {
+        name: "Instructions",
+        description: "Setup guides and configuration instructions",
+      },
     },
-    patterns: []
+    patterns: [],
   };
 }
 
@@ -51,18 +64,18 @@ function getDefinitions() {
  */
 function parseMarkdownFile(filePath) {
   try {
-    const fileContent = fs.readFileSync(filePath, 'utf8');
+    const fileContent = fs.readFileSync(filePath, "utf8");
     const parsed = matter(fileContent);
-    
+
     return {
       content: parsed.content,
-      frontmatter: parsed.data || {}
+      frontmatter: parsed.data || {},
     };
   } catch (error) {
     console.error(`Error parsing markdown file ${filePath}:`, error);
     return {
-      content: '',
-      frontmatter: {}
+      content: "",
+      frontmatter: {},
     };
   }
 }
@@ -75,12 +88,12 @@ function matchesPattern(filePath, pattern) {
   // Handle ** first (matches any number of directories including none)
   // Then handle single * (matches within a single directory level)
   const regexPattern = pattern
-    .replace(/\*\*/g, '§DOUBLE_STAR§') // Temporary placeholder
-    .replace(/\*/g, '[^/]*')           // Single * matches within directory
-    .replace(/§DOUBLE_STAR§/g, '.*')   // ** matches across directories
-    .replace(/\?/g, '[^/]');           // ? matches single character
-  
-  const regex = new RegExp(`^${regexPattern}$`, 'i');
+    .replace(/\*\*/g, "§DOUBLE_STAR§") // Temporary placeholder
+    .replace(/\*/g, "[^/]*") // Single * matches within directory
+    .replace(/§DOUBLE_STAR§/g, ".*") // ** matches across directories
+    .replace(/\?/g, "[^/]"); // ? matches single character
+
+  const regex = new RegExp(`^${regexPattern}$`, "i");
   return regex.test(filePath);
 }
 
@@ -89,20 +102,20 @@ function matchesPattern(filePath, pattern) {
  */
 function applyTagsToFile(filePath, frontmatter, definitions) {
   const tags = new Set();
-  
+
   // Add frontmatter tags
   if (frontmatter.tags) {
     frontmatter.tags.forEach(tag => tags.add(tag));
   }
-  
+
   // Add category tag if specified
   if (frontmatter.category) {
     tags.add(frontmatter.category);
   }
-  
+
   // Apply pattern-based tagging
   const relativePath = path.relative(CONTENT_DIR, filePath);
-  
+
   // Check category patterns
   Object.entries(definitions.categories).forEach(([categoryKey, category]) => {
     if (category.patterns) {
@@ -116,9 +129,9 @@ function applyTagsToFile(filePath, frontmatter, definitions) {
       });
     }
   });
-  
+
   // Apply custom pattern rules
-  definitions.patterns.forEach((patternDef) => {
+  definitions.patterns.forEach(patternDef => {
     if (matchesPattern(relativePath, patternDef.pattern)) {
       patternDef.tags.forEach(tag => tags.add(tag));
       if (patternDef.category) {
@@ -126,7 +139,7 @@ function applyTagsToFile(filePath, frontmatter, definitions) {
       }
     }
   });
-  
+
   return Array.from(tags);
 }
 
@@ -138,11 +151,11 @@ function loadContentTree(options = {}) {
     includeContent = false,
     parseMarkdown = true,
     applyTags = true,
-    excludePatterns = ['.DS_Store', '.git', 'node_modules']
+    excludePatterns = [".DS_Store", ".git", "node_modules"],
   } = options;
 
   if (!fs.existsSync(CONTENT_DIR)) {
-    console.warn('Content directory does not exist:', CONTENT_DIR);
+    console.warn("Content directory does not exist:", CONTENT_DIR);
     return [];
   }
 
@@ -151,7 +164,7 @@ function loadContentTree(options = {}) {
   function buildTree(currentPath, name = path.basename(currentPath)) {
     const stats = fs.statSync(currentPath);
     const relativePath = path.relative(CONTENT_DIR, currentPath);
-    
+
     // Check exclusion patterns
     if (excludePatterns.some(pattern => name.includes(pattern))) {
       return null;
@@ -159,7 +172,7 @@ function loadContentTree(options = {}) {
 
     if (stats.isDirectory()) {
       const children = [];
-      
+
       try {
         const items = fs.readdirSync(currentPath);
         for (const item of items) {
@@ -176,29 +189,29 @@ function loadContentTree(options = {}) {
       // Sort children: folders first, then files
       children.sort((a, b) => {
         if (a.type !== b.type) {
-          return a.type === 'folder' ? -1 : 1;
+          return a.type === "folder" ? -1 : 1;
         }
         return a.name.localeCompare(b.name);
       });
 
       return {
         name,
-        type: 'folder',
+        type: "folder",
         path: relativePath,
         children,
         lastModified: stats.mtime,
-        tags: []
+        tags: [],
       };
     } else {
       // Handle files
-      const isMarkdown = name.endsWith('.md') || name.endsWith('.markdown');
-      let content = '';
+      const isMarkdown = name.endsWith(".md") || name.endsWith(".markdown");
+      let content = "";
       let frontmatter = {};
       let fileTags = [];
 
       if (isMarkdown && parseMarkdown) {
         const parsed = parseMarkdownFile(currentPath);
-        content = includeContent ? parsed.content : '';
+        content = includeContent ? parsed.content : "";
         frontmatter = parsed.frontmatter;
       }
 
@@ -208,13 +221,13 @@ function loadContentTree(options = {}) {
 
       return {
         name,
-        type: 'file',
+        type: "file",
         path: relativePath,
         content,
         frontmatter,
         tags: fileTags,
         size: stats.size,
-        lastModified: stats.mtime
+        lastModified: stats.mtime,
       };
     }
   }
@@ -239,41 +252,44 @@ function loadContentTree(options = {}) {
 function filterFileTree(tree, filter) {
   function filterNode(node) {
     // For folders, recursively filter children
-    if (node.type === 'folder') {
+    if (node.type === "folder") {
       const filteredChildren = node.children
         ? node.children.map(filterNode).filter(Boolean)
         : [];
-      
+
       // Include folder if it has matching children or matches filter itself
       if (filteredChildren.length > 0) {
         return { ...node, children: filteredChildren };
       }
       return null;
     }
-    
+
     // For files, check if they match the filter
     if (filter.tags && filter.tags.length > 0) {
-      const hasMatchingTag = filter.tags.some(tag => 
-        (node.tags && node.tags.includes(tag)) || 
-        (node.frontmatter && node.frontmatter.tags && node.frontmatter.tags.includes(tag))
+      const hasMatchingTag = filter.tags.some(
+        tag =>
+          (node.tags && node.tags.includes(tag)) ||
+          (node.frontmatter &&
+            node.frontmatter.tags &&
+            node.frontmatter.tags.includes(tag))
       );
       if (!hasMatchingTag) {
         return null;
       }
     }
-    
+
     if (filter.category) {
-      const hasMatchingCategory = 
+      const hasMatchingCategory =
         (node.tags && node.tags.includes(filter.category)) ||
         (node.frontmatter && node.frontmatter.category === filter.category);
       if (!hasMatchingCategory) {
         return null;
       }
     }
-    
+
     return node;
   }
-  
+
   return tree.map(filterNode).filter(Boolean);
 }
 
@@ -281,23 +297,23 @@ function filterFileTree(tree, filter) {
  * Generate all content data at build time (server-side only)
  */
 function generateStaticContentData() {
-  console.log('🔥 Generating static content data...');
-  
+  console.log("🔥 Generating static content data...");
+
   // Load content tree with full content
   const contentTree = loadContentTree({
     includeContent: true,
     parseMarkdown: true,
-    applyTags: true
+    applyTags: true,
   });
-  
+
   const definitions = getDefinitions();
-  
+
   // Create content map for quick lookup
   const contentMap = {};
-  
+
   function collectContent(items) {
     for (const item of items) {
-      if (item.type === 'file' && item.content) {
+      if (item.type === "file" && item.content) {
         contentMap[item.path] = item.content;
       }
       if (item.children) {
@@ -305,25 +321,25 @@ function generateStaticContentData() {
       }
     }
   }
-  
+
   collectContent(contentTree);
-  
+
   // Generate statistics
   let totalFiles = 0;
   const categoryCount = {};
   const tagCount = {};
-  
+
   function countItems(items) {
     for (const item of items) {
-      if (item.type === 'file') {
+      if (item.type === "file") {
         totalFiles++;
-        
+
         if (item.tags) {
           item.tags.forEach(tag => {
             tagCount[tag] = (tagCount[tag] || 0) + 1;
           });
         }
-        
+
         if (item.frontmatter && item.frontmatter.category) {
           const category = item.frontmatter.category;
           categoryCount[category] = (categoryCount[category] || 0) + 1;
@@ -333,34 +349,36 @@ function generateStaticContentData() {
       }
     }
   }
-  
+
   countItems(contentTree);
-  
+
   const stats = {
     totalFiles,
     totalCategories: Object.keys(categoryCount).length,
     totalTags: Object.keys(tagCount).length,
     categoryCount,
-    tagCount
+    tagCount,
   };
-  
+
   // Generate pre-filtered content for each tab
   const filteredContent = {
     all: contentTree,
-    agents: filterFileTree(contentTree, { tags: ['agents'] }),
-    prompts: filterFileTree(contentTree, { tags: ['prompts'] }),
-    commands: filterFileTree(contentTree, { tags: ['commands'] }),
-    instructions: filterFileTree(contentTree, { tags: ['instructions'] })
+    agents: filterFileTree(contentTree, { tags: ["agents"] }),
+    prompts: filterFileTree(contentTree, { tags: ["prompts"] }),
+    commands: filterFileTree(contentTree, { tags: ["commands"] }),
+    instructions: filterFileTree(contentTree, { tags: ["instructions"] }),
   };
-  
-  console.log(`✅ Generated content data: ${totalFiles} files, ${Object.keys(contentMap).length} content entries`);
-  
+
+  console.log(
+    `✅ Generated content data: ${totalFiles} files, ${Object.keys(contentMap).length} content entries`
+  );
+
   return {
     contentTree,
     definitions,
     contentMap,
     stats,
-    filteredContent
+    filteredContent,
   };
 }
 
@@ -368,11 +386,11 @@ function generateStaticContentData() {
  * Save content data to JSON for static generation (server-side only)
  */
 async function saveStaticContentData(data) {
-  const outputPath = path.join(process.cwd(), 'public', 'content-data.json');
-  
+  const outputPath = path.join(process.cwd(), "public", "content-data.json");
+
   // Create a version without content for the tree (content is in contentMap)
   const treeWithoutContent = JSON.parse(JSON.stringify(data.contentTree));
-  
+
   function removeContent(items) {
     for (const item of items) {
       if (item.content) {
@@ -383,9 +401,9 @@ async function saveStaticContentData(data) {
       }
     }
   }
-  
+
   removeContent(treeWithoutContent);
-  
+
   const outputData = {
     ...data,
     contentTree: treeWithoutContent,
@@ -394,29 +412,33 @@ async function saveStaticContentData(data) {
       agents: filterContentForOutput(data.filteredContent.agents),
       prompts: filterContentForOutput(data.filteredContent.prompts),
       commands: filterContentForOutput(data.filteredContent.commands),
-      instructions: filterContentForOutput(data.filteredContent.instructions)
-    }
+      instructions: filterContentForOutput(data.filteredContent.instructions),
+    },
   };
-  
+
   // Ensure public directory exists
   const publicDir = path.dirname(outputPath);
   if (!fs.existsSync(publicDir)) {
     fs.mkdirSync(publicDir, { recursive: true });
   }
-  
+
   fs.writeFileSync(outputPath, JSON.stringify(outputData, null, 2));
   console.log(`📦 Saved content data to: ${outputPath}`);
 }
 
 function filterContentForOutput(items) {
-  return JSON.parse(JSON.stringify(items.map(item => {
-    const cleaned = { ...item };
-    delete cleaned.content;
-    if (cleaned.children) {
-      cleaned.children = filterContentForOutput(cleaned.children);
-    }
-    return cleaned;
-  })));
+  return JSON.parse(
+    JSON.stringify(
+      items.map(item => {
+        const cleaned = { ...item };
+        delete cleaned.content;
+        if (cleaned.children) {
+          cleaned.children = filterContentForOutput(cleaned.children);
+        }
+        return cleaned;
+      })
+    )
+  );
 }
 
 module.exports = {
@@ -424,5 +446,5 @@ module.exports = {
   saveStaticContentData,
   loadContentTree,
   getDefinitions,
-  filterFileTree
+  filterFileTree,
 };
