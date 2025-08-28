@@ -39,6 +39,11 @@ function getDefinitions() {
         patterns: ["**/instructions/**", "**/rules/**", "**/*.instructions.*"],
         defaultTags: ["instructions"],
       },
+      github: {
+        name: "GitHub",
+        patterns: ["**/.github/**", ".github/**"],
+        defaultTags: ["github", "configuration"],
+      },
     },
     tags: {
       agents: {
@@ -53,6 +58,14 @@ function getDefinitions() {
       instructions: {
         name: "Instructions",
         description: "Setup guides and configuration instructions",
+      },
+      github: { 
+        name: "GitHub", 
+        description: "GitHub workflows and configuration files" 
+      },
+      configuration: { 
+        name: "Configuration", 
+        description: "Configuration files and settings" 
       },
     },
     patterns: [],
@@ -211,8 +224,8 @@ function loadContentTree(options = {}) {
     const stats = fs.statSync(currentPath);
     const relativePath = path.relative(CONTENT_DIR, currentPath);
 
-    // Check exclusion patterns
-    if (excludePatterns.some(pattern => name.includes(pattern))) {
+    // Check exclusion patterns (exact match to avoid filtering .github when .git is excluded)
+    if (excludePatterns.some(pattern => name === pattern)) {
       return null;
     }
 

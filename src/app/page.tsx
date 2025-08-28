@@ -215,7 +215,7 @@ export default function Prompts(): React.JSX.Element {
                       </Button>
                     </div>
                   </div>
-                  <ScrollArea className="h-96">
+                  <ScrollArea className="h-64 sm:h-96 lg:h-[500px]">
                     {loading ? (
                       <div className="flex items-center justify-center py-8">
                         <div className="text-muted-foreground text-sm">
