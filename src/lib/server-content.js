@@ -6,48 +6,44 @@
 const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
-const yaml = require('js-yaml');
 
 const CONTENT_DIR = path.join(process.cwd(), 'content');
-const DEFINITIONS_FILE = path.join(CONTENT_DIR, 'definitions.yaml');
 
 /**
- * Load and parse definitions.yaml for tagging rules
+ * Get built-in tagging definitions based on content patterns
  */
-async function loadDefinitions() {
-  const defaultDefinitions = {
+function getDefinitions() {
+  return {
     categories: {
-      agents: { name: 'Agents', patterns: ['**/agents/**', '**/.claude/**'], defaultTags: ['agents'] },
-      prompts: { name: 'Prompts', patterns: ['**/prompts/**', '**/*.prompt.*'], defaultTags: ['prompts'] },
-      commands: { name: 'Commands', patterns: ['**/commands/**', '**/*.command.*'], defaultTags: ['commands'] },
-      instructions: { name: 'Instructions', patterns: ['**/instructions/**', '**/*.instructions.*'], defaultTags: ['instructions'] },
+      agents: { 
+        name: 'Agents', 
+        patterns: ['**/agents/**', '**/.claude/agents/**'], 
+        defaultTags: ['agents'] 
+      },
+      commands: { 
+        name: 'Commands', 
+        patterns: ['**/commands/**', '**/.claude/commands/**', '**/*.command.*'], 
+        defaultTags: ['commands'] 
+      },
+      prompts: { 
+        name: 'Prompts', 
+        patterns: ['**/prompts/**', '**/claude/**', '**/*.prompt.*'], 
+        defaultTags: ['prompts'] 
+      },
+      instructions: { 
+        name: 'Instructions', 
+        patterns: ['**/instructions/**', '**/rules/**', '**/*.instructions.*'], 
+        defaultTags: ['instructions'] 
+      },
     },
     tags: {
       agents: { name: 'Agents', description: 'AI agent configurations and prompts' },
-      prompts: { name: 'Prompts', description: 'Reusable prompt templates' },
       commands: { name: 'Commands', description: 'Command definitions and workflows' },
-      instructions: { name: 'Instructions', description: 'Setup and configuration instructions' },
+      prompts: { name: 'Prompts', description: 'Reusable prompt templates' },
+      instructions: { name: 'Instructions', description: 'Setup guides and configuration instructions' },
     },
     patterns: []
   };
-
-  try {
-    if (fs.existsSync(DEFINITIONS_FILE)) {
-      const definitionsContent = fs.readFileSync(DEFINITIONS_FILE, 'utf8');
-      const parsed = yaml.load(definitionsContent);
-      
-      // Merge with defaults
-      return {
-        categories: { ...defaultDefinitions.categories, ...parsed.categories },
-        tags: { ...defaultDefinitions.tags, ...parsed.tags },
-        patterns: [...defaultDefinitions.patterns, ...(parsed.patterns || [])]
-      };
-    }
-  } catch (error) {
-    console.warn('Failed to load definitions.yaml, using defaults:', error);
-  }
-
-  return defaultDefinitions;
 }
 
 /**
@@ -76,10 +72,13 @@ function parseMarkdownFile(filePath) {
  */
 function matchesPattern(filePath, pattern) {
   // Convert glob pattern to regex
+  // Handle ** first (matches any number of directories including none)
+  // Then handle single * (matches within a single directory level)
   const regexPattern = pattern
-    .replace(/\*\*/g, '.*')
-    .replace(/\*/g, '[^/]*')
-    .replace(/\?/g, '[^/]');
+    .replace(/\*\*/g, '§DOUBLE_STAR§') // Temporary placeholder
+    .replace(/\*/g, '[^/]*')           // Single * matches within directory
+    .replace(/§DOUBLE_STAR§/g, '.*')   // ** matches across directories
+    .replace(/\?/g, '[^/]');           // ? matches single character
   
   const regex = new RegExp(`^${regexPattern}$`, 'i');
   return regex.test(filePath);
@@ -134,7 +133,7 @@ function applyTagsToFile(filePath, frontmatter, definitions) {
 /**
  * Recursively build file tree from content directory
  */
-async function loadContentTree(options = {}) {
+function loadContentTree(options = {}) {
   const {
     includeContent = false,
     parseMarkdown = true,
@@ -147,7 +146,7 @@ async function loadContentTree(options = {}) {
     return [];
   }
 
-  const definitions = applyTags ? await loadDefinitions() : null;
+  const definitions = applyTags ? getDefinitions() : null;
 
   function buildTree(currentPath, name = path.basename(currentPath)) {
     const stats = fs.statSync(currentPath);
@@ -281,17 +280,17 @@ function filterFileTree(tree, filter) {
 /**
  * Generate all content data at build time (server-side only)
  */
-async function generateStaticContentData() {
+function generateStaticContentData() {
   console.log('🔥 Generating static content data...');
   
   // Load content tree with full content
-  const contentTree = await loadContentTree({
+  const contentTree = loadContentTree({
     includeContent: true,
     parseMarkdown: true,
     applyTags: true
   });
   
-  const definitions = await loadDefinitions();
+  const definitions = getDefinitions();
   
   // Create content map for quick lookup
   const contentMap = {};
@@ -424,6 +423,6 @@ module.exports = {
   generateStaticContentData,
   saveStaticContentData,
   loadContentTree,
-  loadDefinitions,
+  getDefinitions,
   filterFileTree
 };

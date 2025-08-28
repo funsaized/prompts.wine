@@ -5,11 +5,6 @@ import { Button } from "@/components/ui/button";
 import { FileTree } from "@/components/ui/file-tree";
 import { ContentViewer } from "@/components/ui/content-viewer";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import {
-  Collapsible,
-  CollapsibleTrigger,
-  CollapsibleContent,
-} from "@/components/ui/collapsible";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { FileScan, Folder, Plus, Download, Tag, Clock } from "lucide-react";
 import Image from "next/image";
@@ -43,7 +38,6 @@ export default function Prompts(): React.JSX.Element {
   const [selectedFile, setSelectedFile] = React.useState<string>("");
   const [selectedFileContent, setSelectedFileContent] =
     React.useState<string>("");
-  const [isCollapsibleOpen, setIsCollapsibleOpen] = React.useState(false);
   const [activeFilter, setActiveFilter] = React.useState<string>("all");
   const [contentData, setContentData] =
     React.useState<StaticContentData | null>(null);
@@ -117,7 +111,7 @@ export default function Prompts(): React.JSX.Element {
 
   return (
     <div className="bg-background text-foreground min-h-screen">
-      <div className="container mx-auto flex min-h-screen flex-col items-start justify-start space-y-8 p-4">
+      <div className="container mx-auto flex min-h-screen flex-col items-start justify-start space-y-8 p-2">
         <div className="space-y-4">
           <header className="flex flex-shrink-0 flex-col font-light uppercase">
             <h1 className="text-3xl tracking-tight sm:text-4xl">
@@ -163,11 +157,25 @@ export default function Prompts(): React.JSX.Element {
               onValueChange={setActiveFilter}
               className="w-full"
             >
-              <TabsList className="grid w-full grid-cols-4">
-                <TabsTrigger value="all">All</TabsTrigger>
-                <TabsTrigger value="agents">Agents</TabsTrigger>
-                <TabsTrigger value="prompts">Prompts</TabsTrigger>
-                <TabsTrigger value="commands">Commands</TabsTrigger>
+              <TabsList className="grid w-full grid-cols-5 gap-0">
+                <TabsTrigger value="all" className="px-0.5 py-1 text-xs">
+                  All
+                </TabsTrigger>
+                <TabsTrigger value="agents" className="px-0.5 py-1 text-xs">
+                  Agents
+                </TabsTrigger>
+                <TabsTrigger value="prompts" className="px-0.5 py-1 text-xs">
+                  Prompts
+                </TabsTrigger>
+                <TabsTrigger value="commands" className="px-0.5 py-1 text-xs">
+                  Cmds
+                </TabsTrigger>
+                <TabsTrigger
+                  value="instructions"
+                  className="px-0.5 py-1 text-xs"
+                >
+                  Instructions
+                </TabsTrigger>
               </TabsList>
 
               <TabsContent value={activeFilter} className="mt-4">
@@ -275,7 +283,7 @@ export default function Prompts(): React.JSX.Element {
                   </div>
 
                   {/* File Content */}
-                  <div className="p-6 overflow-hidden">
+                  <div className="overflow-hidden p-6">
                     <ContentViewer content={selectedFileContent} />
                   </div>
                 </div>

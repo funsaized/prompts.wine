@@ -61,7 +61,7 @@ function ensureDirectoryExists(dirPath) {
   }
 }
 
-function copyDirectory(src, dest) {
+function copyDirectory(src, dest, skipTopLevelFiles = false) {
   ensureDirectoryExists(dest);
   const items = fs.readdirSync(src);
   
@@ -71,10 +71,11 @@ function copyDirectory(src, dest) {
     const stat = fs.statSync(srcPath);
     
     if (stat.isDirectory()) {
-      copyDirectory(srcPath, destPath);
-    } else {
+      copyDirectory(srcPath, destPath, false); // Always copy everything within directories
+    } else if (!skipTopLevelFiles) {
       fs.copyFileSync(srcPath, destPath);
     }
+    // Skip top-level files when skipTopLevelFiles is true
   }
 }
 
@@ -113,18 +114,13 @@ async function main() {
     }
     ensureDirectoryExists(CONTENT_DIR);
     
-    // Copy content to destination
-    console.log('📁 Copying content to /content directory...');
-    copyDirectory(extractPath, CONTENT_DIR);
+    // Copy content to destination (only directories, skip top-level files)
+    console.log('📁 Copying content to /content directory (directories only)...');
+    copyDirectory(extractPath, CONTENT_DIR, true);
     console.log('✅ Content copy complete');
     
-    // Verify important files exist
-    const definitionsPath = path.join(CONTENT_DIR, 'definitions.yaml');
-    if (fs.existsSync(definitionsPath)) {
-      console.log('✅ definitions.yaml found');
-    } else {
-      console.log('⚠️  definitions.yaml not found - tagging may not work properly');
-    }
+    console.log('ℹ️  Only directories were copied, top-level files excluded');
+    console.log('🏷️  Tagging uses built-in regex patterns, no definitions.yaml needed');
     
     // Count files
     const countFiles = (dir) => {
