@@ -157,7 +157,7 @@ export default function Prompts(): React.JSX.Element {
               onValueChange={setActiveFilter}
               className="w-full"
             >
-              <TabsList className="grid w-full grid-cols-5 gap-0">
+              <TabsList className="flex w-full gap-0">
                 <TabsTrigger value="all" className="px-0.5 py-1 text-xs">
                   All
                 </TabsTrigger>
