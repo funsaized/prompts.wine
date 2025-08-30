@@ -83,10 +83,10 @@
   export class User {
     @PrimaryGeneratedColumn()
     id: number;
-    
+
     @Column({ unique: true })
     email: string;
-    
+
     @CreateDateColumn()
     createdAt: Date;
   }
@@ -118,7 +118,7 @@
   describe('UserComponent', () => {
     let component: UserComponent;
     let fixture: ComponentFixture<UserComponent>;
-    
+
     beforeEach(() => {
       TestBed.configureTestingModule({
         declarations: [UserComponent]
@@ -126,7 +126,7 @@
       fixture = TestBed.createComponent(UserComponent);
       component = fixture.componentInstance;
     });
-    
+
     it('should create', () => {
       expect(component).toBeTruthy();
     });
