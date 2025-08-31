@@ -128,7 +128,7 @@ export default function Prompts(): React.JSX.Element {
               <h2>
                 <TextType
                   text={[
-                    "A directory of instructions, agents, and workflows for LLMs &tools that have aged like fine wine 🍷",
+                    "A directory of instructions, agents, and workflows for LLMs & tools that have aged like fine wine 🍷",
                     "Made by Sai Nimmagadda 🤓",
                   ]}
                   typingSpeed={75}
@@ -278,7 +278,7 @@ export default function Prompts(): React.JSX.Element {
                       </div>
                     </div>
                     {selectedFileItem.frontmatter?.description && (
-                      <FrontmatterDisplay 
+                      <FrontmatterDisplay
                         description={selectedFileItem.frontmatter.description}
                       />
                     )}
