@@ -4,6 +4,7 @@ import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { FileTree } from "@/components/ui/file-tree";
 import { ContentViewer } from "@/components/ui/content-viewer";
+import { FrontmatterDisplay } from "@/components/ui/frontmatter-display";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Download, Tag, Clock } from "lucide-react";
@@ -277,9 +278,9 @@ export default function Prompts(): React.JSX.Element {
                       </div>
                     </div>
                     {selectedFileItem.frontmatter?.description && (
-                      <p className="text-muted-foreground mt-2 text-sm">
-                        {selectedFileItem.frontmatter.description}
-                      </p>
+                      <FrontmatterDisplay 
+                        description={selectedFileItem.frontmatter.description}
+                      />
                     )}
                   </div>
 
