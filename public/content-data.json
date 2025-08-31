@@ -21,16 +21,15 @@
                   "path": ".claude/agents/design/brand-guardian.md",
                   "frontmatter": {
                     "name": "brand-guardian",
-                    "user": "Developers keep using different shades of our brand colors",
-                    "assistant": "Clear asset management prevents brand dilution. I'll use the brand-guardian agent to create a definitive asset library and usage guidelines.",
+                    "description": "Use this agent when establishing brand guidelines, ensuring visual consistency, managing brand assets, or evolving brand identity. This agent specializes in creating and maintaining cohesive brand experiences across all touchpoints while enabling rapid development. Examples:\n\n<example>\nContext: Creating brand guidelines for a new app\nuser: \"We need to establish a visual identity for our meditation app\"\nassistant: \"I'll help create a calming yet distinctive brand identity. Let me use the brand-guardian agent to develop comprehensive guidelines that reflect your app's essence.\"\n<commentary>\nStrong brand identity differentiates apps in crowded marketplaces.\n</commentary>\n</example>\n\n<example>\nContext: Ensuring consistency across platforms\nuser: \"Our app looks different on iOS, Android, and web\"\nassistant: \"Brand consistency builds trust and recognition. I'll use the brand-guardian agent to create unified design standards across all platforms.\"\n<commentary>\nConsistent branding makes products feel more professional and trustworthy.\n</commentary>\n</example>\n\n<example>\nContext: Evolving existing brand\nuser: \"Our brand feels outdated compared to competitors like Headspace\"\nassistant: \"Brand evolution can revitalize user perception. Let me use the brand-guardian agent to modernize your brand while maintaining recognition.\"\n<commentary>\nStrategic brand updates keep products feeling fresh and relevant.\n</commentary>\n</example>\n\n<example>\nContext: Managing brand assets\nuser: \"Developers keep using different shades of our brand colors\"\nassistant: \"Clear asset management prevents brand dilution. I'll use the brand-guardian agent to create a definitive asset library and usage guidelines.\"\n<commentary>\nWell-organized brand assets speed up development and maintain quality.\n</commentary>\n</example>\n",
                     "color": "indigo",
                     "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                   },
                   "tags": [
                     "agents"
                   ],
-                  "size": 9316,
-                  "lastModified": "2025-08-31T11:34:30.341Z"
+                  "size": 9372,
+                  "lastModified": "2025-08-31T12:12:11.196Z"
                 },
                 {
                   "name": "ui-designer.md",
@@ -38,14 +37,15 @@
                   "path": ".claude/agents/design/ui-designer.md",
                   "frontmatter": {
                     "name": "ui-designer",
+                    "description": "Use this agent when creating user interfaces, designing components, building design systems, or improving visual aesthetics. This agent specializes in creating beautiful, functional interfaces that can be implemented quickly within 6-day sprints. Examples:\n\n<example>\nContext: Starting a new app or feature design\nuser: \"We need UI designs for the new social sharing feature\"\nassistant: \"I'll create compelling UI designs for your social sharing feature. Let me use the ui-designer agent to develop interfaces that are both beautiful and implementable.\"\n<commentary>\nUI design sets the visual foundation for user experience and brand perception.\n</commentary>\n</example>\n\n<example>\nContext: Improving existing interfaces\nuser: \"Our settings page looks dated and cluttered\"\nassistant: \"I'll modernize and simplify your settings UI. Let me use the ui-designer agent to redesign it with better visual hierarchy and usability.\"\n<commentary>\nRefreshing existing UI can dramatically improve user perception and usability.\n</commentary>\n</example>\n\n<example>\nContext: Creating consistent design systems\nuser: \"Our app feels inconsistent across different screens\"\nassistant: \"Design consistency is crucial for professional apps. I'll use the ui-designer agent to create a cohesive design system for your app.\"\n<commentary>\nDesign systems ensure consistency and speed up future development.\n</commentary>\n</example>\n\n<example>\nContext: Adapting trendy design patterns\nuser: \"I love how BeReal does their dual camera view. Can we do something similar?\"\nassistant: \"I'll adapt that trendy pattern for your app. Let me use the ui-designer agent to create a unique take on the dual camera interface.\"\n<commentary>\nAdapting successful patterns from trending apps can boost user engagement.\n</commentary>\n</example>\n",
                     "color": "magenta",
                     "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                   },
                   "tags": [
                     "agents"
                   ],
-                  "size": 7955,
-                  "lastModified": "2025-08-31T11:34:30.341Z"
+                  "size": 7991,
+                  "lastModified": "2025-08-31T12:12:11.196Z"
                 },
                 {
                   "name": "ux-researcher.md",
@@ -53,16 +53,15 @@
                   "path": ".claude/agents/design/ux-researcher.md",
                   "frontmatter": {
                     "name": "ux-researcher",
-                    "user": "We need to better understand our target users for the fitness app",
-                    "assistant": "Understanding your users is crucial for product-market fit. I'll use the ux-researcher agent to develop detailed personas based on user research and behavior patterns.",
+                    "description": "Use this agent when conducting user research, analyzing user behavior, creating journey maps, or validating design decisions through testing. This agent specializes in understanding user needs, pain points, and behaviors to inform product decisions within rapid development cycles. Examples:\n\n<example>\nContext: Understanding user needs for a new feature\nuser: \"We want to add a mood tracking feature but aren't sure what users really need\"\nassistant: \"I'll help uncover what users truly need from mood tracking. Let me use the ux-researcher agent to analyze user behaviors and design effective research methods.\"\n<commentary>\nUnderstanding user needs before building prevents costly pivots later.\n</commentary>\n</example>\n\n<example>\nContext: Improving app onboarding\nuser: \"Our onboarding has a 60% drop-off rate\"\nassistant: \"That's a critical issue affecting user retention. I'll use the ux-researcher agent to identify friction points and design a smoother onboarding experience.\"\n<commentary>\nData-driven UX improvements can dramatically increase conversion rates.\n</commentary>\n</example>\n\n<example>\nContext: Validating design decisions\nuser: \"Should we use a tab bar or hamburger menu for navigation?\"\nassistant: \"Let's make this decision based on user behavior data. I'll use the ux-researcher agent to analyze navigation patterns and recommend the best approach for your users.\"\n<commentary>\nUX research removes guesswork from design decisions.\n</commentary>\n</example>\n\n<example>\nContext: Creating user personas\nuser: \"We need to better understand our target users for the fitness app\"\nassistant: \"Understanding your users is crucial for product-market fit. I'll use the ux-researcher agent to develop detailed personas based on user research and behavior patterns.\"\n<commentary>\nWell-defined personas guide every product decision from features to marketing.\n</commentary>\n</example>\n",
                     "color": "purple",
                     "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                   },
                   "tags": [
                     "agents"
                   ],
-                  "size": 8443,
-                  "lastModified": "2025-08-31T11:34:30.341Z"
+                  "size": 8499,
+                  "lastModified": "2025-08-31T12:12:11.197Z"
                 },
                 {
                   "name": "visual-storyteller.md",
@@ -70,16 +69,15 @@
                   "path": ".claude/agents/design/visual-storyteller.md",
                   "frontmatter": {
                     "name": "visual-storyteller",
-                    "user": "Users don't understand how our recommendation algorithm works",
-                    "assistant": "Complex systems need simple visual explanations. I'll use the visual-storyteller agent to create visual metaphors that demystify your algorithm.",
+                    "description": "Use this agent when creating visual narratives, designing infographics, building presentations, or communicating complex ideas through imagery. This agent specializes in transforming data and concepts into compelling visual stories that engage users and stakeholders. Examples:\n\n<example>\nContext: Creating app onboarding illustrations\nuser: \"We need to explain how our AI journaling app works in a visual way\"\nassistant: \"I'll create an engaging visual narrative for your onboarding. Let me use the visual-storyteller agent to design illustrations that simplify AI concepts and guide users.\"\n<commentary>\nVisual storytelling in onboarding dramatically improves user comprehension and retention.\n</commentary>\n</example>\n\n<example>\nContext: Designing investor pitch deck\nuser: \"We need a pitch deck that shows our growth trajectory and vision\"\nassistant: \"A compelling visual story can make or break funding rounds. I'll use the visual-storyteller agent to create a presentation that captivates investors.\"\n<commentary>\nData visualization and narrative flow are crucial for successful pitches.\n</commentary>\n</example>\n\n<example>\nContext: Creating marketing infographics\nuser: \"We want to show how our app saves users 2 hours per week\"\nassistant: \"That's a powerful value proposition to visualize. Let me use the visual-storyteller agent to create an infographic that makes this benefit instantly clear.\"\n<commentary>\nWell-designed infographics can go viral and drive organic growth.\n</commentary>\n</example>\n\n<example>\nContext: Explaining complex features\nuser: \"Users don't understand how our recommendation algorithm works\"\nassistant: \"Complex systems need simple visual explanations. I'll use the visual-storyteller agent to create visual metaphors that demystify your algorithm.\"\n<commentary>\nVisual explanations build trust by making complexity approachable.\n</commentary>\n</example>\n",
                     "color": "cyan",
                     "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                   },
                   "tags": [
                     "agents"
                   ],
-                  "size": 9945,
-                  "lastModified": "2025-08-31T11:34:30.341Z"
+                  "size": 10001,
+                  "lastModified": "2025-08-31T12:12:11.197Z"
                 },
                 {
                   "name": "whimsy-injector.md",
@@ -87,17 +85,18 @@
                   "path": ".claude/agents/design/whimsy-injector.md",
                   "frontmatter": {
                     "name": "whimsy-injector",
+                    "description": "PROACTIVELY use this agent after any UI/UX changes to ensure delightful, playful elements are incorporated. This agent specializes in adding joy, surprise, and memorable moments to user experiences. The agent should be triggered automatically when design or interface updates are made. Examples:\n\n<example>\nContext: After implementing new features or UI components\nuser: \"I've added the new onboarding flow for the app\"\nassistant: \"Great! I've implemented the onboarding flow. Now let me use the whimsy-injector agent to add delightful touches that will make users smile during their first experience.\"\n<commentary>\nEvery new UI addition is an opportunity to inject personality and delight.\n</commentary>\n</example>\n\n<example>\nContext: When error states or empty states are created\nuser: \"Set up error handling for the payment flow\"\nassistant: \"I've implemented the error handling. Let me use the whimsy-injector agent to transform those error messages into moments that reduce user frustration.\"\n<commentary>\nError states are perfect opportunities to show personality and maintain user goodwill.\n</commentary>\n</example>\n\n<example>\nContext: After creating standard UI components\nuser: \"Build a loading spinner for the data fetch\"\nassistant: \"I've created the basic loading functionality. Now I'll use the whimsy-injector agent to make the loading experience entertaining rather than frustrating.\"\n<commentary>\nLoading states can become memorable moments instead of boring waits.\n</commentary>\n</example>\n\n<example>\nContext: When reviewing completed features\nuser: \"The user profile page is done\"\nassistant: \"Perfect! The profile page is complete. Let me use the whimsy-injector agent to audit it for opportunities to add surprising delights and shareable moments.\"\n<commentary>\nCompleted features often miss opportunities for delight that can differentiate the app.\n</commentary>\n</example>\n",
                     "color": "yellow",
                     "tools": "Read, Write, MultiEdit, Grep, Glob"
                   },
                   "tags": [
                     "agents"
                   ],
-                  "size": 7160,
-                  "lastModified": "2025-08-31T11:34:30.341Z"
+                  "size": 7192,
+                  "lastModified": "2025-08-31T12:12:11.197Z"
                 }
               ],
-              "lastModified": "2025-08-31T11:34:30.341Z",
+              "lastModified": "2025-08-31T12:12:11.197Z",
               "tags": []
             },
             {
@@ -111,14 +110,15 @@
                   "path": ".claude/agents/engineering/ai-engineer.md",
                   "frontmatter": {
                     "name": "ai-engineer",
+                    "description": "Use this agent when implementing AI/ML features, integrating language models, building recommendation systems, or adding intelligent automation to applications. This agent specializes in practical AI implementation for rapid deployment. Examples:\n\n<example>\nContext: Adding AI features to an app\nuser: \"We need AI-powered content recommendations\"\nassistant: \"I'll implement a smart recommendation engine. Let me use the ai-engineer agent to build an ML pipeline that learns from user behavior.\"\n<commentary>\nRecommendation systems require careful ML implementation and continuous learning capabilities.\n</commentary>\n</example>\n\n<example>\nContext: Integrating language models\nuser: \"Add an AI chatbot to help users navigate our app\"\nassistant: \"I'll integrate a conversational AI assistant. Let me use the ai-engineer agent to implement proper prompt engineering and response handling.\"\n<commentary>\nLLM integration requires expertise in prompt design, token management, and response streaming.\n</commentary>\n</example>\n\n<example>\nContext: Implementing computer vision features\nuser: \"Users should be able to search products by taking a photo\"\nassistant: \"I'll implement visual search using computer vision. Let me use the ai-engineer agent to integrate image recognition and similarity matching.\"\n<commentary>\nComputer vision features require efficient processing and accurate model selection.\n</commentary>\n</example>\n",
                     "color": "cyan",
                     "tools": "Write, Read, MultiEdit, Bash, WebFetch"
                   },
                   "tags": [
                     "agents"
                   ],
-                  "size": 5594,
-                  "lastModified": "2025-08-31T11:34:30.342Z"
+                  "size": 5619,
+                  "lastModified": "2025-08-31T12:12:11.197Z"
                 },
                 {
                   "name": "backend-architect.md",
@@ -126,14 +126,15 @@
                   "path": ".claude/agents/engineering/backend-architect.md",
                   "frontmatter": {
                     "name": "backend-architect",
+                    "description": "Use this agent when designing APIs, building server-side logic, implementing databases, or architecting scalable backend systems. This agent specializes in creating robust, secure, and performant backend services. Examples:\n\n<example>\nContext: Designing a new API\nuser: \"We need an API for our social sharing feature\"\nassistant: \"I'll design a RESTful API with proper authentication and rate limiting. Let me use the backend-architect agent to create a scalable backend architecture.\"\n<commentary>\nAPI design requires careful consideration of security, scalability, and maintainability.\n</commentary>\n</example>\n\n<example>\nContext: Database design and optimization\nuser: \"Our queries are getting slow as we scale\"\nassistant: \"Database performance is critical at scale. I'll use the backend-architect agent to optimize queries and implement proper indexing strategies.\"\n<commentary>\nDatabase optimization requires deep understanding of query patterns and indexing strategies.\n</commentary>\n</example>\n\n<example>\nContext: Implementing authentication system\nuser: \"Add OAuth2 login with Google and GitHub\"\nassistant: \"I'll implement secure OAuth2 authentication. Let me use the backend-architect agent to ensure proper token handling and security measures.\"\n<commentary>\nAuthentication systems require careful security considerations and proper implementation.\n</commentary>\n</example>\n",
                     "color": "purple",
                     "tools": "Write, Read, MultiEdit, Bash, Grep"
                   },
                   "tags": [
                     "agents"
                   ],
-                  "size": 5161,
-                  "lastModified": "2025-08-31T11:34:30.342Z"
+                  "size": 5186,
+                  "lastModified": "2025-08-31T12:12:11.197Z"
                 },
                 {
                   "name": "devops-automator.md",
@@ -141,14 +142,15 @@
                   "path": ".claude/agents/engineering/devops-automator.md",
                   "frontmatter": {
                     "name": "devops-automator",
+                    "description": "Use this agent when setting up CI/CD pipelines, configuring cloud infrastructure, implementing monitoring systems, or automating deployment processes. This agent specializes in making deployment and operations seamless for rapid development cycles. Examples:\n\n<example>\nContext: Setting up automated deployments\nuser: \"We need automatic deployments when we push to main\"\nassistant: \"I'll set up a complete CI/CD pipeline. Let me use the devops-automator agent to configure automated testing, building, and deployment.\"\n<commentary>\nAutomated deployments require careful pipeline configuration and proper testing stages.\n</commentary>\n</example>\n\n<example>\nContext: Infrastructure scaling issues\nuser: \"Our app crashes when we get traffic spikes\"\nassistant: \"I'll implement auto-scaling and load balancing. Let me use the devops-automator agent to ensure your infrastructure handles traffic gracefully.\"\n<commentary>\nScaling requires proper infrastructure setup with monitoring and automatic responses.\n</commentary>\n</example>\n\n<example>\nContext: Monitoring and alerting setup\nuser: \"We have no idea when things break in production\"\nassistant: \"Observability is crucial for rapid iteration. I'll use the devops-automator agent to set up comprehensive monitoring and alerting.\"\n<commentary>\nProper monitoring enables fast issue detection and resolution in production.\n</commentary>\n</example>\n",
                     "color": "orange",
                     "tools": "Write, Read, MultiEdit, Bash, Grep"
                   },
                   "tags": [
                     "agents"
                   ],
-                  "size": 5157,
-                  "lastModified": "2025-08-31T11:34:30.342Z"
+                  "size": 5182,
+                  "lastModified": "2025-08-31T12:12:11.197Z"
                 },
                 {
                   "name": "frontend-developer.md",
@@ -156,14 +158,15 @@
                   "path": ".claude/agents/engineering/frontend-developer.md",
                   "frontmatter": {
                     "name": "frontend-developer",
+                    "description": "Use this agent when building user interfaces, implementing React/Vue/Angular components, handling state management, or optimizing frontend performance. This agent excels at creating responsive, accessible, and performant web applications. Examples:\n\n<example>\nContext: Building a new user interface\nuser: \"Create a dashboard for displaying user analytics\"\nassistant: \"I'll build an analytics dashboard with interactive charts. Let me use the frontend-developer agent to create a responsive, data-rich interface.\"\n<commentary>\nComplex UI components require frontend expertise for proper implementation and performance.\n</commentary>\n</example>\n\n<example>\nContext: Fixing UI/UX issues\nuser: \"The mobile navigation is broken on small screens\"\nassistant: \"I'll fix the responsive navigation issues. Let me use the frontend-developer agent to ensure it works perfectly across all device sizes.\"\n<commentary>\nResponsive design issues require deep understanding of CSS and mobile-first development.\n</commentary>\n</example>\n\n<example>\nContext: Optimizing frontend performance\nuser: \"Our app feels sluggish when loading large datasets\"\nassistant: \"Performance optimization is crucial for user experience. I'll use the frontend-developer agent to implement virtualization and optimize rendering.\"\n<commentary>\nFrontend performance requires expertise in React rendering, memoization, and data handling.\n</commentary>\n</example>\n",
                     "color": "blue",
                     "tools": "Write, Read, MultiEdit, Bash, Grep, Glob"
                   },
                   "tags": [
                     "agents"
                   ],
-                  "size": 5320,
-                  "lastModified": "2025-08-31T11:34:30.342Z"
+                  "size": 5345,
+                  "lastModified": "2025-08-31T12:12:11.197Z"
                 },
                 {
                   "name": "test-writer-fixer.md",
@@ -171,16 +174,17 @@
                   "path": ".claude/agents/engineering/test-writer-fixer.md",
                   "frontmatter": {
                     "name": "test-writer-fixer",
+                    "description": "Use this agent when code changes have been made and you need to write new tests, run existing tests, analyze failures, and fix them while maintaining test integrity. This agent should be triggered proactively after code modifications to ensure comprehensive test coverage and suite health. Examples:\n\n<example>\nContext: The user has just implemented a new feature or modified existing code.\nuser: \"I've updated the user authentication logic to support OAuth\"\nassistant: \"I've successfully updated the authentication logic. Now let me run the test-writer-fixer agent to ensure all tests pass with these changes.\"\n<commentary>\nSince code changes were made, use the Task tool to launch the test-writer-fixer agent to run relevant tests and fix any failures.\n</commentary>\n</example>\n\n<example>\nContext: The user has refactored a module or changed function signatures.\nuser: \"Please refactor this payment processing module to use async/await\"\nassistant: \"I've completed the refactoring to use async/await throughout the payment module.\"\n<function call omitted for brevity>\nassistant: \"Now I'll use the test-writer-fixer agent to run the tests and fix any issues caused by the refactoring.\"\n<commentary>\nAfter refactoring code, proactively use the test-writer-fixer agent to ensure tests still pass.\n</commentary>\n</example>\n\n<example>\nContext: The user has fixed a bug or made a critical change.\nuser: \"Fix the race condition in the data synchronization service\"\nassistant: \"I've identified and fixed the race condition by implementing proper locking mechanisms.\"\n<function call omitted for brevity>\nassistant: \"Let me run the test-writer-fixer agent to verify the fix doesn't break existing functionality.\"\n<commentary>\nAfter bug fixes, use the test-writer-fixer agent to ensure the fix works and doesn't introduce regressions.\n</commentary>\n</example>\n\n<example>\nContext: Code lacks test coverage for critical functionality.\nuser: \"Our payment processing module has no tests\"\nassistant: \"That's a critical gap. Let me use the test-writer-fixer agent to create comprehensive tests for the payment module including edge cases and error scenarios.\"\n<commentary>\nCritical modules without tests are high-risk areas that need immediate test coverage.\n</commentary>\n</example>\n\n<example>\nContext: After implementing a new feature that needs tests.\nuser: \"I've added the social sharing functionality\"\nassistant: \"Great! The social sharing is implemented. Now let me use the test-writer-fixer agent to write tests that ensure this feature works correctly across different platforms.\"\n<commentary>\nNew features should always include comprehensive test coverage from the start.\n</commentary>\n</example>\n",
                     "color": "cyan"
                   },
                   "tags": [
                     "agents"
                   ],
-                  "size": 8120,
-                  "lastModified": "2025-08-31T11:34:30.342Z"
+                  "size": 8163,
+                  "lastModified": "2025-08-31T12:12:11.198Z"
                 }
               ],
-              "lastModified": "2025-08-31T11:34:30.342Z",
+              "lastModified": "2025-08-31T12:12:11.198Z",
               "tags": []
             },
             {
@@ -197,7 +201,7 @@
                     "agents"
                   ],
                   "size": 6917,
-                  "lastModified": "2025-08-31T11:34:30.342Z"
+                  "lastModified": "2025-08-31T12:12:11.198Z"
                 },
                 {
                   "name": "twitter-engager.md",
@@ -208,10 +212,10 @@
                     "agents"
                   ],
                   "size": 6120,
-                  "lastModified": "2025-08-31T11:34:30.342Z"
+                  "lastModified": "2025-08-31T12:12:11.198Z"
                 }
               ],
-              "lastModified": "2025-08-31T11:34:30.342Z",
+              "lastModified": "2025-08-31T12:12:11.198Z",
               "tags": []
             },
             {
@@ -225,14 +229,15 @@
                   "path": ".claude/agents/testing/tool-evaluator.md",
                   "frontmatter": {
                     "name": "tool-evaluator",
+                    "description": "Use this agent when evaluating new development tools, frameworks, or services for the studio. This agent specializes in rapid tool assessment, comparative analysis, and making recommendations that align with the 6-day development cycle philosophy. Examples:\n\n<example>\nContext: Considering a new framework or library\nuser: \"Should we use the new Vite 5.0 for our next project?\"\nassistant: \"I'll evaluate Vite 5.0 for your needs. Let me use the tool-evaluator agent to assess its benefits, migration effort, and impact on development speed.\"\n<commentary>\nTool choices significantly impact development velocity and should be evaluated systematically.\n</commentary>\n</example>\n\n<example>\nContext: Comparing similar tools or services\nuser: \"Supabase vs Firebase vs AWS Amplify - which should we use?\"\nassistant: \"I'll compare these backend services for your use case. Let me use the tool-evaluator agent to analyze features, pricing, and development speed.\"\n<commentary>\nBackend service choices affect both development time and long-term costs.\n</commentary>\n</example>\n\n<example>\nContext: Evaluating AI/ML service providers\nuser: \"We need to add AI features. OpenAI, Anthropic, or Replicate?\"\nassistant: \"I'll evaluate these AI providers for your specific needs. Let me use the tool-evaluator agent to compare capabilities, costs, and integration complexity.\"\n<commentary>\nAI service selection impacts both features and operational costs significantly.\n</commentary>\n</example>\n\n<example>\nContext: Assessing no-code/low-code tools\nuser: \"Could Bubble or FlutterFlow speed up our prototyping?\"\nassistant: \"Let's evaluate if no-code tools fit your workflow. I'll use the tool-evaluator agent to assess the speed gains versus flexibility trade-offs.\"\n<commentary>\nNo-code tools can accelerate prototyping but may limit customization.\n</commentary>\n</example>\n",
                     "color": "purple",
                     "tools": "WebSearch, WebFetch, Write, Read, Bash"
                   },
                   "tags": [
                     "agents"
                   ],
-                  "size": 7722,
-                  "lastModified": "2025-08-31T11:34:30.342Z"
+                  "size": 7758,
+                  "lastModified": "2025-08-31T12:12:11.198Z"
                 },
                 {
                   "name": "workflow-optimizer.md",
@@ -240,19 +245,18 @@
                   "path": ".claude/agents/testing/workflow-optimizer.md",
                   "frontmatter": {
                     "name": "workflow-optimizer",
-                    "user": "Are we using our tools effectively together?",
-                    "assistant": "I'll analyze your tool integration and usage patterns. Let me use the workflow-optimizer agent to identify redundancies and missing automations.",
+                    "description": "Use this agent for optimizing human-agent collaboration workflows and analyzing workflow efficiency. This agent specializes in identifying bottlenecks, streamlining processes, and ensuring smooth handoffs between human creativity and AI assistance. Examples:\n\n<example>\nContext: Improving development workflow efficiency\nuser: \"Our team spends too much time on repetitive tasks\"\nassistant: \"I'll analyze your workflow to identify automation opportunities. Let me use the workflow-optimizer agent to map current processes and recommend optimizations.\"\n<commentary>\nWorkflow optimization can reclaim hours of productive time each week.\n</commentary>\n</example>\n\n<example>\nContext: Human-AI collaboration testing\nuser: \"Test how well our AI coding assistant integrates with developer workflows\"\nassistant: \"I'll evaluate the human-AI collaboration effectiveness. Let me use the workflow-optimizer agent to measure handoff efficiency and identify friction points.\"\n<commentary>\nSmooth human-AI collaboration multiplies productivity rather than just adding to it.\n</commentary>\n</example>\n\n<example>\nContext: Process bottleneck analysis\nuser: \"Our deployment process takes too long\"\nassistant: \"I'll analyze your deployment workflow for bottlenecks. Let me use the workflow-optimizer agent to time each step and identify optimization opportunities.\"\n<commentary>\nDeployment bottlenecks compound, turning minutes into hours across releases.\n</commentary>\n</example>\n\n<example>\nContext: Tool integration efficiency\nuser: \"Are we using our tools effectively together?\"\nassistant: \"I'll analyze your tool integration and usage patterns. Let me use the workflow-optimizer agent to identify redundancies and missing automations.\"\n<commentary>\nPoor tool integration creates hidden time taxes on every task.\n</commentary>\n</example>\n",
                     "color": "teal",
                     "tools": "Read, Write, Bash, TodoWrite, MultiEdit, Grep"
                   },
                   "tags": [
                     "agents"
                   ],
-                  "size": 8484,
-                  "lastModified": "2025-08-31T11:34:30.342Z"
+                  "size": 8540,
+                  "lastModified": "2025-08-31T12:12:11.198Z"
                 }
               ],
-              "lastModified": "2025-08-31T11:34:30.342Z",
+              "lastModified": "2025-08-31T12:12:11.198Z",
               "tags": []
             },
             {
@@ -269,14 +273,14 @@
                     "agents"
                   ],
                   "size": 9607,
-                  "lastModified": "2025-08-31T11:34:30.343Z"
+                  "lastModified": "2025-08-31T12:12:11.198Z"
                 }
               ],
-              "lastModified": "2025-08-31T11:34:30.343Z",
+              "lastModified": "2025-08-31T12:12:11.198Z",
               "tags": []
             }
           ],
-          "lastModified": "2025-08-31T11:34:30.343Z",
+          "lastModified": "2025-08-31T12:12:11.198Z",
           "tags": []
         },
         {
@@ -293,7 +297,7 @@
                 "commands"
               ],
               "size": 487,
-              "lastModified": "2025-08-31T11:34:30.343Z"
+              "lastModified": "2025-08-31T12:12:11.199Z"
             },
             {
               "name": "shadCN.md",
@@ -304,10 +308,10 @@
                 "commands"
               ],
               "size": 444,
-              "lastModified": "2025-08-31T11:34:30.343Z"
+              "lastModified": "2025-08-31T12:12:11.199Z"
             }
           ],
-          "lastModified": "2025-08-31T11:34:30.343Z",
+          "lastModified": "2025-08-31T12:12:11.199Z",
           "tags": []
         },
         {
@@ -318,10 +322,10 @@
           "frontmatter": {},
           "tags": [],
           "size": 5,
-          "lastModified": "2025-08-31T11:34:30.343Z"
+          "lastModified": "2025-08-31T12:12:11.199Z"
         }
       ],
-      "lastModified": "2025-08-31T11:34:30.343Z",
+      "lastModified": "2025-08-31T12:12:11.199Z",
       "tags": []
     },
     {
@@ -349,10 +353,10 @@
                     "instructions"
                   ],
                   "size": 3832,
-                  "lastModified": "2025-08-31T11:34:30.343Z"
+                  "lastModified": "2025-08-31T12:12:11.199Z"
                 }
               ],
-              "lastModified": "2025-08-31T11:34:30.343Z",
+              "lastModified": "2025-08-31T12:12:11.199Z",
               "tags": []
             },
             {
@@ -369,18 +373,18 @@
                     "instructions"
                   ],
                   "size": 5627,
-                  "lastModified": "2025-08-31T11:34:30.343Z"
+                  "lastModified": "2025-08-31T12:12:11.199Z"
                 }
               ],
-              "lastModified": "2025-08-31T11:34:30.343Z",
+              "lastModified": "2025-08-31T12:12:11.199Z",
               "tags": []
             }
           ],
-          "lastModified": "2025-08-31T11:34:30.343Z",
+          "lastModified": "2025-08-31T12:12:11.199Z",
           "tags": []
         }
       ],
-      "lastModified": "2025-08-31T11:34:30.343Z",
+      "lastModified": "2025-08-31T12:12:11.199Z",
       "tags": []
     },
     {
@@ -407,7 +411,7 @@
                 "configuration"
               ],
               "size": 9204,
-              "lastModified": "2025-08-31T11:34:30.344Z"
+              "lastModified": "2025-08-31T12:12:11.200Z"
             },
             {
               "name": "janitor.chatmode.md",
@@ -445,7 +449,7 @@
                 "configuration"
               ],
               "size": 2969,
-              "lastModified": "2025-08-31T11:34:30.344Z"
+              "lastModified": "2025-08-31T12:12:11.200Z"
             },
             {
               "name": "prompt-builder.chatmode.md",
@@ -475,7 +479,7 @@
                 "configuration"
               ],
               "size": 18511,
-              "lastModified": "2025-08-31T11:34:30.344Z"
+              "lastModified": "2025-08-31T12:12:11.200Z"
             },
             {
               "name": "tdd-green.chatmode.md",
@@ -502,7 +506,7 @@
                 "configuration"
               ],
               "size": 3431,
-              "lastModified": "2025-08-31T11:34:30.344Z"
+              "lastModified": "2025-08-31T12:12:11.200Z"
             },
             {
               "name": "tdd-red.chatmode.md",
@@ -529,10 +533,10 @@
                 "configuration"
               ],
               "size": 3480,
-              "lastModified": "2025-08-31T11:34:30.344Z"
+              "lastModified": "2025-08-31T12:12:11.200Z"
             }
           ],
-          "lastModified": "2025-08-31T11:34:30.344Z",
+          "lastModified": "2025-08-31T12:12:11.200Z",
           "tags": []
         },
         {
@@ -556,7 +560,7 @@
                 "configuration"
               ],
               "size": 28145,
-              "lastModified": "2025-08-31T11:34:30.344Z"
+              "lastModified": "2025-08-31T12:12:11.200Z"
             },
             {
               "name": "nextjs-tailwind.instructions.md",
@@ -572,7 +576,7 @@
                 "configuration"
               ],
               "size": 1860,
-              "lastModified": "2025-08-31T11:34:30.344Z"
+              "lastModified": "2025-08-31T12:12:11.201Z"
             },
             {
               "name": "progressive-tracking-task-implementation.instructions.md",
@@ -588,10 +592,10 @@
                 "configuration"
               ],
               "size": 8326,
-              "lastModified": "2025-08-31T11:34:30.344Z"
+              "lastModified": "2025-08-31T12:12:11.201Z"
             }
           ],
-          "lastModified": "2025-08-31T11:34:30.344Z",
+          "lastModified": "2025-08-31T12:12:11.201Z",
           "tags": []
         },
         {
@@ -613,7 +617,7 @@
                 "configuration"
               ],
               "size": 13768,
-              "lastModified": "2025-08-31T11:34:30.344Z"
+              "lastModified": "2025-08-31T12:12:11.201Z"
             },
             {
               "name": "sql-optimization.prompt.md",
@@ -636,14 +640,14 @@
                 "configuration"
               ],
               "size": 9351,
-              "lastModified": "2025-08-31T11:34:30.345Z"
+              "lastModified": "2025-08-31T12:12:11.201Z"
             }
           ],
-          "lastModified": "2025-08-31T11:34:30.345Z",
+          "lastModified": "2025-08-31T12:12:11.201Z",
           "tags": []
         }
       ],
-      "lastModified": "2025-08-31T11:34:30.344Z",
+      "lastModified": "2025-08-31T12:12:11.201Z",
       "tags": []
     },
     {
@@ -665,7 +669,7 @@
                 "instructions"
               ],
               "size": 5634,
-              "lastModified": "2025-08-31T11:34:30.345Z"
+              "lastModified": "2025-08-31T12:12:11.201Z"
             },
             {
               "name": "data-science-ai-dev.md",
@@ -676,7 +680,7 @@
                 "instructions"
               ],
               "size": 12048,
-              "lastModified": "2025-08-31T11:34:30.345Z"
+              "lastModified": "2025-08-31T12:12:11.201Z"
             },
             {
               "name": "monorepo-tamagui.md",
@@ -687,7 +691,7 @@
                 "instructions"
               ],
               "size": 5625,
-              "lastModified": "2025-08-31T11:34:30.345Z"
+              "lastModified": "2025-08-31T12:12:11.202Z"
             },
             {
               "name": "react-nextjs-standards-rules.md",
@@ -698,14 +702,14 @@
                 "instructions"
               ],
               "size": 8920,
-              "lastModified": "2025-08-31T11:34:30.345Z"
+              "lastModified": "2025-08-31T12:12:11.202Z"
             }
           ],
-          "lastModified": "2025-08-31T11:34:30.345Z",
+          "lastModified": "2025-08-31T12:12:11.202Z",
           "tags": []
         }
       ],
-      "lastModified": "2025-08-31T11:34:30.345Z",
+      "lastModified": "2025-08-31T12:12:11.201Z",
       "tags": []
     },
     {
@@ -720,10 +724,10 @@
           "frontmatter": {},
           "tags": [],
           "size": 217,
-          "lastModified": "2025-08-31T11:34:30.345Z"
+          "lastModified": "2025-08-31T12:12:11.202Z"
         }
       ],
-      "lastModified": "2025-08-31T11:34:30.345Z",
+      "lastModified": "2025-08-31T12:12:11.202Z",
       "tags": []
     }
   ],
@@ -887,16 +891,15 @@
                     "path": ".claude/agents/design/brand-guardian.md",
                     "frontmatter": {
                       "name": "brand-guardian",
-                      "user": "Developers keep using different shades of our brand colors",
-                      "assistant": "Clear asset management prevents brand dilution. I'll use the brand-guardian agent to create a definitive asset library and usage guidelines.",
+                      "description": "Use this agent when establishing brand guidelines, ensuring visual consistency, managing brand assets, or evolving brand identity. This agent specializes in creating and maintaining cohesive brand experiences across all touchpoints while enabling rapid development. Examples:\n\n<example>\nContext: Creating brand guidelines for a new app\nuser: \"We need to establish a visual identity for our meditation app\"\nassistant: \"I'll help create a calming yet distinctive brand identity. Let me use the brand-guardian agent to develop comprehensive guidelines that reflect your app's essence.\"\n<commentary>\nStrong brand identity differentiates apps in crowded marketplaces.\n</commentary>\n</example>\n\n<example>\nContext: Ensuring consistency across platforms\nuser: \"Our app looks different on iOS, Android, and web\"\nassistant: \"Brand consistency builds trust and recognition. I'll use the brand-guardian agent to create unified design standards across all platforms.\"\n<commentary>\nConsistent branding makes products feel more professional and trustworthy.\n</commentary>\n</example>\n\n<example>\nContext: Evolving existing brand\nuser: \"Our brand feels outdated compared to competitors like Headspace\"\nassistant: \"Brand evolution can revitalize user perception. Let me use the brand-guardian agent to modernize your brand while maintaining recognition.\"\n<commentary>\nStrategic brand updates keep products feeling fresh and relevant.\n</commentary>\n</example>\n\n<example>\nContext: Managing brand assets\nuser: \"Developers keep using different shades of our brand colors\"\nassistant: \"Clear asset management prevents brand dilution. I'll use the brand-guardian agent to create a definitive asset library and usage guidelines.\"\n<commentary>\nWell-organized brand assets speed up development and maintain quality.\n</commentary>\n</example>\n",
                       "color": "indigo",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 9316,
-                    "lastModified": "2025-08-31T11:34:30.341Z"
+                    "size": 9372,
+                    "lastModified": "2025-08-31T12:12:11.196Z"
                   },
                   {
                     "name": "ui-designer.md",
@@ -904,14 +907,15 @@
                     "path": ".claude/agents/design/ui-designer.md",
                     "frontmatter": {
                       "name": "ui-designer",
+                      "description": "Use this agent when creating user interfaces, designing components, building design systems, or improving visual aesthetics. This agent specializes in creating beautiful, functional interfaces that can be implemented quickly within 6-day sprints. Examples:\n\n<example>\nContext: Starting a new app or feature design\nuser: \"We need UI designs for the new social sharing feature\"\nassistant: \"I'll create compelling UI designs for your social sharing feature. Let me use the ui-designer agent to develop interfaces that are both beautiful and implementable.\"\n<commentary>\nUI design sets the visual foundation for user experience and brand perception.\n</commentary>\n</example>\n\n<example>\nContext: Improving existing interfaces\nuser: \"Our settings page looks dated and cluttered\"\nassistant: \"I'll modernize and simplify your settings UI. Let me use the ui-designer agent to redesign it with better visual hierarchy and usability.\"\n<commentary>\nRefreshing existing UI can dramatically improve user perception and usability.\n</commentary>\n</example>\n\n<example>\nContext: Creating consistent design systems\nuser: \"Our app feels inconsistent across different screens\"\nassistant: \"Design consistency is crucial for professional apps. I'll use the ui-designer agent to create a cohesive design system for your app.\"\n<commentary>\nDesign systems ensure consistency and speed up future development.\n</commentary>\n</example>\n\n<example>\nContext: Adapting trendy design patterns\nuser: \"I love how BeReal does their dual camera view. Can we do something similar?\"\nassistant: \"I'll adapt that trendy pattern for your app. Let me use the ui-designer agent to create a unique take on the dual camera interface.\"\n<commentary>\nAdapting successful patterns from trending apps can boost user engagement.\n</commentary>\n</example>\n",
                       "color": "magenta",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 7955,
-                    "lastModified": "2025-08-31T11:34:30.341Z"
+                    "size": 7991,
+                    "lastModified": "2025-08-31T12:12:11.196Z"
                   },
                   {
                     "name": "ux-researcher.md",
@@ -919,16 +923,15 @@
                     "path": ".claude/agents/design/ux-researcher.md",
                     "frontmatter": {
                       "name": "ux-researcher",
-                      "user": "We need to better understand our target users for the fitness app",
-                      "assistant": "Understanding your users is crucial for product-market fit. I'll use the ux-researcher agent to develop detailed personas based on user research and behavior patterns.",
+                      "description": "Use this agent when conducting user research, analyzing user behavior, creating journey maps, or validating design decisions through testing. This agent specializes in understanding user needs, pain points, and behaviors to inform product decisions within rapid development cycles. Examples:\n\n<example>\nContext: Understanding user needs for a new feature\nuser: \"We want to add a mood tracking feature but aren't sure what users really need\"\nassistant: \"I'll help uncover what users truly need from mood tracking. Let me use the ux-researcher agent to analyze user behaviors and design effective research methods.\"\n<commentary>\nUnderstanding user needs before building prevents costly pivots later.\n</commentary>\n</example>\n\n<example>\nContext: Improving app onboarding\nuser: \"Our onboarding has a 60% drop-off rate\"\nassistant: \"That's a critical issue affecting user retention. I'll use the ux-researcher agent to identify friction points and design a smoother onboarding experience.\"\n<commentary>\nData-driven UX improvements can dramatically increase conversion rates.\n</commentary>\n</example>\n\n<example>\nContext: Validating design decisions\nuser: \"Should we use a tab bar or hamburger menu for navigation?\"\nassistant: \"Let's make this decision based on user behavior data. I'll use the ux-researcher agent to analyze navigation patterns and recommend the best approach for your users.\"\n<commentary>\nUX research removes guesswork from design decisions.\n</commentary>\n</example>\n\n<example>\nContext: Creating user personas\nuser: \"We need to better understand our target users for the fitness app\"\nassistant: \"Understanding your users is crucial for product-market fit. I'll use the ux-researcher agent to develop detailed personas based on user research and behavior patterns.\"\n<commentary>\nWell-defined personas guide every product decision from features to marketing.\n</commentary>\n</example>\n",
                       "color": "purple",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 8443,
-                    "lastModified": "2025-08-31T11:34:30.341Z"
+                    "size": 8499,
+                    "lastModified": "2025-08-31T12:12:11.197Z"
                   },
                   {
                     "name": "visual-storyteller.md",
@@ -936,16 +939,15 @@
                     "path": ".claude/agents/design/visual-storyteller.md",
                     "frontmatter": {
                       "name": "visual-storyteller",
-                      "user": "Users don't understand how our recommendation algorithm works",
-                      "assistant": "Complex systems need simple visual explanations. I'll use the visual-storyteller agent to create visual metaphors that demystify your algorithm.",
+                      "description": "Use this agent when creating visual narratives, designing infographics, building presentations, or communicating complex ideas through imagery. This agent specializes in transforming data and concepts into compelling visual stories that engage users and stakeholders. Examples:\n\n<example>\nContext: Creating app onboarding illustrations\nuser: \"We need to explain how our AI journaling app works in a visual way\"\nassistant: \"I'll create an engaging visual narrative for your onboarding. Let me use the visual-storyteller agent to design illustrations that simplify AI concepts and guide users.\"\n<commentary>\nVisual storytelling in onboarding dramatically improves user comprehension and retention.\n</commentary>\n</example>\n\n<example>\nContext: Designing investor pitch deck\nuser: \"We need a pitch deck that shows our growth trajectory and vision\"\nassistant: \"A compelling visual story can make or break funding rounds. I'll use the visual-storyteller agent to create a presentation that captivates investors.\"\n<commentary>\nData visualization and narrative flow are crucial for successful pitches.\n</commentary>\n</example>\n\n<example>\nContext: Creating marketing infographics\nuser: \"We want to show how our app saves users 2 hours per week\"\nassistant: \"That's a powerful value proposition to visualize. Let me use the visual-storyteller agent to create an infographic that makes this benefit instantly clear.\"\n<commentary>\nWell-designed infographics can go viral and drive organic growth.\n</commentary>\n</example>\n\n<example>\nContext: Explaining complex features\nuser: \"Users don't understand how our recommendation algorithm works\"\nassistant: \"Complex systems need simple visual explanations. I'll use the visual-storyteller agent to create visual metaphors that demystify your algorithm.\"\n<commentary>\nVisual explanations build trust by making complexity approachable.\n</commentary>\n</example>\n",
                       "color": "cyan",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 9945,
-                    "lastModified": "2025-08-31T11:34:30.341Z"
+                    "size": 10001,
+                    "lastModified": "2025-08-31T12:12:11.197Z"
                   },
                   {
                     "name": "whimsy-injector.md",
@@ -953,17 +955,18 @@
                     "path": ".claude/agents/design/whimsy-injector.md",
                     "frontmatter": {
                       "name": "whimsy-injector",
+                      "description": "PROACTIVELY use this agent after any UI/UX changes to ensure delightful, playful elements are incorporated. This agent specializes in adding joy, surprise, and memorable moments to user experiences. The agent should be triggered automatically when design or interface updates are made. Examples:\n\n<example>\nContext: After implementing new features or UI components\nuser: \"I've added the new onboarding flow for the app\"\nassistant: \"Great! I've implemented the onboarding flow. Now let me use the whimsy-injector agent to add delightful touches that will make users smile during their first experience.\"\n<commentary>\nEvery new UI addition is an opportunity to inject personality and delight.\n</commentary>\n</example>\n\n<example>\nContext: When error states or empty states are created\nuser: \"Set up error handling for the payment flow\"\nassistant: \"I've implemented the error handling. Let me use the whimsy-injector agent to transform those error messages into moments that reduce user frustration.\"\n<commentary>\nError states are perfect opportunities to show personality and maintain user goodwill.\n</commentary>\n</example>\n\n<example>\nContext: After creating standard UI components\nuser: \"Build a loading spinner for the data fetch\"\nassistant: \"I've created the basic loading functionality. Now I'll use the whimsy-injector agent to make the loading experience entertaining rather than frustrating.\"\n<commentary>\nLoading states can become memorable moments instead of boring waits.\n</commentary>\n</example>\n\n<example>\nContext: When reviewing completed features\nuser: \"The user profile page is done\"\nassistant: \"Perfect! The profile page is complete. Let me use the whimsy-injector agent to audit it for opportunities to add surprising delights and shareable moments.\"\n<commentary>\nCompleted features often miss opportunities for delight that can differentiate the app.\n</commentary>\n</example>\n",
                       "color": "yellow",
                       "tools": "Read, Write, MultiEdit, Grep, Glob"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 7160,
-                    "lastModified": "2025-08-31T11:34:30.341Z"
+                    "size": 7192,
+                    "lastModified": "2025-08-31T12:12:11.197Z"
                   }
                 ],
-                "lastModified": "2025-08-31T11:34:30.341Z",
+                "lastModified": "2025-08-31T12:12:11.197Z",
                 "tags": []
               },
               {
@@ -977,14 +980,15 @@
                     "path": ".claude/agents/engineering/ai-engineer.md",
                     "frontmatter": {
                       "name": "ai-engineer",
+                      "description": "Use this agent when implementing AI/ML features, integrating language models, building recommendation systems, or adding intelligent automation to applications. This agent specializes in practical AI implementation for rapid deployment. Examples:\n\n<example>\nContext: Adding AI features to an app\nuser: \"We need AI-powered content recommendations\"\nassistant: \"I'll implement a smart recommendation engine. Let me use the ai-engineer agent to build an ML pipeline that learns from user behavior.\"\n<commentary>\nRecommendation systems require careful ML implementation and continuous learning capabilities.\n</commentary>\n</example>\n\n<example>\nContext: Integrating language models\nuser: \"Add an AI chatbot to help users navigate our app\"\nassistant: \"I'll integrate a conversational AI assistant. Let me use the ai-engineer agent to implement proper prompt engineering and response handling.\"\n<commentary>\nLLM integration requires expertise in prompt design, token management, and response streaming.\n</commentary>\n</example>\n\n<example>\nContext: Implementing computer vision features\nuser: \"Users should be able to search products by taking a photo\"\nassistant: \"I'll implement visual search using computer vision. Let me use the ai-engineer agent to integrate image recognition and similarity matching.\"\n<commentary>\nComputer vision features require efficient processing and accurate model selection.\n</commentary>\n</example>\n",
                       "color": "cyan",
                       "tools": "Write, Read, MultiEdit, Bash, WebFetch"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 5594,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "size": 5619,
+                    "lastModified": "2025-08-31T12:12:11.197Z"
                   },
                   {
                     "name": "backend-architect.md",
@@ -992,14 +996,15 @@
                     "path": ".claude/agents/engineering/backend-architect.md",
                     "frontmatter": {
                       "name": "backend-architect",
+                      "description": "Use this agent when designing APIs, building server-side logic, implementing databases, or architecting scalable backend systems. This agent specializes in creating robust, secure, and performant backend services. Examples:\n\n<example>\nContext: Designing a new API\nuser: \"We need an API for our social sharing feature\"\nassistant: \"I'll design a RESTful API with proper authentication and rate limiting. Let me use the backend-architect agent to create a scalable backend architecture.\"\n<commentary>\nAPI design requires careful consideration of security, scalability, and maintainability.\n</commentary>\n</example>\n\n<example>\nContext: Database design and optimization\nuser: \"Our queries are getting slow as we scale\"\nassistant: \"Database performance is critical at scale. I'll use the backend-architect agent to optimize queries and implement proper indexing strategies.\"\n<commentary>\nDatabase optimization requires deep understanding of query patterns and indexing strategies.\n</commentary>\n</example>\n\n<example>\nContext: Implementing authentication system\nuser: \"Add OAuth2 login with Google and GitHub\"\nassistant: \"I'll implement secure OAuth2 authentication. Let me use the backend-architect agent to ensure proper token handling and security measures.\"\n<commentary>\nAuthentication systems require careful security considerations and proper implementation.\n</commentary>\n</example>\n",
                       "color": "purple",
                       "tools": "Write, Read, MultiEdit, Bash, Grep"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 5161,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "size": 5186,
+                    "lastModified": "2025-08-31T12:12:11.197Z"
                   },
                   {
                     "name": "devops-automator.md",
@@ -1007,14 +1012,15 @@
                     "path": ".claude/agents/engineering/devops-automator.md",
                     "frontmatter": {
                       "name": "devops-automator",
+                      "description": "Use this agent when setting up CI/CD pipelines, configuring cloud infrastructure, implementing monitoring systems, or automating deployment processes. This agent specializes in making deployment and operations seamless for rapid development cycles. Examples:\n\n<example>\nContext: Setting up automated deployments\nuser: \"We need automatic deployments when we push to main\"\nassistant: \"I'll set up a complete CI/CD pipeline. Let me use the devops-automator agent to configure automated testing, building, and deployment.\"\n<commentary>\nAutomated deployments require careful pipeline configuration and proper testing stages.\n</commentary>\n</example>\n\n<example>\nContext: Infrastructure scaling issues\nuser: \"Our app crashes when we get traffic spikes\"\nassistant: \"I'll implement auto-scaling and load balancing. Let me use the devops-automator agent to ensure your infrastructure handles traffic gracefully.\"\n<commentary>\nScaling requires proper infrastructure setup with monitoring and automatic responses.\n</commentary>\n</example>\n\n<example>\nContext: Monitoring and alerting setup\nuser: \"We have no idea when things break in production\"\nassistant: \"Observability is crucial for rapid iteration. I'll use the devops-automator agent to set up comprehensive monitoring and alerting.\"\n<commentary>\nProper monitoring enables fast issue detection and resolution in production.\n</commentary>\n</example>\n",
                       "color": "orange",
                       "tools": "Write, Read, MultiEdit, Bash, Grep"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 5157,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "size": 5182,
+                    "lastModified": "2025-08-31T12:12:11.197Z"
                   },
                   {
                     "name": "frontend-developer.md",
@@ -1022,14 +1028,15 @@
                     "path": ".claude/agents/engineering/frontend-developer.md",
                     "frontmatter": {
                       "name": "frontend-developer",
+                      "description": "Use this agent when building user interfaces, implementing React/Vue/Angular components, handling state management, or optimizing frontend performance. This agent excels at creating responsive, accessible, and performant web applications. Examples:\n\n<example>\nContext: Building a new user interface\nuser: \"Create a dashboard for displaying user analytics\"\nassistant: \"I'll build an analytics dashboard with interactive charts. Let me use the frontend-developer agent to create a responsive, data-rich interface.\"\n<commentary>\nComplex UI components require frontend expertise for proper implementation and performance.\n</commentary>\n</example>\n\n<example>\nContext: Fixing UI/UX issues\nuser: \"The mobile navigation is broken on small screens\"\nassistant: \"I'll fix the responsive navigation issues. Let me use the frontend-developer agent to ensure it works perfectly across all device sizes.\"\n<commentary>\nResponsive design issues require deep understanding of CSS and mobile-first development.\n</commentary>\n</example>\n\n<example>\nContext: Optimizing frontend performance\nuser: \"Our app feels sluggish when loading large datasets\"\nassistant: \"Performance optimization is crucial for user experience. I'll use the frontend-developer agent to implement virtualization and optimize rendering.\"\n<commentary>\nFrontend performance requires expertise in React rendering, memoization, and data handling.\n</commentary>\n</example>\n",
                       "color": "blue",
                       "tools": "Write, Read, MultiEdit, Bash, Grep, Glob"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 5320,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "size": 5345,
+                    "lastModified": "2025-08-31T12:12:11.197Z"
                   },
                   {
                     "name": "test-writer-fixer.md",
@@ -1037,16 +1044,17 @@
                     "path": ".claude/agents/engineering/test-writer-fixer.md",
                     "frontmatter": {
                       "name": "test-writer-fixer",
+                      "description": "Use this agent when code changes have been made and you need to write new tests, run existing tests, analyze failures, and fix them while maintaining test integrity. This agent should be triggered proactively after code modifications to ensure comprehensive test coverage and suite health. Examples:\n\n<example>\nContext: The user has just implemented a new feature or modified existing code.\nuser: \"I've updated the user authentication logic to support OAuth\"\nassistant: \"I've successfully updated the authentication logic. Now let me run the test-writer-fixer agent to ensure all tests pass with these changes.\"\n<commentary>\nSince code changes were made, use the Task tool to launch the test-writer-fixer agent to run relevant tests and fix any failures.\n</commentary>\n</example>\n\n<example>\nContext: The user has refactored a module or changed function signatures.\nuser: \"Please refactor this payment processing module to use async/await\"\nassistant: \"I've completed the refactoring to use async/await throughout the payment module.\"\n<function call omitted for brevity>\nassistant: \"Now I'll use the test-writer-fixer agent to run the tests and fix any issues caused by the refactoring.\"\n<commentary>\nAfter refactoring code, proactively use the test-writer-fixer agent to ensure tests still pass.\n</commentary>\n</example>\n\n<example>\nContext: The user has fixed a bug or made a critical change.\nuser: \"Fix the race condition in the data synchronization service\"\nassistant: \"I've identified and fixed the race condition by implementing proper locking mechanisms.\"\n<function call omitted for brevity>\nassistant: \"Let me run the test-writer-fixer agent to verify the fix doesn't break existing functionality.\"\n<commentary>\nAfter bug fixes, use the test-writer-fixer agent to ensure the fix works and doesn't introduce regressions.\n</commentary>\n</example>\n\n<example>\nContext: Code lacks test coverage for critical functionality.\nuser: \"Our payment processing module has no tests\"\nassistant: \"That's a critical gap. Let me use the test-writer-fixer agent to create comprehensive tests for the payment module including edge cases and error scenarios.\"\n<commentary>\nCritical modules without tests are high-risk areas that need immediate test coverage.\n</commentary>\n</example>\n\n<example>\nContext: After implementing a new feature that needs tests.\nuser: \"I've added the social sharing functionality\"\nassistant: \"Great! The social sharing is implemented. Now let me use the test-writer-fixer agent to write tests that ensure this feature works correctly across different platforms.\"\n<commentary>\nNew features should always include comprehensive test coverage from the start.\n</commentary>\n</example>\n",
                       "color": "cyan"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 8120,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "size": 8163,
+                    "lastModified": "2025-08-31T12:12:11.198Z"
                   }
                 ],
-                "lastModified": "2025-08-31T11:34:30.342Z",
+                "lastModified": "2025-08-31T12:12:11.198Z",
                 "tags": []
               },
               {
@@ -1063,7 +1071,7 @@
                       "agents"
                     ],
                     "size": 6917,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "lastModified": "2025-08-31T12:12:11.198Z"
                   },
                   {
                     "name": "twitter-engager.md",
@@ -1074,10 +1082,10 @@
                       "agents"
                     ],
                     "size": 6120,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "lastModified": "2025-08-31T12:12:11.198Z"
                   }
                 ],
-                "lastModified": "2025-08-31T11:34:30.342Z",
+                "lastModified": "2025-08-31T12:12:11.198Z",
                 "tags": []
               },
               {
@@ -1091,14 +1099,15 @@
                     "path": ".claude/agents/testing/tool-evaluator.md",
                     "frontmatter": {
                       "name": "tool-evaluator",
+                      "description": "Use this agent when evaluating new development tools, frameworks, or services for the studio. This agent specializes in rapid tool assessment, comparative analysis, and making recommendations that align with the 6-day development cycle philosophy. Examples:\n\n<example>\nContext: Considering a new framework or library\nuser: \"Should we use the new Vite 5.0 for our next project?\"\nassistant: \"I'll evaluate Vite 5.0 for your needs. Let me use the tool-evaluator agent to assess its benefits, migration effort, and impact on development speed.\"\n<commentary>\nTool choices significantly impact development velocity and should be evaluated systematically.\n</commentary>\n</example>\n\n<example>\nContext: Comparing similar tools or services\nuser: \"Supabase vs Firebase vs AWS Amplify - which should we use?\"\nassistant: \"I'll compare these backend services for your use case. Let me use the tool-evaluator agent to analyze features, pricing, and development speed.\"\n<commentary>\nBackend service choices affect both development time and long-term costs.\n</commentary>\n</example>\n\n<example>\nContext: Evaluating AI/ML service providers\nuser: \"We need to add AI features. OpenAI, Anthropic, or Replicate?\"\nassistant: \"I'll evaluate these AI providers for your specific needs. Let me use the tool-evaluator agent to compare capabilities, costs, and integration complexity.\"\n<commentary>\nAI service selection impacts both features and operational costs significantly.\n</commentary>\n</example>\n\n<example>\nContext: Assessing no-code/low-code tools\nuser: \"Could Bubble or FlutterFlow speed up our prototyping?\"\nassistant: \"Let's evaluate if no-code tools fit your workflow. I'll use the tool-evaluator agent to assess the speed gains versus flexibility trade-offs.\"\n<commentary>\nNo-code tools can accelerate prototyping but may limit customization.\n</commentary>\n</example>\n",
                       "color": "purple",
                       "tools": "WebSearch, WebFetch, Write, Read, Bash"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 7722,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "size": 7758,
+                    "lastModified": "2025-08-31T12:12:11.198Z"
                   },
                   {
                     "name": "workflow-optimizer.md",
@@ -1106,19 +1115,18 @@
                     "path": ".claude/agents/testing/workflow-optimizer.md",
                     "frontmatter": {
                       "name": "workflow-optimizer",
-                      "user": "Are we using our tools effectively together?",
-                      "assistant": "I'll analyze your tool integration and usage patterns. Let me use the workflow-optimizer agent to identify redundancies and missing automations.",
+                      "description": "Use this agent for optimizing human-agent collaboration workflows and analyzing workflow efficiency. This agent specializes in identifying bottlenecks, streamlining processes, and ensuring smooth handoffs between human creativity and AI assistance. Examples:\n\n<example>\nContext: Improving development workflow efficiency\nuser: \"Our team spends too much time on repetitive tasks\"\nassistant: \"I'll analyze your workflow to identify automation opportunities. Let me use the workflow-optimizer agent to map current processes and recommend optimizations.\"\n<commentary>\nWorkflow optimization can reclaim hours of productive time each week.\n</commentary>\n</example>\n\n<example>\nContext: Human-AI collaboration testing\nuser: \"Test how well our AI coding assistant integrates with developer workflows\"\nassistant: \"I'll evaluate the human-AI collaboration effectiveness. Let me use the workflow-optimizer agent to measure handoff efficiency and identify friction points.\"\n<commentary>\nSmooth human-AI collaboration multiplies productivity rather than just adding to it.\n</commentary>\n</example>\n\n<example>\nContext: Process bottleneck analysis\nuser: \"Our deployment process takes too long\"\nassistant: \"I'll analyze your deployment workflow for bottlenecks. Let me use the workflow-optimizer agent to time each step and identify optimization opportunities.\"\n<commentary>\nDeployment bottlenecks compound, turning minutes into hours across releases.\n</commentary>\n</example>\n\n<example>\nContext: Tool integration efficiency\nuser: \"Are we using our tools effectively together?\"\nassistant: \"I'll analyze your tool integration and usage patterns. Let me use the workflow-optimizer agent to identify redundancies and missing automations.\"\n<commentary>\nPoor tool integration creates hidden time taxes on every task.\n</commentary>\n</example>\n",
                       "color": "teal",
                       "tools": "Read, Write, Bash, TodoWrite, MultiEdit, Grep"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 8484,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "size": 8540,
+                    "lastModified": "2025-08-31T12:12:11.198Z"
                   }
                 ],
-                "lastModified": "2025-08-31T11:34:30.342Z",
+                "lastModified": "2025-08-31T12:12:11.198Z",
                 "tags": []
               },
               {
@@ -1135,14 +1143,14 @@
                       "agents"
                     ],
                     "size": 9607,
-                    "lastModified": "2025-08-31T11:34:30.343Z"
+                    "lastModified": "2025-08-31T12:12:11.198Z"
                   }
                 ],
-                "lastModified": "2025-08-31T11:34:30.343Z",
+                "lastModified": "2025-08-31T12:12:11.198Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-31T11:34:30.343Z",
+            "lastModified": "2025-08-31T12:12:11.198Z",
             "tags": []
           },
           {
@@ -1159,7 +1167,7 @@
                   "commands"
                 ],
                 "size": 487,
-                "lastModified": "2025-08-31T11:34:30.343Z"
+                "lastModified": "2025-08-31T12:12:11.199Z"
               },
               {
                 "name": "shadCN.md",
@@ -1170,10 +1178,10 @@
                   "commands"
                 ],
                 "size": 444,
-                "lastModified": "2025-08-31T11:34:30.343Z"
+                "lastModified": "2025-08-31T12:12:11.199Z"
               }
             ],
-            "lastModified": "2025-08-31T11:34:30.343Z",
+            "lastModified": "2025-08-31T12:12:11.199Z",
             "tags": []
           },
           {
@@ -1184,10 +1192,10 @@
             "frontmatter": {},
             "tags": [],
             "size": 5,
-            "lastModified": "2025-08-31T11:34:30.343Z"
+            "lastModified": "2025-08-31T12:12:11.199Z"
           }
         ],
-        "lastModified": "2025-08-31T11:34:30.343Z",
+        "lastModified": "2025-08-31T12:12:11.199Z",
         "tags": []
       },
       {
@@ -1215,10 +1223,10 @@
                       "instructions"
                     ],
                     "size": 3832,
-                    "lastModified": "2025-08-31T11:34:30.343Z"
+                    "lastModified": "2025-08-31T12:12:11.199Z"
                   }
                 ],
-                "lastModified": "2025-08-31T11:34:30.343Z",
+                "lastModified": "2025-08-31T12:12:11.199Z",
                 "tags": []
               },
               {
@@ -1235,18 +1243,18 @@
                       "instructions"
                     ],
                     "size": 5627,
-                    "lastModified": "2025-08-31T11:34:30.343Z"
+                    "lastModified": "2025-08-31T12:12:11.199Z"
                   }
                 ],
-                "lastModified": "2025-08-31T11:34:30.343Z",
+                "lastModified": "2025-08-31T12:12:11.199Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-31T11:34:30.343Z",
+            "lastModified": "2025-08-31T12:12:11.199Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T11:34:30.343Z",
+        "lastModified": "2025-08-31T12:12:11.199Z",
         "tags": []
       },
       {
@@ -1273,7 +1281,7 @@
                   "configuration"
                 ],
                 "size": 9204,
-                "lastModified": "2025-08-31T11:34:30.344Z"
+                "lastModified": "2025-08-31T12:12:11.200Z"
               },
               {
                 "name": "janitor.chatmode.md",
@@ -1311,7 +1319,7 @@
                   "configuration"
                 ],
                 "size": 2969,
-                "lastModified": "2025-08-31T11:34:30.344Z"
+                "lastModified": "2025-08-31T12:12:11.200Z"
               },
               {
                 "name": "prompt-builder.chatmode.md",
@@ -1341,7 +1349,7 @@
                   "configuration"
                 ],
                 "size": 18511,
-                "lastModified": "2025-08-31T11:34:30.344Z"
+                "lastModified": "2025-08-31T12:12:11.200Z"
               },
               {
                 "name": "tdd-green.chatmode.md",
@@ -1368,7 +1376,7 @@
                   "configuration"
                 ],
                 "size": 3431,
-                "lastModified": "2025-08-31T11:34:30.344Z"
+                "lastModified": "2025-08-31T12:12:11.200Z"
               },
               {
                 "name": "tdd-red.chatmode.md",
@@ -1395,10 +1403,10 @@
                   "configuration"
                 ],
                 "size": 3480,
-                "lastModified": "2025-08-31T11:34:30.344Z"
+                "lastModified": "2025-08-31T12:12:11.200Z"
               }
             ],
-            "lastModified": "2025-08-31T11:34:30.344Z",
+            "lastModified": "2025-08-31T12:12:11.200Z",
             "tags": []
           },
           {
@@ -1422,7 +1430,7 @@
                   "configuration"
                 ],
                 "size": 28145,
-                "lastModified": "2025-08-31T11:34:30.344Z"
+                "lastModified": "2025-08-31T12:12:11.200Z"
               },
               {
                 "name": "nextjs-tailwind.instructions.md",
@@ -1438,7 +1446,7 @@
                   "configuration"
                 ],
                 "size": 1860,
-                "lastModified": "2025-08-31T11:34:30.344Z"
+                "lastModified": "2025-08-31T12:12:11.201Z"
               },
               {
                 "name": "progressive-tracking-task-implementation.instructions.md",
@@ -1454,10 +1462,10 @@
                   "configuration"
                 ],
                 "size": 8326,
-                "lastModified": "2025-08-31T11:34:30.344Z"
+                "lastModified": "2025-08-31T12:12:11.201Z"
               }
             ],
-            "lastModified": "2025-08-31T11:34:30.344Z",
+            "lastModified": "2025-08-31T12:12:11.201Z",
             "tags": []
           },
           {
@@ -1479,7 +1487,7 @@
                   "configuration"
                 ],
                 "size": 13768,
-                "lastModified": "2025-08-31T11:34:30.344Z"
+                "lastModified": "2025-08-31T12:12:11.201Z"
               },
               {
                 "name": "sql-optimization.prompt.md",
@@ -1502,14 +1510,14 @@
                   "configuration"
                 ],
                 "size": 9351,
-                "lastModified": "2025-08-31T11:34:30.345Z"
+                "lastModified": "2025-08-31T12:12:11.201Z"
               }
             ],
-            "lastModified": "2025-08-31T11:34:30.345Z",
+            "lastModified": "2025-08-31T12:12:11.201Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T11:34:30.344Z",
+        "lastModified": "2025-08-31T12:12:11.201Z",
         "tags": []
       },
       {
@@ -1531,7 +1539,7 @@
                   "instructions"
                 ],
                 "size": 5634,
-                "lastModified": "2025-08-31T11:34:30.345Z"
+                "lastModified": "2025-08-31T12:12:11.201Z"
               },
               {
                 "name": "data-science-ai-dev.md",
@@ -1542,7 +1550,7 @@
                   "instructions"
                 ],
                 "size": 12048,
-                "lastModified": "2025-08-31T11:34:30.345Z"
+                "lastModified": "2025-08-31T12:12:11.201Z"
               },
               {
                 "name": "monorepo-tamagui.md",
@@ -1553,7 +1561,7 @@
                   "instructions"
                 ],
                 "size": 5625,
-                "lastModified": "2025-08-31T11:34:30.345Z"
+                "lastModified": "2025-08-31T12:12:11.202Z"
               },
               {
                 "name": "react-nextjs-standards-rules.md",
@@ -1564,14 +1572,14 @@
                   "instructions"
                 ],
                 "size": 8920,
-                "lastModified": "2025-08-31T11:34:30.345Z"
+                "lastModified": "2025-08-31T12:12:11.202Z"
               }
             ],
-            "lastModified": "2025-08-31T11:34:30.345Z",
+            "lastModified": "2025-08-31T12:12:11.202Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T11:34:30.345Z",
+        "lastModified": "2025-08-31T12:12:11.201Z",
         "tags": []
       },
       {
@@ -1586,10 +1594,10 @@
             "frontmatter": {},
             "tags": [],
             "size": 217,
-            "lastModified": "2025-08-31T11:34:30.345Z"
+            "lastModified": "2025-08-31T12:12:11.202Z"
           }
         ],
-        "lastModified": "2025-08-31T11:34:30.345Z",
+        "lastModified": "2025-08-31T12:12:11.202Z",
         "tags": []
       }
     ],
@@ -1615,16 +1623,15 @@
                     "path": ".claude/agents/design/brand-guardian.md",
                     "frontmatter": {
                       "name": "brand-guardian",
-                      "user": "Developers keep using different shades of our brand colors",
-                      "assistant": "Clear asset management prevents brand dilution. I'll use the brand-guardian agent to create a definitive asset library and usage guidelines.",
+                      "description": "Use this agent when establishing brand guidelines, ensuring visual consistency, managing brand assets, or evolving brand identity. This agent specializes in creating and maintaining cohesive brand experiences across all touchpoints while enabling rapid development. Examples:\n\n<example>\nContext: Creating brand guidelines for a new app\nuser: \"We need to establish a visual identity for our meditation app\"\nassistant: \"I'll help create a calming yet distinctive brand identity. Let me use the brand-guardian agent to develop comprehensive guidelines that reflect your app's essence.\"\n<commentary>\nStrong brand identity differentiates apps in crowded marketplaces.\n</commentary>\n</example>\n\n<example>\nContext: Ensuring consistency across platforms\nuser: \"Our app looks different on iOS, Android, and web\"\nassistant: \"Brand consistency builds trust and recognition. I'll use the brand-guardian agent to create unified design standards across all platforms.\"\n<commentary>\nConsistent branding makes products feel more professional and trustworthy.\n</commentary>\n</example>\n\n<example>\nContext: Evolving existing brand\nuser: \"Our brand feels outdated compared to competitors like Headspace\"\nassistant: \"Brand evolution can revitalize user perception. Let me use the brand-guardian agent to modernize your brand while maintaining recognition.\"\n<commentary>\nStrategic brand updates keep products feeling fresh and relevant.\n</commentary>\n</example>\n\n<example>\nContext: Managing brand assets\nuser: \"Developers keep using different shades of our brand colors\"\nassistant: \"Clear asset management prevents brand dilution. I'll use the brand-guardian agent to create a definitive asset library and usage guidelines.\"\n<commentary>\nWell-organized brand assets speed up development and maintain quality.\n</commentary>\n</example>\n",
                       "color": "indigo",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 9316,
-                    "lastModified": "2025-08-31T11:34:30.341Z"
+                    "size": 9372,
+                    "lastModified": "2025-08-31T12:12:11.196Z"
                   },
                   {
                     "name": "ui-designer.md",
@@ -1632,14 +1639,15 @@
                     "path": ".claude/agents/design/ui-designer.md",
                     "frontmatter": {
                       "name": "ui-designer",
+                      "description": "Use this agent when creating user interfaces, designing components, building design systems, or improving visual aesthetics. This agent specializes in creating beautiful, functional interfaces that can be implemented quickly within 6-day sprints. Examples:\n\n<example>\nContext: Starting a new app or feature design\nuser: \"We need UI designs for the new social sharing feature\"\nassistant: \"I'll create compelling UI designs for your social sharing feature. Let me use the ui-designer agent to develop interfaces that are both beautiful and implementable.\"\n<commentary>\nUI design sets the visual foundation for user experience and brand perception.\n</commentary>\n</example>\n\n<example>\nContext: Improving existing interfaces\nuser: \"Our settings page looks dated and cluttered\"\nassistant: \"I'll modernize and simplify your settings UI. Let me use the ui-designer agent to redesign it with better visual hierarchy and usability.\"\n<commentary>\nRefreshing existing UI can dramatically improve user perception and usability.\n</commentary>\n</example>\n\n<example>\nContext: Creating consistent design systems\nuser: \"Our app feels inconsistent across different screens\"\nassistant: \"Design consistency is crucial for professional apps. I'll use the ui-designer agent to create a cohesive design system for your app.\"\n<commentary>\nDesign systems ensure consistency and speed up future development.\n</commentary>\n</example>\n\n<example>\nContext: Adapting trendy design patterns\nuser: \"I love how BeReal does their dual camera view. Can we do something similar?\"\nassistant: \"I'll adapt that trendy pattern for your app. Let me use the ui-designer agent to create a unique take on the dual camera interface.\"\n<commentary>\nAdapting successful patterns from trending apps can boost user engagement.\n</commentary>\n</example>\n",
                       "color": "magenta",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 7955,
-                    "lastModified": "2025-08-31T11:34:30.341Z"
+                    "size": 7991,
+                    "lastModified": "2025-08-31T12:12:11.196Z"
                   },
                   {
                     "name": "ux-researcher.md",
@@ -1647,16 +1655,15 @@
                     "path": ".claude/agents/design/ux-researcher.md",
                     "frontmatter": {
                       "name": "ux-researcher",
-                      "user": "We need to better understand our target users for the fitness app",
-                      "assistant": "Understanding your users is crucial for product-market fit. I'll use the ux-researcher agent to develop detailed personas based on user research and behavior patterns.",
+                      "description": "Use this agent when conducting user research, analyzing user behavior, creating journey maps, or validating design decisions through testing. This agent specializes in understanding user needs, pain points, and behaviors to inform product decisions within rapid development cycles. Examples:\n\n<example>\nContext: Understanding user needs for a new feature\nuser: \"We want to add a mood tracking feature but aren't sure what users really need\"\nassistant: \"I'll help uncover what users truly need from mood tracking. Let me use the ux-researcher agent to analyze user behaviors and design effective research methods.\"\n<commentary>\nUnderstanding user needs before building prevents costly pivots later.\n</commentary>\n</example>\n\n<example>\nContext: Improving app onboarding\nuser: \"Our onboarding has a 60% drop-off rate\"\nassistant: \"That's a critical issue affecting user retention. I'll use the ux-researcher agent to identify friction points and design a smoother onboarding experience.\"\n<commentary>\nData-driven UX improvements can dramatically increase conversion rates.\n</commentary>\n</example>\n\n<example>\nContext: Validating design decisions\nuser: \"Should we use a tab bar or hamburger menu for navigation?\"\nassistant: \"Let's make this decision based on user behavior data. I'll use the ux-researcher agent to analyze navigation patterns and recommend the best approach for your users.\"\n<commentary>\nUX research removes guesswork from design decisions.\n</commentary>\n</example>\n\n<example>\nContext: Creating user personas\nuser: \"We need to better understand our target users for the fitness app\"\nassistant: \"Understanding your users is crucial for product-market fit. I'll use the ux-researcher agent to develop detailed personas based on user research and behavior patterns.\"\n<commentary>\nWell-defined personas guide every product decision from features to marketing.\n</commentary>\n</example>\n",
                       "color": "purple",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 8443,
-                    "lastModified": "2025-08-31T11:34:30.341Z"
+                    "size": 8499,
+                    "lastModified": "2025-08-31T12:12:11.197Z"
                   },
                   {
                     "name": "visual-storyteller.md",
@@ -1664,16 +1671,15 @@
                     "path": ".claude/agents/design/visual-storyteller.md",
                     "frontmatter": {
                       "name": "visual-storyteller",
-                      "user": "Users don't understand how our recommendation algorithm works",
-                      "assistant": "Complex systems need simple visual explanations. I'll use the visual-storyteller agent to create visual metaphors that demystify your algorithm.",
+                      "description": "Use this agent when creating visual narratives, designing infographics, building presentations, or communicating complex ideas through imagery. This agent specializes in transforming data and concepts into compelling visual stories that engage users and stakeholders. Examples:\n\n<example>\nContext: Creating app onboarding illustrations\nuser: \"We need to explain how our AI journaling app works in a visual way\"\nassistant: \"I'll create an engaging visual narrative for your onboarding. Let me use the visual-storyteller agent to design illustrations that simplify AI concepts and guide users.\"\n<commentary>\nVisual storytelling in onboarding dramatically improves user comprehension and retention.\n</commentary>\n</example>\n\n<example>\nContext: Designing investor pitch deck\nuser: \"We need a pitch deck that shows our growth trajectory and vision\"\nassistant: \"A compelling visual story can make or break funding rounds. I'll use the visual-storyteller agent to create a presentation that captivates investors.\"\n<commentary>\nData visualization and narrative flow are crucial for successful pitches.\n</commentary>\n</example>\n\n<example>\nContext: Creating marketing infographics\nuser: \"We want to show how our app saves users 2 hours per week\"\nassistant: \"That's a powerful value proposition to visualize. Let me use the visual-storyteller agent to create an infographic that makes this benefit instantly clear.\"\n<commentary>\nWell-designed infographics can go viral and drive organic growth.\n</commentary>\n</example>\n\n<example>\nContext: Explaining complex features\nuser: \"Users don't understand how our recommendation algorithm works\"\nassistant: \"Complex systems need simple visual explanations. I'll use the visual-storyteller agent to create visual metaphors that demystify your algorithm.\"\n<commentary>\nVisual explanations build trust by making complexity approachable.\n</commentary>\n</example>\n",
                       "color": "cyan",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 9945,
-                    "lastModified": "2025-08-31T11:34:30.341Z"
+                    "size": 10001,
+                    "lastModified": "2025-08-31T12:12:11.197Z"
                   },
                   {
                     "name": "whimsy-injector.md",
@@ -1681,17 +1687,18 @@
                     "path": ".claude/agents/design/whimsy-injector.md",
                     "frontmatter": {
                       "name": "whimsy-injector",
+                      "description": "PROACTIVELY use this agent after any UI/UX changes to ensure delightful, playful elements are incorporated. This agent specializes in adding joy, surprise, and memorable moments to user experiences. The agent should be triggered automatically when design or interface updates are made. Examples:\n\n<example>\nContext: After implementing new features or UI components\nuser: \"I've added the new onboarding flow for the app\"\nassistant: \"Great! I've implemented the onboarding flow. Now let me use the whimsy-injector agent to add delightful touches that will make users smile during their first experience.\"\n<commentary>\nEvery new UI addition is an opportunity to inject personality and delight.\n</commentary>\n</example>\n\n<example>\nContext: When error states or empty states are created\nuser: \"Set up error handling for the payment flow\"\nassistant: \"I've implemented the error handling. Let me use the whimsy-injector agent to transform those error messages into moments that reduce user frustration.\"\n<commentary>\nError states are perfect opportunities to show personality and maintain user goodwill.\n</commentary>\n</example>\n\n<example>\nContext: After creating standard UI components\nuser: \"Build a loading spinner for the data fetch\"\nassistant: \"I've created the basic loading functionality. Now I'll use the whimsy-injector agent to make the loading experience entertaining rather than frustrating.\"\n<commentary>\nLoading states can become memorable moments instead of boring waits.\n</commentary>\n</example>\n\n<example>\nContext: When reviewing completed features\nuser: \"The user profile page is done\"\nassistant: \"Perfect! The profile page is complete. Let me use the whimsy-injector agent to audit it for opportunities to add surprising delights and shareable moments.\"\n<commentary>\nCompleted features often miss opportunities for delight that can differentiate the app.\n</commentary>\n</example>\n",
                       "color": "yellow",
                       "tools": "Read, Write, MultiEdit, Grep, Glob"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 7160,
-                    "lastModified": "2025-08-31T11:34:30.341Z"
+                    "size": 7192,
+                    "lastModified": "2025-08-31T12:12:11.197Z"
                   }
                 ],
-                "lastModified": "2025-08-31T11:34:30.341Z",
+                "lastModified": "2025-08-31T12:12:11.197Z",
                 "tags": []
               },
               {
@@ -1705,14 +1712,15 @@
                     "path": ".claude/agents/engineering/ai-engineer.md",
                     "frontmatter": {
                       "name": "ai-engineer",
+                      "description": "Use this agent when implementing AI/ML features, integrating language models, building recommendation systems, or adding intelligent automation to applications. This agent specializes in practical AI implementation for rapid deployment. Examples:\n\n<example>\nContext: Adding AI features to an app\nuser: \"We need AI-powered content recommendations\"\nassistant: \"I'll implement a smart recommendation engine. Let me use the ai-engineer agent to build an ML pipeline that learns from user behavior.\"\n<commentary>\nRecommendation systems require careful ML implementation and continuous learning capabilities.\n</commentary>\n</example>\n\n<example>\nContext: Integrating language models\nuser: \"Add an AI chatbot to help users navigate our app\"\nassistant: \"I'll integrate a conversational AI assistant. Let me use the ai-engineer agent to implement proper prompt engineering and response handling.\"\n<commentary>\nLLM integration requires expertise in prompt design, token management, and response streaming.\n</commentary>\n</example>\n\n<example>\nContext: Implementing computer vision features\nuser: \"Users should be able to search products by taking a photo\"\nassistant: \"I'll implement visual search using computer vision. Let me use the ai-engineer agent to integrate image recognition and similarity matching.\"\n<commentary>\nComputer vision features require efficient processing and accurate model selection.\n</commentary>\n</example>\n",
                       "color": "cyan",
                       "tools": "Write, Read, MultiEdit, Bash, WebFetch"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 5594,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "size": 5619,
+                    "lastModified": "2025-08-31T12:12:11.197Z"
                   },
                   {
                     "name": "backend-architect.md",
@@ -1720,14 +1728,15 @@
                     "path": ".claude/agents/engineering/backend-architect.md",
                     "frontmatter": {
                       "name": "backend-architect",
+                      "description": "Use this agent when designing APIs, building server-side logic, implementing databases, or architecting scalable backend systems. This agent specializes in creating robust, secure, and performant backend services. Examples:\n\n<example>\nContext: Designing a new API\nuser: \"We need an API for our social sharing feature\"\nassistant: \"I'll design a RESTful API with proper authentication and rate limiting. Let me use the backend-architect agent to create a scalable backend architecture.\"\n<commentary>\nAPI design requires careful consideration of security, scalability, and maintainability.\n</commentary>\n</example>\n\n<example>\nContext: Database design and optimization\nuser: \"Our queries are getting slow as we scale\"\nassistant: \"Database performance is critical at scale. I'll use the backend-architect agent to optimize queries and implement proper indexing strategies.\"\n<commentary>\nDatabase optimization requires deep understanding of query patterns and indexing strategies.\n</commentary>\n</example>\n\n<example>\nContext: Implementing authentication system\nuser: \"Add OAuth2 login with Google and GitHub\"\nassistant: \"I'll implement secure OAuth2 authentication. Let me use the backend-architect agent to ensure proper token handling and security measures.\"\n<commentary>\nAuthentication systems require careful security considerations and proper implementation.\n</commentary>\n</example>\n",
                       "color": "purple",
                       "tools": "Write, Read, MultiEdit, Bash, Grep"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 5161,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "size": 5186,
+                    "lastModified": "2025-08-31T12:12:11.197Z"
                   },
                   {
                     "name": "devops-automator.md",
@@ -1735,14 +1744,15 @@
                     "path": ".claude/agents/engineering/devops-automator.md",
                     "frontmatter": {
                       "name": "devops-automator",
+                      "description": "Use this agent when setting up CI/CD pipelines, configuring cloud infrastructure, implementing monitoring systems, or automating deployment processes. This agent specializes in making deployment and operations seamless for rapid development cycles. Examples:\n\n<example>\nContext: Setting up automated deployments\nuser: \"We need automatic deployments when we push to main\"\nassistant: \"I'll set up a complete CI/CD pipeline. Let me use the devops-automator agent to configure automated testing, building, and deployment.\"\n<commentary>\nAutomated deployments require careful pipeline configuration and proper testing stages.\n</commentary>\n</example>\n\n<example>\nContext: Infrastructure scaling issues\nuser: \"Our app crashes when we get traffic spikes\"\nassistant: \"I'll implement auto-scaling and load balancing. Let me use the devops-automator agent to ensure your infrastructure handles traffic gracefully.\"\n<commentary>\nScaling requires proper infrastructure setup with monitoring and automatic responses.\n</commentary>\n</example>\n\n<example>\nContext: Monitoring and alerting setup\nuser: \"We have no idea when things break in production\"\nassistant: \"Observability is crucial for rapid iteration. I'll use the devops-automator agent to set up comprehensive monitoring and alerting.\"\n<commentary>\nProper monitoring enables fast issue detection and resolution in production.\n</commentary>\n</example>\n",
                       "color": "orange",
                       "tools": "Write, Read, MultiEdit, Bash, Grep"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 5157,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "size": 5182,
+                    "lastModified": "2025-08-31T12:12:11.197Z"
                   },
                   {
                     "name": "frontend-developer.md",
@@ -1750,14 +1760,15 @@
                     "path": ".claude/agents/engineering/frontend-developer.md",
                     "frontmatter": {
                       "name": "frontend-developer",
+                      "description": "Use this agent when building user interfaces, implementing React/Vue/Angular components, handling state management, or optimizing frontend performance. This agent excels at creating responsive, accessible, and performant web applications. Examples:\n\n<example>\nContext: Building a new user interface\nuser: \"Create a dashboard for displaying user analytics\"\nassistant: \"I'll build an analytics dashboard with interactive charts. Let me use the frontend-developer agent to create a responsive, data-rich interface.\"\n<commentary>\nComplex UI components require frontend expertise for proper implementation and performance.\n</commentary>\n</example>\n\n<example>\nContext: Fixing UI/UX issues\nuser: \"The mobile navigation is broken on small screens\"\nassistant: \"I'll fix the responsive navigation issues. Let me use the frontend-developer agent to ensure it works perfectly across all device sizes.\"\n<commentary>\nResponsive design issues require deep understanding of CSS and mobile-first development.\n</commentary>\n</example>\n\n<example>\nContext: Optimizing frontend performance\nuser: \"Our app feels sluggish when loading large datasets\"\nassistant: \"Performance optimization is crucial for user experience. I'll use the frontend-developer agent to implement virtualization and optimize rendering.\"\n<commentary>\nFrontend performance requires expertise in React rendering, memoization, and data handling.\n</commentary>\n</example>\n",
                       "color": "blue",
                       "tools": "Write, Read, MultiEdit, Bash, Grep, Glob"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 5320,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "size": 5345,
+                    "lastModified": "2025-08-31T12:12:11.197Z"
                   },
                   {
                     "name": "test-writer-fixer.md",
@@ -1765,16 +1776,17 @@
                     "path": ".claude/agents/engineering/test-writer-fixer.md",
                     "frontmatter": {
                       "name": "test-writer-fixer",
+                      "description": "Use this agent when code changes have been made and you need to write new tests, run existing tests, analyze failures, and fix them while maintaining test integrity. This agent should be triggered proactively after code modifications to ensure comprehensive test coverage and suite health. Examples:\n\n<example>\nContext: The user has just implemented a new feature or modified existing code.\nuser: \"I've updated the user authentication logic to support OAuth\"\nassistant: \"I've successfully updated the authentication logic. Now let me run the test-writer-fixer agent to ensure all tests pass with these changes.\"\n<commentary>\nSince code changes were made, use the Task tool to launch the test-writer-fixer agent to run relevant tests and fix any failures.\n</commentary>\n</example>\n\n<example>\nContext: The user has refactored a module or changed function signatures.\nuser: \"Please refactor this payment processing module to use async/await\"\nassistant: \"I've completed the refactoring to use async/await throughout the payment module.\"\n<function call omitted for brevity>\nassistant: \"Now I'll use the test-writer-fixer agent to run the tests and fix any issues caused by the refactoring.\"\n<commentary>\nAfter refactoring code, proactively use the test-writer-fixer agent to ensure tests still pass.\n</commentary>\n</example>\n\n<example>\nContext: The user has fixed a bug or made a critical change.\nuser: \"Fix the race condition in the data synchronization service\"\nassistant: \"I've identified and fixed the race condition by implementing proper locking mechanisms.\"\n<function call omitted for brevity>\nassistant: \"Let me run the test-writer-fixer agent to verify the fix doesn't break existing functionality.\"\n<commentary>\nAfter bug fixes, use the test-writer-fixer agent to ensure the fix works and doesn't introduce regressions.\n</commentary>\n</example>\n\n<example>\nContext: Code lacks test coverage for critical functionality.\nuser: \"Our payment processing module has no tests\"\nassistant: \"That's a critical gap. Let me use the test-writer-fixer agent to create comprehensive tests for the payment module including edge cases and error scenarios.\"\n<commentary>\nCritical modules without tests are high-risk areas that need immediate test coverage.\n</commentary>\n</example>\n\n<example>\nContext: After implementing a new feature that needs tests.\nuser: \"I've added the social sharing functionality\"\nassistant: \"Great! The social sharing is implemented. Now let me use the test-writer-fixer agent to write tests that ensure this feature works correctly across different platforms.\"\n<commentary>\nNew features should always include comprehensive test coverage from the start.\n</commentary>\n</example>\n",
                       "color": "cyan"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 8120,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "size": 8163,
+                    "lastModified": "2025-08-31T12:12:11.198Z"
                   }
                 ],
-                "lastModified": "2025-08-31T11:34:30.342Z",
+                "lastModified": "2025-08-31T12:12:11.198Z",
                 "tags": []
               },
               {
@@ -1791,7 +1803,7 @@
                       "agents"
                     ],
                     "size": 6917,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "lastModified": "2025-08-31T12:12:11.198Z"
                   },
                   {
                     "name": "twitter-engager.md",
@@ -1802,10 +1814,10 @@
                       "agents"
                     ],
                     "size": 6120,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "lastModified": "2025-08-31T12:12:11.198Z"
                   }
                 ],
-                "lastModified": "2025-08-31T11:34:30.342Z",
+                "lastModified": "2025-08-31T12:12:11.198Z",
                 "tags": []
               },
               {
@@ -1819,14 +1831,15 @@
                     "path": ".claude/agents/testing/tool-evaluator.md",
                     "frontmatter": {
                       "name": "tool-evaluator",
+                      "description": "Use this agent when evaluating new development tools, frameworks, or services for the studio. This agent specializes in rapid tool assessment, comparative analysis, and making recommendations that align with the 6-day development cycle philosophy. Examples:\n\n<example>\nContext: Considering a new framework or library\nuser: \"Should we use the new Vite 5.0 for our next project?\"\nassistant: \"I'll evaluate Vite 5.0 for your needs. Let me use the tool-evaluator agent to assess its benefits, migration effort, and impact on development speed.\"\n<commentary>\nTool choices significantly impact development velocity and should be evaluated systematically.\n</commentary>\n</example>\n\n<example>\nContext: Comparing similar tools or services\nuser: \"Supabase vs Firebase vs AWS Amplify - which should we use?\"\nassistant: \"I'll compare these backend services for your use case. Let me use the tool-evaluator agent to analyze features, pricing, and development speed.\"\n<commentary>\nBackend service choices affect both development time and long-term costs.\n</commentary>\n</example>\n\n<example>\nContext: Evaluating AI/ML service providers\nuser: \"We need to add AI features. OpenAI, Anthropic, or Replicate?\"\nassistant: \"I'll evaluate these AI providers for your specific needs. Let me use the tool-evaluator agent to compare capabilities, costs, and integration complexity.\"\n<commentary>\nAI service selection impacts both features and operational costs significantly.\n</commentary>\n</example>\n\n<example>\nContext: Assessing no-code/low-code tools\nuser: \"Could Bubble or FlutterFlow speed up our prototyping?\"\nassistant: \"Let's evaluate if no-code tools fit your workflow. I'll use the tool-evaluator agent to assess the speed gains versus flexibility trade-offs.\"\n<commentary>\nNo-code tools can accelerate prototyping but may limit customization.\n</commentary>\n</example>\n",
                       "color": "purple",
                       "tools": "WebSearch, WebFetch, Write, Read, Bash"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 7722,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "size": 7758,
+                    "lastModified": "2025-08-31T12:12:11.198Z"
                   },
                   {
                     "name": "workflow-optimizer.md",
@@ -1834,19 +1847,18 @@
                     "path": ".claude/agents/testing/workflow-optimizer.md",
                     "frontmatter": {
                       "name": "workflow-optimizer",
-                      "user": "Are we using our tools effectively together?",
-                      "assistant": "I'll analyze your tool integration and usage patterns. Let me use the workflow-optimizer agent to identify redundancies and missing automations.",
+                      "description": "Use this agent for optimizing human-agent collaboration workflows and analyzing workflow efficiency. This agent specializes in identifying bottlenecks, streamlining processes, and ensuring smooth handoffs between human creativity and AI assistance. Examples:\n\n<example>\nContext: Improving development workflow efficiency\nuser: \"Our team spends too much time on repetitive tasks\"\nassistant: \"I'll analyze your workflow to identify automation opportunities. Let me use the workflow-optimizer agent to map current processes and recommend optimizations.\"\n<commentary>\nWorkflow optimization can reclaim hours of productive time each week.\n</commentary>\n</example>\n\n<example>\nContext: Human-AI collaboration testing\nuser: \"Test how well our AI coding assistant integrates with developer workflows\"\nassistant: \"I'll evaluate the human-AI collaboration effectiveness. Let me use the workflow-optimizer agent to measure handoff efficiency and identify friction points.\"\n<commentary>\nSmooth human-AI collaboration multiplies productivity rather than just adding to it.\n</commentary>\n</example>\n\n<example>\nContext: Process bottleneck analysis\nuser: \"Our deployment process takes too long\"\nassistant: \"I'll analyze your deployment workflow for bottlenecks. Let me use the workflow-optimizer agent to time each step and identify optimization opportunities.\"\n<commentary>\nDeployment bottlenecks compound, turning minutes into hours across releases.\n</commentary>\n</example>\n\n<example>\nContext: Tool integration efficiency\nuser: \"Are we using our tools effectively together?\"\nassistant: \"I'll analyze your tool integration and usage patterns. Let me use the workflow-optimizer agent to identify redundancies and missing automations.\"\n<commentary>\nPoor tool integration creates hidden time taxes on every task.\n</commentary>\n</example>\n",
                       "color": "teal",
                       "tools": "Read, Write, Bash, TodoWrite, MultiEdit, Grep"
                     },
                     "tags": [
                       "agents"
                     ],
-                    "size": 8484,
-                    "lastModified": "2025-08-31T11:34:30.342Z"
+                    "size": 8540,
+                    "lastModified": "2025-08-31T12:12:11.198Z"
                   }
                 ],
-                "lastModified": "2025-08-31T11:34:30.342Z",
+                "lastModified": "2025-08-31T12:12:11.198Z",
                 "tags": []
               },
               {
@@ -1863,18 +1875,18 @@
                       "agents"
                     ],
                     "size": 9607,
-                    "lastModified": "2025-08-31T11:34:30.343Z"
+                    "lastModified": "2025-08-31T12:12:11.198Z"
                   }
                 ],
-                "lastModified": "2025-08-31T11:34:30.343Z",
+                "lastModified": "2025-08-31T12:12:11.198Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-31T11:34:30.343Z",
+            "lastModified": "2025-08-31T12:12:11.198Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T11:34:30.343Z",
+        "lastModified": "2025-08-31T12:12:11.199Z",
         "tags": []
       }
     ],
@@ -1903,7 +1915,7 @@
                   "configuration"
                 ],
                 "size": 13768,
-                "lastModified": "2025-08-31T11:34:30.344Z"
+                "lastModified": "2025-08-31T12:12:11.201Z"
               },
               {
                 "name": "sql-optimization.prompt.md",
@@ -1926,14 +1938,14 @@
                   "configuration"
                 ],
                 "size": 9351,
-                "lastModified": "2025-08-31T11:34:30.345Z"
+                "lastModified": "2025-08-31T12:12:11.201Z"
               }
             ],
-            "lastModified": "2025-08-31T11:34:30.345Z",
+            "lastModified": "2025-08-31T12:12:11.201Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T11:34:30.344Z",
+        "lastModified": "2025-08-31T12:12:11.201Z",
         "tags": []
       }
     ],
@@ -1957,7 +1969,7 @@
                   "commands"
                 ],
                 "size": 487,
-                "lastModified": "2025-08-31T11:34:30.343Z"
+                "lastModified": "2025-08-31T12:12:11.199Z"
               },
               {
                 "name": "shadCN.md",
@@ -1968,14 +1980,14 @@
                   "commands"
                 ],
                 "size": 444,
-                "lastModified": "2025-08-31T11:34:30.343Z"
+                "lastModified": "2025-08-31T12:12:11.199Z"
               }
             ],
-            "lastModified": "2025-08-31T11:34:30.343Z",
+            "lastModified": "2025-08-31T12:12:11.199Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T11:34:30.343Z",
+        "lastModified": "2025-08-31T12:12:11.199Z",
         "tags": []
       }
     ],
@@ -2004,10 +2016,10 @@
                       "instructions"
                     ],
                     "size": 3832,
-                    "lastModified": "2025-08-31T11:34:30.343Z"
+                    "lastModified": "2025-08-31T12:12:11.199Z"
                   }
                 ],
-                "lastModified": "2025-08-31T11:34:30.343Z",
+                "lastModified": "2025-08-31T12:12:11.199Z",
                 "tags": []
               },
               {
@@ -2024,18 +2036,18 @@
                       "instructions"
                     ],
                     "size": 5627,
-                    "lastModified": "2025-08-31T11:34:30.343Z"
+                    "lastModified": "2025-08-31T12:12:11.199Z"
                   }
                 ],
-                "lastModified": "2025-08-31T11:34:30.343Z",
+                "lastModified": "2025-08-31T12:12:11.199Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-31T11:34:30.343Z",
+            "lastModified": "2025-08-31T12:12:11.199Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T11:34:30.343Z",
+        "lastModified": "2025-08-31T12:12:11.199Z",
         "tags": []
       },
       {
@@ -2064,7 +2076,7 @@
                   "configuration"
                 ],
                 "size": 28145,
-                "lastModified": "2025-08-31T11:34:30.344Z"
+                "lastModified": "2025-08-31T12:12:11.200Z"
               },
               {
                 "name": "nextjs-tailwind.instructions.md",
@@ -2080,7 +2092,7 @@
                   "configuration"
                 ],
                 "size": 1860,
-                "lastModified": "2025-08-31T11:34:30.344Z"
+                "lastModified": "2025-08-31T12:12:11.201Z"
               },
               {
                 "name": "progressive-tracking-task-implementation.instructions.md",
@@ -2096,14 +2108,14 @@
                   "configuration"
                 ],
                 "size": 8326,
-                "lastModified": "2025-08-31T11:34:30.344Z"
+                "lastModified": "2025-08-31T12:12:11.201Z"
               }
             ],
-            "lastModified": "2025-08-31T11:34:30.344Z",
+            "lastModified": "2025-08-31T12:12:11.201Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T11:34:30.344Z",
+        "lastModified": "2025-08-31T12:12:11.201Z",
         "tags": []
       },
       {
@@ -2125,7 +2137,7 @@
                   "instructions"
                 ],
                 "size": 5634,
-                "lastModified": "2025-08-31T11:34:30.345Z"
+                "lastModified": "2025-08-31T12:12:11.201Z"
               },
               {
                 "name": "data-science-ai-dev.md",
@@ -2136,7 +2148,7 @@
                   "instructions"
                 ],
                 "size": 12048,
-                "lastModified": "2025-08-31T11:34:30.345Z"
+                "lastModified": "2025-08-31T12:12:11.201Z"
               },
               {
                 "name": "monorepo-tamagui.md",
@@ -2147,7 +2159,7 @@
                   "instructions"
                 ],
                 "size": 5625,
-                "lastModified": "2025-08-31T11:34:30.345Z"
+                "lastModified": "2025-08-31T12:12:11.202Z"
               },
               {
                 "name": "react-nextjs-standards-rules.md",
@@ -2158,14 +2170,14 @@
                   "instructions"
                 ],
                 "size": 8920,
-                "lastModified": "2025-08-31T11:34:30.345Z"
+                "lastModified": "2025-08-31T12:12:11.202Z"
               }
             ],
-            "lastModified": "2025-08-31T11:34:30.345Z",
+            "lastModified": "2025-08-31T12:12:11.202Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T11:34:30.345Z",
+        "lastModified": "2025-08-31T12:12:11.201Z",
         "tags": []
       }
     ]
