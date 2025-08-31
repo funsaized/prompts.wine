@@ -29,7 +29,7 @@
                     "agents"
                   ],
                   "size": 9372,
-                  "lastModified": "2025-08-31T12:12:11.196Z"
+                  "lastModified": "2025-08-31T12:27:13.917Z"
                 },
                 {
                   "name": "ui-designer.md",
@@ -45,7 +45,7 @@
                     "agents"
                   ],
                   "size": 7991,
-                  "lastModified": "2025-08-31T12:12:11.196Z"
+                  "lastModified": "2025-08-31T12:27:13.917Z"
                 },
                 {
                   "name": "ux-researcher.md",
@@ -61,7 +61,7 @@
                     "agents"
                   ],
                   "size": 8499,
-                  "lastModified": "2025-08-31T12:12:11.197Z"
+                  "lastModified": "2025-08-31T12:27:13.918Z"
                 },
                 {
                   "name": "visual-storyteller.md",
@@ -77,7 +77,7 @@
                     "agents"
                   ],
                   "size": 10001,
-                  "lastModified": "2025-08-31T12:12:11.197Z"
+                  "lastModified": "2025-08-31T12:27:13.918Z"
                 },
                 {
                   "name": "whimsy-injector.md",
@@ -93,10 +93,10 @@
                     "agents"
                   ],
                   "size": 7192,
-                  "lastModified": "2025-08-31T12:12:11.197Z"
+                  "lastModified": "2025-08-31T12:27:13.918Z"
                 }
               ],
-              "lastModified": "2025-08-31T12:12:11.197Z",
+              "lastModified": "2025-08-31T12:27:13.918Z",
               "tags": []
             },
             {
@@ -118,7 +118,7 @@
                     "agents"
                   ],
                   "size": 5619,
-                  "lastModified": "2025-08-31T12:12:11.197Z"
+                  "lastModified": "2025-08-31T12:27:13.918Z"
                 },
                 {
                   "name": "backend-architect.md",
@@ -134,7 +134,7 @@
                     "agents"
                   ],
                   "size": 5186,
-                  "lastModified": "2025-08-31T12:12:11.197Z"
+                  "lastModified": "2025-08-31T12:27:13.918Z"
                 },
                 {
                   "name": "devops-automator.md",
@@ -150,7 +150,7 @@
                     "agents"
                   ],
                   "size": 5182,
-                  "lastModified": "2025-08-31T12:12:11.197Z"
+                  "lastModified": "2025-08-31T12:27:13.918Z"
                 },
                 {
                   "name": "frontend-developer.md",
@@ -166,7 +166,7 @@
                     "agents"
                   ],
                   "size": 5345,
-                  "lastModified": "2025-08-31T12:12:11.197Z"
+                  "lastModified": "2025-08-31T12:27:13.919Z"
                 },
                 {
                   "name": "test-writer-fixer.md",
@@ -181,10 +181,10 @@
                     "agents"
                   ],
                   "size": 8163,
-                  "lastModified": "2025-08-31T12:12:11.198Z"
+                  "lastModified": "2025-08-31T12:27:13.919Z"
                 }
               ],
-              "lastModified": "2025-08-31T12:12:11.198Z",
+              "lastModified": "2025-08-31T12:27:13.919Z",
               "tags": []
             },
             {
@@ -201,7 +201,7 @@
                     "agents"
                   ],
                   "size": 6917,
-                  "lastModified": "2025-08-31T12:12:11.198Z"
+                  "lastModified": "2025-08-31T12:27:13.919Z"
                 },
                 {
                   "name": "twitter-engager.md",
@@ -212,10 +212,10 @@
                     "agents"
                   ],
                   "size": 6120,
-                  "lastModified": "2025-08-31T12:12:11.198Z"
+                  "lastModified": "2025-08-31T12:27:13.919Z"
                 }
               ],
-              "lastModified": "2025-08-31T12:12:11.198Z",
+              "lastModified": "2025-08-31T12:27:13.919Z",
               "tags": []
             },
             {
@@ -237,7 +237,7 @@
                     "agents"
                   ],
                   "size": 7758,
-                  "lastModified": "2025-08-31T12:12:11.198Z"
+                  "lastModified": "2025-08-31T12:27:13.920Z"
                 },
                 {
                   "name": "workflow-optimizer.md",
@@ -253,10 +253,10 @@
                     "agents"
                   ],
                   "size": 8540,
-                  "lastModified": "2025-08-31T12:12:11.198Z"
+                  "lastModified": "2025-08-31T12:27:13.920Z"
                 }
               ],
-              "lastModified": "2025-08-31T12:12:11.198Z",
+              "lastModified": "2025-08-31T12:27:13.920Z",
               "tags": []
             },
             {
@@ -273,14 +273,14 @@
                     "agents"
                   ],
                   "size": 9607,
-                  "lastModified": "2025-08-31T12:12:11.198Z"
+                  "lastModified": "2025-08-31T12:27:13.920Z"
                 }
               ],
-              "lastModified": "2025-08-31T12:12:11.198Z",
+              "lastModified": "2025-08-31T12:27:13.920Z",
               "tags": []
             }
           ],
-          "lastModified": "2025-08-31T12:12:11.198Z",
+          "lastModified": "2025-08-31T12:27:13.920Z",
           "tags": []
         },
         {
@@ -297,7 +297,7 @@
                 "commands"
               ],
               "size": 487,
-              "lastModified": "2025-08-31T12:12:11.199Z"
+              "lastModified": "2025-08-31T12:27:13.920Z"
             },
             {
               "name": "shadCN.md",
@@ -308,10 +308,10 @@
                 "commands"
               ],
               "size": 444,
-              "lastModified": "2025-08-31T12:12:11.199Z"
+              "lastModified": "2025-08-31T12:27:13.921Z"
             }
           ],
-          "lastModified": "2025-08-31T12:12:11.199Z",
+          "lastModified": "2025-08-31T12:27:13.921Z",
           "tags": []
         },
         {
@@ -322,10 +322,10 @@
           "frontmatter": {},
           "tags": [],
           "size": 5,
-          "lastModified": "2025-08-31T12:12:11.199Z"
+          "lastModified": "2025-08-31T12:27:13.921Z"
         }
       ],
-      "lastModified": "2025-08-31T12:12:11.199Z",
+      "lastModified": "2025-08-31T12:27:13.921Z",
       "tags": []
     },
     {
@@ -353,10 +353,10 @@
                     "instructions"
                   ],
                   "size": 3832,
-                  "lastModified": "2025-08-31T12:12:11.199Z"
+                  "lastModified": "2025-08-31T12:27:13.921Z"
                 }
               ],
-              "lastModified": "2025-08-31T12:12:11.199Z",
+              "lastModified": "2025-08-31T12:27:13.921Z",
               "tags": []
             },
             {
@@ -373,18 +373,18 @@
                     "instructions"
                   ],
                   "size": 5627,
-                  "lastModified": "2025-08-31T12:12:11.199Z"
+                  "lastModified": "2025-08-31T12:27:13.922Z"
                 }
               ],
-              "lastModified": "2025-08-31T12:12:11.199Z",
+              "lastModified": "2025-08-31T12:27:13.922Z",
               "tags": []
             }
           ],
-          "lastModified": "2025-08-31T12:12:11.199Z",
+          "lastModified": "2025-08-31T12:27:13.921Z",
           "tags": []
         }
       ],
-      "lastModified": "2025-08-31T12:12:11.199Z",
+      "lastModified": "2025-08-31T12:27:13.921Z",
       "tags": []
     },
     {
@@ -411,7 +411,7 @@
                 "configuration"
               ],
               "size": 9204,
-              "lastModified": "2025-08-31T12:12:11.200Z"
+              "lastModified": "2025-08-31T12:27:13.922Z"
             },
             {
               "name": "janitor.chatmode.md",
@@ -449,7 +449,7 @@
                 "configuration"
               ],
               "size": 2969,
-              "lastModified": "2025-08-31T12:12:11.200Z"
+              "lastModified": "2025-08-31T12:27:13.922Z"
             },
             {
               "name": "prompt-builder.chatmode.md",
@@ -479,7 +479,7 @@
                 "configuration"
               ],
               "size": 18511,
-              "lastModified": "2025-08-31T12:12:11.200Z"
+              "lastModified": "2025-08-31T12:27:13.922Z"
             },
             {
               "name": "tdd-green.chatmode.md",
@@ -506,7 +506,7 @@
                 "configuration"
               ],
               "size": 3431,
-              "lastModified": "2025-08-31T12:12:11.200Z"
+              "lastModified": "2025-08-31T12:27:13.922Z"
             },
             {
               "name": "tdd-red.chatmode.md",
@@ -533,10 +533,10 @@
                 "configuration"
               ],
               "size": 3480,
-              "lastModified": "2025-08-31T12:12:11.200Z"
+              "lastModified": "2025-08-31T12:27:13.923Z"
             }
           ],
-          "lastModified": "2025-08-31T12:12:11.200Z",
+          "lastModified": "2025-08-31T12:27:13.922Z",
           "tags": []
         },
         {
@@ -560,7 +560,7 @@
                 "configuration"
               ],
               "size": 28145,
-              "lastModified": "2025-08-31T12:12:11.200Z"
+              "lastModified": "2025-08-31T12:27:13.923Z"
             },
             {
               "name": "nextjs-tailwind.instructions.md",
@@ -576,7 +576,7 @@
                 "configuration"
               ],
               "size": 1860,
-              "lastModified": "2025-08-31T12:12:11.201Z"
+              "lastModified": "2025-08-31T12:27:13.923Z"
             },
             {
               "name": "progressive-tracking-task-implementation.instructions.md",
@@ -592,10 +592,10 @@
                 "configuration"
               ],
               "size": 8326,
-              "lastModified": "2025-08-31T12:12:11.201Z"
+              "lastModified": "2025-08-31T12:27:13.923Z"
             }
           ],
-          "lastModified": "2025-08-31T12:12:11.201Z",
+          "lastModified": "2025-08-31T12:27:13.923Z",
           "tags": []
         },
         {
@@ -617,7 +617,7 @@
                 "configuration"
               ],
               "size": 13768,
-              "lastModified": "2025-08-31T12:12:11.201Z"
+              "lastModified": "2025-08-31T12:27:13.923Z"
             },
             {
               "name": "sql-optimization.prompt.md",
@@ -640,14 +640,14 @@
                 "configuration"
               ],
               "size": 9351,
-              "lastModified": "2025-08-31T12:12:11.201Z"
+              "lastModified": "2025-08-31T12:27:13.923Z"
             }
           ],
-          "lastModified": "2025-08-31T12:12:11.201Z",
+          "lastModified": "2025-08-31T12:27:13.923Z",
           "tags": []
         }
       ],
-      "lastModified": "2025-08-31T12:12:11.201Z",
+      "lastModified": "2025-08-31T12:27:13.923Z",
       "tags": []
     },
     {
@@ -669,7 +669,7 @@
                 "instructions"
               ],
               "size": 5634,
-              "lastModified": "2025-08-31T12:12:11.201Z"
+              "lastModified": "2025-08-31T12:27:13.924Z"
             },
             {
               "name": "data-science-ai-dev.md",
@@ -680,7 +680,7 @@
                 "instructions"
               ],
               "size": 12048,
-              "lastModified": "2025-08-31T12:12:11.201Z"
+              "lastModified": "2025-08-31T12:27:13.924Z"
             },
             {
               "name": "monorepo-tamagui.md",
@@ -691,7 +691,7 @@
                 "instructions"
               ],
               "size": 5625,
-              "lastModified": "2025-08-31T12:12:11.202Z"
+              "lastModified": "2025-08-31T12:27:13.924Z"
             },
             {
               "name": "react-nextjs-standards-rules.md",
@@ -702,14 +702,14 @@
                 "instructions"
               ],
               "size": 8920,
-              "lastModified": "2025-08-31T12:12:11.202Z"
+              "lastModified": "2025-08-31T12:27:13.924Z"
             }
           ],
-          "lastModified": "2025-08-31T12:12:11.202Z",
+          "lastModified": "2025-08-31T12:27:13.924Z",
           "tags": []
         }
       ],
-      "lastModified": "2025-08-31T12:12:11.201Z",
+      "lastModified": "2025-08-31T12:27:13.924Z",
       "tags": []
     },
     {
@@ -724,10 +724,10 @@
           "frontmatter": {},
           "tags": [],
           "size": 217,
-          "lastModified": "2025-08-31T12:12:11.202Z"
+          "lastModified": "2025-08-31T12:27:13.924Z"
         }
       ],
-      "lastModified": "2025-08-31T12:12:11.202Z",
+      "lastModified": "2025-08-31T12:27:13.924Z",
       "tags": []
     }
   ],
@@ -899,7 +899,7 @@
                       "agents"
                     ],
                     "size": 9372,
-                    "lastModified": "2025-08-31T12:12:11.196Z"
+                    "lastModified": "2025-08-31T12:27:13.917Z"
                   },
                   {
                     "name": "ui-designer.md",
@@ -915,7 +915,7 @@
                       "agents"
                     ],
                     "size": 7991,
-                    "lastModified": "2025-08-31T12:12:11.196Z"
+                    "lastModified": "2025-08-31T12:27:13.917Z"
                   },
                   {
                     "name": "ux-researcher.md",
@@ -931,7 +931,7 @@
                       "agents"
                     ],
                     "size": 8499,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T12:27:13.918Z"
                   },
                   {
                     "name": "visual-storyteller.md",
@@ -947,7 +947,7 @@
                       "agents"
                     ],
                     "size": 10001,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T12:27:13.918Z"
                   },
                   {
                     "name": "whimsy-injector.md",
@@ -963,10 +963,10 @@
                       "agents"
                     ],
                     "size": 7192,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T12:27:13.918Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.197Z",
+                "lastModified": "2025-08-31T12:27:13.918Z",
                 "tags": []
               },
               {
@@ -988,7 +988,7 @@
                       "agents"
                     ],
                     "size": 5619,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T12:27:13.918Z"
                   },
                   {
                     "name": "backend-architect.md",
@@ -1004,7 +1004,7 @@
                       "agents"
                     ],
                     "size": 5186,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T12:27:13.918Z"
                   },
                   {
                     "name": "devops-automator.md",
@@ -1020,7 +1020,7 @@
                       "agents"
                     ],
                     "size": 5182,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T12:27:13.918Z"
                   },
                   {
                     "name": "frontend-developer.md",
@@ -1036,7 +1036,7 @@
                       "agents"
                     ],
                     "size": 5345,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T12:27:13.919Z"
                   },
                   {
                     "name": "test-writer-fixer.md",
@@ -1051,10 +1051,10 @@
                       "agents"
                     ],
                     "size": 8163,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T12:27:13.919Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T12:27:13.919Z",
                 "tags": []
               },
               {
@@ -1071,7 +1071,7 @@
                       "agents"
                     ],
                     "size": 6917,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T12:27:13.919Z"
                   },
                   {
                     "name": "twitter-engager.md",
@@ -1082,10 +1082,10 @@
                       "agents"
                     ],
                     "size": 6120,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T12:27:13.919Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T12:27:13.919Z",
                 "tags": []
               },
               {
@@ -1107,7 +1107,7 @@
                       "agents"
                     ],
                     "size": 7758,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T12:27:13.920Z"
                   },
                   {
                     "name": "workflow-optimizer.md",
@@ -1123,10 +1123,10 @@
                       "agents"
                     ],
                     "size": 8540,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T12:27:13.920Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T12:27:13.920Z",
                 "tags": []
               },
               {
@@ -1143,14 +1143,14 @@
                       "agents"
                     ],
                     "size": 9607,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T12:27:13.920Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T12:27:13.920Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.198Z",
+            "lastModified": "2025-08-31T12:27:13.920Z",
             "tags": []
           },
           {
@@ -1167,7 +1167,7 @@
                   "commands"
                 ],
                 "size": 487,
-                "lastModified": "2025-08-31T12:12:11.199Z"
+                "lastModified": "2025-08-31T12:27:13.920Z"
               },
               {
                 "name": "shadCN.md",
@@ -1178,10 +1178,10 @@
                   "commands"
                 ],
                 "size": 444,
-                "lastModified": "2025-08-31T12:12:11.199Z"
+                "lastModified": "2025-08-31T12:27:13.921Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.199Z",
+            "lastModified": "2025-08-31T12:27:13.921Z",
             "tags": []
           },
           {
@@ -1192,10 +1192,10 @@
             "frontmatter": {},
             "tags": [],
             "size": 5,
-            "lastModified": "2025-08-31T12:12:11.199Z"
+            "lastModified": "2025-08-31T12:27:13.921Z"
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.199Z",
+        "lastModified": "2025-08-31T12:27:13.921Z",
         "tags": []
       },
       {
@@ -1223,10 +1223,10 @@
                       "instructions"
                     ],
                     "size": 3832,
-                    "lastModified": "2025-08-31T12:12:11.199Z"
+                    "lastModified": "2025-08-31T12:27:13.921Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.199Z",
+                "lastModified": "2025-08-31T12:27:13.921Z",
                 "tags": []
               },
               {
@@ -1243,18 +1243,18 @@
                       "instructions"
                     ],
                     "size": 5627,
-                    "lastModified": "2025-08-31T12:12:11.199Z"
+                    "lastModified": "2025-08-31T12:27:13.922Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.199Z",
+                "lastModified": "2025-08-31T12:27:13.922Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.199Z",
+            "lastModified": "2025-08-31T12:27:13.921Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.199Z",
+        "lastModified": "2025-08-31T12:27:13.921Z",
         "tags": []
       },
       {
@@ -1281,7 +1281,7 @@
                   "configuration"
                 ],
                 "size": 9204,
-                "lastModified": "2025-08-31T12:12:11.200Z"
+                "lastModified": "2025-08-31T12:27:13.922Z"
               },
               {
                 "name": "janitor.chatmode.md",
@@ -1319,7 +1319,7 @@
                   "configuration"
                 ],
                 "size": 2969,
-                "lastModified": "2025-08-31T12:12:11.200Z"
+                "lastModified": "2025-08-31T12:27:13.922Z"
               },
               {
                 "name": "prompt-builder.chatmode.md",
@@ -1349,7 +1349,7 @@
                   "configuration"
                 ],
                 "size": 18511,
-                "lastModified": "2025-08-31T12:12:11.200Z"
+                "lastModified": "2025-08-31T12:27:13.922Z"
               },
               {
                 "name": "tdd-green.chatmode.md",
@@ -1376,7 +1376,7 @@
                   "configuration"
                 ],
                 "size": 3431,
-                "lastModified": "2025-08-31T12:12:11.200Z"
+                "lastModified": "2025-08-31T12:27:13.922Z"
               },
               {
                 "name": "tdd-red.chatmode.md",
@@ -1403,10 +1403,10 @@
                   "configuration"
                 ],
                 "size": 3480,
-                "lastModified": "2025-08-31T12:12:11.200Z"
+                "lastModified": "2025-08-31T12:27:13.923Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.200Z",
+            "lastModified": "2025-08-31T12:27:13.922Z",
             "tags": []
           },
           {
@@ -1430,7 +1430,7 @@
                   "configuration"
                 ],
                 "size": 28145,
-                "lastModified": "2025-08-31T12:12:11.200Z"
+                "lastModified": "2025-08-31T12:27:13.923Z"
               },
               {
                 "name": "nextjs-tailwind.instructions.md",
@@ -1446,7 +1446,7 @@
                   "configuration"
                 ],
                 "size": 1860,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T12:27:13.923Z"
               },
               {
                 "name": "progressive-tracking-task-implementation.instructions.md",
@@ -1462,10 +1462,10 @@
                   "configuration"
                 ],
                 "size": 8326,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T12:27:13.923Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.201Z",
+            "lastModified": "2025-08-31T12:27:13.923Z",
             "tags": []
           },
           {
@@ -1487,7 +1487,7 @@
                   "configuration"
                 ],
                 "size": 13768,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T12:27:13.923Z"
               },
               {
                 "name": "sql-optimization.prompt.md",
@@ -1510,14 +1510,14 @@
                   "configuration"
                 ],
                 "size": 9351,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T12:27:13.923Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.201Z",
+            "lastModified": "2025-08-31T12:27:13.923Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.201Z",
+        "lastModified": "2025-08-31T12:27:13.923Z",
         "tags": []
       },
       {
@@ -1539,7 +1539,7 @@
                   "instructions"
                 ],
                 "size": 5634,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T12:27:13.924Z"
               },
               {
                 "name": "data-science-ai-dev.md",
@@ -1550,7 +1550,7 @@
                   "instructions"
                 ],
                 "size": 12048,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T12:27:13.924Z"
               },
               {
                 "name": "monorepo-tamagui.md",
@@ -1561,7 +1561,7 @@
                   "instructions"
                 ],
                 "size": 5625,
-                "lastModified": "2025-08-31T12:12:11.202Z"
+                "lastModified": "2025-08-31T12:27:13.924Z"
               },
               {
                 "name": "react-nextjs-standards-rules.md",
@@ -1572,14 +1572,14 @@
                   "instructions"
                 ],
                 "size": 8920,
-                "lastModified": "2025-08-31T12:12:11.202Z"
+                "lastModified": "2025-08-31T12:27:13.924Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.202Z",
+            "lastModified": "2025-08-31T12:27:13.924Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.201Z",
+        "lastModified": "2025-08-31T12:27:13.924Z",
         "tags": []
       },
       {
@@ -1594,10 +1594,10 @@
             "frontmatter": {},
             "tags": [],
             "size": 217,
-            "lastModified": "2025-08-31T12:12:11.202Z"
+            "lastModified": "2025-08-31T12:27:13.924Z"
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.202Z",
+        "lastModified": "2025-08-31T12:27:13.924Z",
         "tags": []
       }
     ],
@@ -1631,7 +1631,7 @@
                       "agents"
                     ],
                     "size": 9372,
-                    "lastModified": "2025-08-31T12:12:11.196Z"
+                    "lastModified": "2025-08-31T12:27:13.917Z"
                   },
                   {
                     "name": "ui-designer.md",
@@ -1647,7 +1647,7 @@
                       "agents"
                     ],
                     "size": 7991,
-                    "lastModified": "2025-08-31T12:12:11.196Z"
+                    "lastModified": "2025-08-31T12:27:13.917Z"
                   },
                   {
                     "name": "ux-researcher.md",
@@ -1663,7 +1663,7 @@
                       "agents"
                     ],
                     "size": 8499,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T12:27:13.918Z"
                   },
                   {
                     "name": "visual-storyteller.md",
@@ -1679,7 +1679,7 @@
                       "agents"
                     ],
                     "size": 10001,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T12:27:13.918Z"
                   },
                   {
                     "name": "whimsy-injector.md",
@@ -1695,10 +1695,10 @@
                       "agents"
                     ],
                     "size": 7192,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T12:27:13.918Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.197Z",
+                "lastModified": "2025-08-31T12:27:13.918Z",
                 "tags": []
               },
               {
@@ -1720,7 +1720,7 @@
                       "agents"
                     ],
                     "size": 5619,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T12:27:13.918Z"
                   },
                   {
                     "name": "backend-architect.md",
@@ -1736,7 +1736,7 @@
                       "agents"
                     ],
                     "size": 5186,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T12:27:13.918Z"
                   },
                   {
                     "name": "devops-automator.md",
@@ -1752,7 +1752,7 @@
                       "agents"
                     ],
                     "size": 5182,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T12:27:13.918Z"
                   },
                   {
                     "name": "frontend-developer.md",
@@ -1768,7 +1768,7 @@
                       "agents"
                     ],
                     "size": 5345,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T12:27:13.919Z"
                   },
                   {
                     "name": "test-writer-fixer.md",
@@ -1783,10 +1783,10 @@
                       "agents"
                     ],
                     "size": 8163,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T12:27:13.919Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T12:27:13.919Z",
                 "tags": []
               },
               {
@@ -1803,7 +1803,7 @@
                       "agents"
                     ],
                     "size": 6917,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T12:27:13.919Z"
                   },
                   {
                     "name": "twitter-engager.md",
@@ -1814,10 +1814,10 @@
                       "agents"
                     ],
                     "size": 6120,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T12:27:13.919Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T12:27:13.919Z",
                 "tags": []
               },
               {
@@ -1839,7 +1839,7 @@
                       "agents"
                     ],
                     "size": 7758,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T12:27:13.920Z"
                   },
                   {
                     "name": "workflow-optimizer.md",
@@ -1855,10 +1855,10 @@
                       "agents"
                     ],
                     "size": 8540,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T12:27:13.920Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T12:27:13.920Z",
                 "tags": []
               },
               {
@@ -1875,18 +1875,18 @@
                       "agents"
                     ],
                     "size": 9607,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T12:27:13.920Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T12:27:13.920Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.198Z",
+            "lastModified": "2025-08-31T12:27:13.920Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.199Z",
+        "lastModified": "2025-08-31T12:27:13.921Z",
         "tags": []
       }
     ],
@@ -1915,7 +1915,7 @@
                   "configuration"
                 ],
                 "size": 13768,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T12:27:13.923Z"
               },
               {
                 "name": "sql-optimization.prompt.md",
@@ -1938,14 +1938,14 @@
                   "configuration"
                 ],
                 "size": 9351,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T12:27:13.923Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.201Z",
+            "lastModified": "2025-08-31T12:27:13.923Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.201Z",
+        "lastModified": "2025-08-31T12:27:13.923Z",
         "tags": []
       }
     ],
@@ -1969,7 +1969,7 @@
                   "commands"
                 ],
                 "size": 487,
-                "lastModified": "2025-08-31T12:12:11.199Z"
+                "lastModified": "2025-08-31T12:27:13.920Z"
               },
               {
                 "name": "shadCN.md",
@@ -1980,14 +1980,14 @@
                   "commands"
                 ],
                 "size": 444,
-                "lastModified": "2025-08-31T12:12:11.199Z"
+                "lastModified": "2025-08-31T12:27:13.921Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.199Z",
+            "lastModified": "2025-08-31T12:27:13.921Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.199Z",
+        "lastModified": "2025-08-31T12:27:13.921Z",
         "tags": []
       }
     ],
@@ -2016,10 +2016,10 @@
                       "instructions"
                     ],
                     "size": 3832,
-                    "lastModified": "2025-08-31T12:12:11.199Z"
+                    "lastModified": "2025-08-31T12:27:13.921Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.199Z",
+                "lastModified": "2025-08-31T12:27:13.921Z",
                 "tags": []
               },
               {
@@ -2036,18 +2036,18 @@
                       "instructions"
                     ],
                     "size": 5627,
-                    "lastModified": "2025-08-31T12:12:11.199Z"
+                    "lastModified": "2025-08-31T12:27:13.922Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.199Z",
+                "lastModified": "2025-08-31T12:27:13.922Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.199Z",
+            "lastModified": "2025-08-31T12:27:13.921Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.199Z",
+        "lastModified": "2025-08-31T12:27:13.921Z",
         "tags": []
       },
       {
@@ -2076,7 +2076,7 @@
                   "configuration"
                 ],
                 "size": 28145,
-                "lastModified": "2025-08-31T12:12:11.200Z"
+                "lastModified": "2025-08-31T12:27:13.923Z"
               },
               {
                 "name": "nextjs-tailwind.instructions.md",
@@ -2092,7 +2092,7 @@
                   "configuration"
                 ],
                 "size": 1860,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T12:27:13.923Z"
               },
               {
                 "name": "progressive-tracking-task-implementation.instructions.md",
@@ -2108,14 +2108,14 @@
                   "configuration"
                 ],
                 "size": 8326,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T12:27:13.923Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.201Z",
+            "lastModified": "2025-08-31T12:27:13.923Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.201Z",
+        "lastModified": "2025-08-31T12:27:13.923Z",
         "tags": []
       },
       {
@@ -2137,7 +2137,7 @@
                   "instructions"
                 ],
                 "size": 5634,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T12:27:13.924Z"
               },
               {
                 "name": "data-science-ai-dev.md",
@@ -2148,7 +2148,7 @@
                   "instructions"
                 ],
                 "size": 12048,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T12:27:13.924Z"
               },
               {
                 "name": "monorepo-tamagui.md",
@@ -2159,7 +2159,7 @@
                   "instructions"
                 ],
                 "size": 5625,
-                "lastModified": "2025-08-31T12:12:11.202Z"
+                "lastModified": "2025-08-31T12:27:13.924Z"
               },
               {
                 "name": "react-nextjs-standards-rules.md",
@@ -2170,14 +2170,14 @@
                   "instructions"
                 ],
                 "size": 8920,
-                "lastModified": "2025-08-31T12:12:11.202Z"
+                "lastModified": "2025-08-31T12:27:13.924Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.202Z",
+            "lastModified": "2025-08-31T12:27:13.924Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.201Z",
+        "lastModified": "2025-08-31T12:27:13.924Z",
         "tags": []
       }
     ]
