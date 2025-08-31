@@ -128,34 +128,13 @@ export default function Prompts(): React.JSX.Element {
                 <TextType
                   text={[
                     "A directory of instructions, agents, and workflows for LLMs &tools that have aged like fine wine 🍷",
-                    "Made by Sai Nimmagadda",
+                    "Made by Sai Nimmagadda 🤓",
                   ]}
                   typingSpeed={75}
                   pauseDuration={1500}
                   showCursor={true}
                   cursorCharacter="|"
                 />
-              </h2>
-            </div>
-            <div className="flex items-center gap-2 pl-2">
-              <span>└─</span>
-              <h2>
-                Made by{" "}
-                <a
-                  href="https://s11a.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative top-1 inline-flex items-center gap-1.5 pl-1 transition-colors hover:text-white"
-                >
-                  <Image
-                    alt="Sai Nimmagadda"
-                    width={20}
-                    height={20}
-                    className="border-foreground size-5 rounded-full border transition-colors group-hover:border-white"
-                    src="/face.png"
-                  />
-                  @Sai N. Nimmagadda
-                </a>
               </h2>
             </div>
           </header>
