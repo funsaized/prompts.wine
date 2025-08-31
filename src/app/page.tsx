@@ -286,7 +286,10 @@ export default function Prompts(): React.JSX.Element {
 
                   {/* File Content */}
                   <div className="overflow-hidden p-6">
-                    <ContentViewer content={selectedFileContent} />
+                    <ContentViewer
+                      content={selectedFileContent}
+                      frontmatter={selectedFileItem.frontmatter}
+                    />
                   </div>
                 </div>
               ) : (
