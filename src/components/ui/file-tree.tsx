@@ -145,10 +145,7 @@ function FileTreeNode({
             <TooltipContent side="top" align="end" className="max-w-xs">
               <div className="flex flex-wrap gap-1">
                 {item.tags.map(tag => (
-                  <span
-                    key={tag}
-                    className="text-xs"
-                  >
+                  <span key={tag} className="text-xs">
                     {tag}
                   </span>
                 ))}

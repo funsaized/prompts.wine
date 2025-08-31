@@ -25,11 +25,9 @@
                     "color": "indigo",
                     "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                   },
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 9372,
-                  "lastModified": "2025-08-31T12:12:11.196Z"
+                  "lastModified": "2025-08-31T18:10:27.160Z"
                 },
                 {
                   "name": "ui-designer.md",
@@ -41,11 +39,9 @@
                     "color": "magenta",
                     "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                   },
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 7991,
-                  "lastModified": "2025-08-31T12:12:11.196Z"
+                  "lastModified": "2025-08-31T18:10:27.161Z"
                 },
                 {
                   "name": "ux-researcher.md",
@@ -57,11 +53,9 @@
                     "color": "purple",
                     "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                   },
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 8499,
-                  "lastModified": "2025-08-31T12:12:11.197Z"
+                  "lastModified": "2025-08-31T18:10:27.161Z"
                 },
                 {
                   "name": "visual-storyteller.md",
@@ -73,11 +67,9 @@
                     "color": "cyan",
                     "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                   },
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 10001,
-                  "lastModified": "2025-08-31T12:12:11.197Z"
+                  "lastModified": "2025-08-31T18:10:27.161Z"
                 },
                 {
                   "name": "whimsy-injector.md",
@@ -89,14 +81,12 @@
                     "color": "yellow",
                     "tools": "Read, Write, MultiEdit, Grep, Glob"
                   },
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 7192,
-                  "lastModified": "2025-08-31T12:12:11.197Z"
+                  "lastModified": "2025-08-31T18:10:27.161Z"
                 }
               ],
-              "lastModified": "2025-08-31T12:12:11.197Z",
+              "lastModified": "2025-08-31T18:10:27.161Z",
               "tags": []
             },
             {
@@ -114,11 +104,9 @@
                     "color": "cyan",
                     "tools": "Write, Read, MultiEdit, Bash, WebFetch"
                   },
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 5619,
-                  "lastModified": "2025-08-31T12:12:11.197Z"
+                  "lastModified": "2025-08-31T18:10:27.162Z"
                 },
                 {
                   "name": "backend-architect.md",
@@ -130,11 +118,9 @@
                     "color": "purple",
                     "tools": "Write, Read, MultiEdit, Bash, Grep"
                   },
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 5186,
-                  "lastModified": "2025-08-31T12:12:11.197Z"
+                  "lastModified": "2025-08-31T18:10:27.162Z"
                 },
                 {
                   "name": "devops-automator.md",
@@ -146,11 +132,9 @@
                     "color": "orange",
                     "tools": "Write, Read, MultiEdit, Bash, Grep"
                   },
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 5182,
-                  "lastModified": "2025-08-31T12:12:11.197Z"
+                  "lastModified": "2025-08-31T18:10:27.162Z"
                 },
                 {
                   "name": "frontend-developer.md",
@@ -162,11 +146,9 @@
                     "color": "blue",
                     "tools": "Write, Read, MultiEdit, Bash, Grep, Glob"
                   },
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 5345,
-                  "lastModified": "2025-08-31T12:12:11.197Z"
+                  "lastModified": "2025-08-31T18:10:27.163Z"
                 },
                 {
                   "name": "test-writer-fixer.md",
@@ -177,14 +159,12 @@
                     "description": "Use this agent when code changes have been made and you need to write new tests, run existing tests, analyze failures, and fix them while maintaining test integrity. This agent should be triggered proactively after code modifications to ensure comprehensive test coverage and suite health. Examples:\n\n<example>\nContext: The user has just implemented a new feature or modified existing code.\nuser: \"I've updated the user authentication logic to support OAuth\"\nassistant: \"I've successfully updated the authentication logic. Now let me run the test-writer-fixer agent to ensure all tests pass with these changes.\"\n<commentary>\nSince code changes were made, use the Task tool to launch the test-writer-fixer agent to run relevant tests and fix any failures.\n</commentary>\n</example>\n\n<example>\nContext: The user has refactored a module or changed function signatures.\nuser: \"Please refactor this payment processing module to use async/await\"\nassistant: \"I've completed the refactoring to use async/await throughout the payment module.\"\n<function call omitted for brevity>\nassistant: \"Now I'll use the test-writer-fixer agent to run the tests and fix any issues caused by the refactoring.\"\n<commentary>\nAfter refactoring code, proactively use the test-writer-fixer agent to ensure tests still pass.\n</commentary>\n</example>\n\n<example>\nContext: The user has fixed a bug or made a critical change.\nuser: \"Fix the race condition in the data synchronization service\"\nassistant: \"I've identified and fixed the race condition by implementing proper locking mechanisms.\"\n<function call omitted for brevity>\nassistant: \"Let me run the test-writer-fixer agent to verify the fix doesn't break existing functionality.\"\n<commentary>\nAfter bug fixes, use the test-writer-fixer agent to ensure the fix works and doesn't introduce regressions.\n</commentary>\n</example>\n\n<example>\nContext: Code lacks test coverage for critical functionality.\nuser: \"Our payment processing module has no tests\"\nassistant: \"That's a critical gap. Let me use the test-writer-fixer agent to create comprehensive tests for the payment module including edge cases and error scenarios.\"\n<commentary>\nCritical modules without tests are high-risk areas that need immediate test coverage.\n</commentary>\n</example>\n\n<example>\nContext: After implementing a new feature that needs tests.\nuser: \"I've added the social sharing functionality\"\nassistant: \"Great! The social sharing is implemented. Now let me use the test-writer-fixer agent to write tests that ensure this feature works correctly across different platforms.\"\n<commentary>\nNew features should always include comprehensive test coverage from the start.\n</commentary>\n</example>\n",
                     "color": "cyan"
                   },
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 8163,
-                  "lastModified": "2025-08-31T12:12:11.198Z"
+                  "lastModified": "2025-08-31T18:10:27.163Z"
                 }
               ],
-              "lastModified": "2025-08-31T12:12:11.198Z",
+              "lastModified": "2025-08-31T18:10:27.163Z",
               "tags": []
             },
             {
@@ -197,25 +177,21 @@
                   "type": "file",
                   "path": ".claude/agents/marketing/reddit-community-builder.md",
                   "frontmatter": {},
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 6917,
-                  "lastModified": "2025-08-31T12:12:11.198Z"
+                  "lastModified": "2025-08-31T18:10:27.163Z"
                 },
                 {
                   "name": "twitter-engager.md",
                   "type": "file",
                   "path": ".claude/agents/marketing/twitter-engager.md",
                   "frontmatter": {},
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 6120,
-                  "lastModified": "2025-08-31T12:12:11.198Z"
+                  "lastModified": "2025-08-31T18:10:27.164Z"
                 }
               ],
-              "lastModified": "2025-08-31T12:12:11.198Z",
+              "lastModified": "2025-08-31T18:10:27.163Z",
               "tags": []
             },
             {
@@ -233,11 +209,9 @@
                     "color": "purple",
                     "tools": "WebSearch, WebFetch, Write, Read, Bash"
                   },
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 7758,
-                  "lastModified": "2025-08-31T12:12:11.198Z"
+                  "lastModified": "2025-08-31T18:10:27.164Z"
                 },
                 {
                   "name": "workflow-optimizer.md",
@@ -249,14 +223,12 @@
                     "color": "teal",
                     "tools": "Read, Write, Bash, TodoWrite, MultiEdit, Grep"
                   },
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 8540,
-                  "lastModified": "2025-08-31T12:12:11.198Z"
+                  "lastModified": "2025-08-31T18:10:27.164Z"
                 }
               ],
-              "lastModified": "2025-08-31T12:12:11.198Z",
+              "lastModified": "2025-08-31T18:10:27.164Z",
               "tags": []
             },
             {
@@ -269,18 +241,16 @@
                   "type": "file",
                   "path": ".claude/agents/universal-app/CLAUDE.md",
                   "frontmatter": {},
-                  "tags": [
-                    "agents"
-                  ],
+                  "tags": ["agents"],
                   "size": 9607,
-                  "lastModified": "2025-08-31T12:12:11.198Z"
+                  "lastModified": "2025-08-31T18:10:27.165Z"
                 }
               ],
-              "lastModified": "2025-08-31T12:12:11.198Z",
+              "lastModified": "2025-08-31T18:10:27.165Z",
               "tags": []
             }
           ],
-          "lastModified": "2025-08-31T12:12:11.198Z",
+          "lastModified": "2025-08-31T18:10:27.165Z",
           "tags": []
         },
         {
@@ -293,25 +263,21 @@
               "type": "file",
               "path": ".claude/commands/fix-github-issue.md",
               "frontmatter": {},
-              "tags": [
-                "commands"
-              ],
+              "tags": ["commands"],
               "size": 487,
-              "lastModified": "2025-08-31T12:12:11.199Z"
+              "lastModified": "2025-08-31T18:10:27.165Z"
             },
             {
               "name": "shadCN.md",
               "type": "file",
               "path": ".claude/commands/shadCN.md",
               "frontmatter": {},
-              "tags": [
-                "commands"
-              ],
+              "tags": ["commands"],
               "size": 444,
-              "lastModified": "2025-08-31T12:12:11.199Z"
+              "lastModified": "2025-08-31T18:10:27.166Z"
             }
           ],
-          "lastModified": "2025-08-31T12:12:11.199Z",
+          "lastModified": "2025-08-31T18:10:27.165Z",
           "tags": []
         },
         {
@@ -322,10 +288,10 @@
           "frontmatter": {},
           "tags": [],
           "size": 5,
-          "lastModified": "2025-08-31T12:12:11.199Z"
+          "lastModified": "2025-08-31T18:10:27.166Z"
         }
       ],
-      "lastModified": "2025-08-31T12:12:11.199Z",
+      "lastModified": "2025-08-31T18:10:27.166Z",
       "tags": []
     },
     {
@@ -349,14 +315,12 @@
                   "path": ".cursor/rules/nextjs/nextjs-modern-ui.mdc",
                   "content": "",
                   "frontmatter": {},
-                  "tags": [
-                    "instructions"
-                  ],
+                  "tags": ["instructions"],
                   "size": 3832,
-                  "lastModified": "2025-08-31T12:12:11.199Z"
+                  "lastModified": "2025-08-31T18:10:27.167Z"
                 }
               ],
-              "lastModified": "2025-08-31T12:12:11.199Z",
+              "lastModified": "2025-08-31T18:10:27.167Z",
               "tags": []
             },
             {
@@ -369,22 +333,20 @@
                   "type": "file",
                   "path": ".cursor/rules/tamagui/monorepo-tamagui.md",
                   "frontmatter": {},
-                  "tags": [
-                    "instructions"
-                  ],
+                  "tags": ["instructions"],
                   "size": 5627,
-                  "lastModified": "2025-08-31T12:12:11.199Z"
+                  "lastModified": "2025-08-31T18:10:27.167Z"
                 }
               ],
-              "lastModified": "2025-08-31T12:12:11.199Z",
+              "lastModified": "2025-08-31T18:10:27.167Z",
               "tags": []
             }
           ],
-          "lastModified": "2025-08-31T12:12:11.199Z",
+          "lastModified": "2025-08-31T18:10:27.167Z",
           "tags": []
         }
       ],
-      "lastModified": "2025-08-31T12:12:11.199Z",
+      "lastModified": "2025-08-31T18:10:27.166Z",
       "tags": []
     },
     {
@@ -406,12 +368,9 @@
                 "model": "GPT-4.1",
                 "title": "4.1 Beast Mode (VS Code v1.102)"
               },
-              "tags": [
-                "github",
-                "configuration"
-              ],
+              "tags": ["github", "configuration"],
               "size": 9204,
-              "lastModified": "2025-08-31T12:12:11.200Z"
+              "lastModified": "2025-08-31T18:10:27.167Z"
             },
             {
               "name": "janitor.chatmode.md",
@@ -444,12 +403,9 @@
                   "github"
                 ]
               },
-              "tags": [
-                "github",
-                "configuration"
-              ],
+              "tags": ["github", "configuration"],
               "size": 2969,
-              "lastModified": "2025-08-31T12:12:11.200Z"
+              "lastModified": "2025-08-31T18:10:27.168Z"
             },
             {
               "name": "prompt-builder.chatmode.md",
@@ -474,12 +430,9 @@
                   "context7"
                 ]
               },
-              "tags": [
-                "github",
-                "configuration"
-              ],
+              "tags": ["github", "configuration"],
               "size": 18511,
-              "lastModified": "2025-08-31T12:12:11.200Z"
+              "lastModified": "2025-08-31T18:10:27.168Z"
             },
             {
               "name": "tdd-green.chatmode.md",
@@ -501,12 +454,9 @@
                   "terminalLastCommand"
                 ]
               },
-              "tags": [
-                "github",
-                "configuration"
-              ],
+              "tags": ["github", "configuration"],
               "size": 3431,
-              "lastModified": "2025-08-31T12:12:11.200Z"
+              "lastModified": "2025-08-31T18:10:27.168Z"
             },
             {
               "name": "tdd-red.chatmode.md",
@@ -528,15 +478,12 @@
                   "terminalLastCommand"
                 ]
               },
-              "tags": [
-                "github",
-                "configuration"
-              ],
+              "tags": ["github", "configuration"],
               "size": 3480,
-              "lastModified": "2025-08-31T12:12:11.200Z"
+              "lastModified": "2025-08-31T18:10:27.168Z"
             }
           ],
-          "lastModified": "2025-08-31T12:12:11.200Z",
+          "lastModified": "2025-08-31T18:10:27.168Z",
           "tags": []
         },
         {
@@ -549,18 +496,12 @@
               "type": "file",
               "path": ".github/instructions/ai-prompt-engineering-safety-best-practices.instructions.md",
               "frontmatter": {
-                "applyTo": [
-                  "*"
-                ],
+                "applyTo": ["*"],
                 "description": "Comprehensive best practices for AI prompt engineering, safety frameworks, bias mitigation, and responsible AI usage for Copilot and LLMs."
               },
-              "tags": [
-                "instructions",
-                "github",
-                "configuration"
-              ],
+              "tags": ["instructions", "github", "configuration"],
               "size": 28145,
-              "lastModified": "2025-08-31T12:12:11.200Z"
+              "lastModified": "2025-08-31T18:10:27.169Z"
             },
             {
               "name": "nextjs-tailwind.instructions.md",
@@ -570,13 +511,9 @@
                 "description": "Next.js + Tailwind development standards and instructions",
                 "applyTo": "**/*.tsx, **/*.ts, **/*.jsx, **/*.js, **/*.css"
               },
-              "tags": [
-                "instructions",
-                "github",
-                "configuration"
-              ],
+              "tags": ["instructions", "github", "configuration"],
               "size": 1860,
-              "lastModified": "2025-08-31T12:12:11.201Z"
+              "lastModified": "2025-08-31T18:10:27.169Z"
             },
             {
               "name": "progressive-tracking-task-implementation.instructions.md",
@@ -586,16 +523,12 @@
                 "applyTo": "**/.copilot-tracking/changes/*.md",
                 "description": "Instructions for implementing task plans with progressive tracking and change record - Brought to you by microsoft/edge-ai"
               },
-              "tags": [
-                "instructions",
-                "github",
-                "configuration"
-              ],
+              "tags": ["instructions", "github", "configuration"],
               "size": 8326,
-              "lastModified": "2025-08-31T12:12:11.201Z"
+              "lastModified": "2025-08-31T18:10:27.170Z"
             }
           ],
-          "lastModified": "2025-08-31T12:12:11.201Z",
+          "lastModified": "2025-08-31T18:10:27.169Z",
           "tags": []
         },
         {
@@ -611,13 +544,9 @@
                 "description": "Comprehensive technology-agnostic prompt for analyzing and documenting project folder structures. Auto-detects project types (.NET, Java, React, Angular, Python, Node.js, Flutter), generates detailed blueprints with visualization options, naming conventions, file placement patterns, and extension templates for maintaining consistent code organization across diverse technology stacks.",
                 "mode": "agent"
               },
-              "tags": [
-                "prompts",
-                "github",
-                "configuration"
-              ],
+              "tags": ["prompts", "github", "configuration"],
               "size": 13768,
-              "lastModified": "2025-08-31T12:12:11.201Z"
+              "lastModified": "2025-08-31T18:10:27.170Z"
             },
             {
               "name": "sql-optimization.prompt.md",
@@ -625,29 +554,20 @@
               "path": ".github/prompts/sql-optimization.prompt.md",
               "frontmatter": {
                 "mode": "agent",
-                "tools": [
-                  "changes",
-                  "codebase",
-                  "editFiles",
-                  "problems"
-                ],
+                "tools": ["changes", "codebase", "editFiles", "problems"],
                 "description": "Universal SQL performance optimization assistant for comprehensive query tuning, indexing strategies, and database performance analysis across all SQL databases (MySQL, PostgreSQL, SQL Server, Oracle). Provides execution plan analysis, pagination optimization, batch operations, and performance monitoring guidance.",
                 "tested_with": "GitHub Copilot Chat (GPT-4o) - Validated July 20, 2025"
               },
-              "tags": [
-                "prompts",
-                "github",
-                "configuration"
-              ],
+              "tags": ["prompts", "github", "configuration"],
               "size": 9351,
-              "lastModified": "2025-08-31T12:12:11.201Z"
+              "lastModified": "2025-08-31T18:10:27.170Z"
             }
           ],
-          "lastModified": "2025-08-31T12:12:11.201Z",
+          "lastModified": "2025-08-31T18:10:27.170Z",
           "tags": []
         }
       ],
-      "lastModified": "2025-08-31T12:12:11.201Z",
+      "lastModified": "2025-08-31T18:10:27.170Z",
       "tags": []
     },
     {
@@ -665,51 +585,43 @@
               "type": "file",
               "path": ".windsurf/rules/angular-fullstack.md",
               "frontmatter": {},
-              "tags": [
-                "instructions"
-              ],
+              "tags": ["instructions"],
               "size": 5634,
-              "lastModified": "2025-08-31T12:12:11.201Z"
+              "lastModified": "2025-08-31T18:10:27.171Z"
             },
             {
               "name": "data-science-ai-dev.md",
               "type": "file",
               "path": ".windsurf/rules/data-science-ai-dev.md",
               "frontmatter": {},
-              "tags": [
-                "instructions"
-              ],
+              "tags": ["instructions"],
               "size": 12048,
-              "lastModified": "2025-08-31T12:12:11.201Z"
+              "lastModified": "2025-08-31T18:10:27.171Z"
             },
             {
               "name": "monorepo-tamagui.md",
               "type": "file",
               "path": ".windsurf/rules/monorepo-tamagui.md",
               "frontmatter": {},
-              "tags": [
-                "instructions"
-              ],
+              "tags": ["instructions"],
               "size": 5625,
-              "lastModified": "2025-08-31T12:12:11.202Z"
+              "lastModified": "2025-08-31T18:10:27.172Z"
             },
             {
               "name": "react-nextjs-standards-rules.md",
               "type": "file",
               "path": ".windsurf/rules/react-nextjs-standards-rules.md",
               "frontmatter": {},
-              "tags": [
-                "instructions"
-              ],
+              "tags": ["instructions"],
               "size": 8920,
-              "lastModified": "2025-08-31T12:12:11.202Z"
+              "lastModified": "2025-08-31T18:10:27.172Z"
             }
           ],
-          "lastModified": "2025-08-31T12:12:11.202Z",
+          "lastModified": "2025-08-31T18:10:27.172Z",
           "tags": []
         }
       ],
-      "lastModified": "2025-08-31T12:12:11.201Z",
+      "lastModified": "2025-08-31T18:10:27.170Z",
       "tags": []
     },
     {
@@ -724,10 +636,10 @@
           "frontmatter": {},
           "tags": [],
           "size": 217,
-          "lastModified": "2025-08-31T12:12:11.202Z"
+          "lastModified": "2025-08-31T18:10:27.174Z"
         }
       ],
-      "lastModified": "2025-08-31T12:12:11.202Z",
+      "lastModified": "2025-08-31T18:10:27.174Z",
       "tags": []
     }
   ],
@@ -735,13 +647,8 @@
     "categories": {
       "agents": {
         "name": "Agents",
-        "patterns": [
-          "**/agents/**",
-          "**/.claude/agents/**"
-        ],
-        "defaultTags": [
-          "agents"
-        ]
+        "patterns": ["**/agents/**", "**/.claude/agents/**"],
+        "defaultTags": ["agents"]
       },
       "commands": {
         "name": "Commands",
@@ -750,20 +657,12 @@
           "**/.claude/commands/**",
           "**/*.command.*"
         ],
-        "defaultTags": [
-          "commands"
-        ]
+        "defaultTags": ["commands"]
       },
       "prompts": {
         "name": "Prompts",
-        "patterns": [
-          "**/prompts/**",
-          "**/claude/**",
-          "**/*.prompt.*"
-        ],
-        "defaultTags": [
-          "prompts"
-        ]
+        "patterns": ["**/prompts/**", "**/claude/**", "**/*.prompt.*"],
+        "defaultTags": ["prompts"]
       },
       "instructions": {
         "name": "Instructions",
@@ -772,20 +671,12 @@
           "**/rules/**",
           "**/*.instructions.*"
         ],
-        "defaultTags": [
-          "instructions"
-        ]
+        "defaultTags": ["instructions"]
       },
       "github": {
         "name": "GitHub",
-        "patterns": [
-          "**/.github/**",
-          ".github/**"
-        ],
-        "defaultTags": [
-          "github",
-          "configuration"
-        ]
+        "patterns": ["**/.github/**", ".github/**"],
+        "defaultTags": ["github", "configuration"]
       }
     },
     "tags": {
@@ -895,11 +786,9 @@
                       "color": "indigo",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 9372,
-                    "lastModified": "2025-08-31T12:12:11.196Z"
+                    "lastModified": "2025-08-31T18:10:27.160Z"
                   },
                   {
                     "name": "ui-designer.md",
@@ -911,11 +800,9 @@
                       "color": "magenta",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 7991,
-                    "lastModified": "2025-08-31T12:12:11.196Z"
+                    "lastModified": "2025-08-31T18:10:27.161Z"
                   },
                   {
                     "name": "ux-researcher.md",
@@ -927,11 +814,9 @@
                       "color": "purple",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 8499,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T18:10:27.161Z"
                   },
                   {
                     "name": "visual-storyteller.md",
@@ -943,11 +828,9 @@
                       "color": "cyan",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 10001,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T18:10:27.161Z"
                   },
                   {
                     "name": "whimsy-injector.md",
@@ -959,14 +842,12 @@
                       "color": "yellow",
                       "tools": "Read, Write, MultiEdit, Grep, Glob"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 7192,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T18:10:27.161Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.197Z",
+                "lastModified": "2025-08-31T18:10:27.161Z",
                 "tags": []
               },
               {
@@ -984,11 +865,9 @@
                       "color": "cyan",
                       "tools": "Write, Read, MultiEdit, Bash, WebFetch"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 5619,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T18:10:27.162Z"
                   },
                   {
                     "name": "backend-architect.md",
@@ -1000,11 +879,9 @@
                       "color": "purple",
                       "tools": "Write, Read, MultiEdit, Bash, Grep"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 5186,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T18:10:27.162Z"
                   },
                   {
                     "name": "devops-automator.md",
@@ -1016,11 +893,9 @@
                       "color": "orange",
                       "tools": "Write, Read, MultiEdit, Bash, Grep"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 5182,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T18:10:27.162Z"
                   },
                   {
                     "name": "frontend-developer.md",
@@ -1032,11 +907,9 @@
                       "color": "blue",
                       "tools": "Write, Read, MultiEdit, Bash, Grep, Glob"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 5345,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T18:10:27.163Z"
                   },
                   {
                     "name": "test-writer-fixer.md",
@@ -1047,14 +920,12 @@
                       "description": "Use this agent when code changes have been made and you need to write new tests, run existing tests, analyze failures, and fix them while maintaining test integrity. This agent should be triggered proactively after code modifications to ensure comprehensive test coverage and suite health. Examples:\n\n<example>\nContext: The user has just implemented a new feature or modified existing code.\nuser: \"I've updated the user authentication logic to support OAuth\"\nassistant: \"I've successfully updated the authentication logic. Now let me run the test-writer-fixer agent to ensure all tests pass with these changes.\"\n<commentary>\nSince code changes were made, use the Task tool to launch the test-writer-fixer agent to run relevant tests and fix any failures.\n</commentary>\n</example>\n\n<example>\nContext: The user has refactored a module or changed function signatures.\nuser: \"Please refactor this payment processing module to use async/await\"\nassistant: \"I've completed the refactoring to use async/await throughout the payment module.\"\n<function call omitted for brevity>\nassistant: \"Now I'll use the test-writer-fixer agent to run the tests and fix any issues caused by the refactoring.\"\n<commentary>\nAfter refactoring code, proactively use the test-writer-fixer agent to ensure tests still pass.\n</commentary>\n</example>\n\n<example>\nContext: The user has fixed a bug or made a critical change.\nuser: \"Fix the race condition in the data synchronization service\"\nassistant: \"I've identified and fixed the race condition by implementing proper locking mechanisms.\"\n<function call omitted for brevity>\nassistant: \"Let me run the test-writer-fixer agent to verify the fix doesn't break existing functionality.\"\n<commentary>\nAfter bug fixes, use the test-writer-fixer agent to ensure the fix works and doesn't introduce regressions.\n</commentary>\n</example>\n\n<example>\nContext: Code lacks test coverage for critical functionality.\nuser: \"Our payment processing module has no tests\"\nassistant: \"That's a critical gap. Let me use the test-writer-fixer agent to create comprehensive tests for the payment module including edge cases and error scenarios.\"\n<commentary>\nCritical modules without tests are high-risk areas that need immediate test coverage.\n</commentary>\n</example>\n\n<example>\nContext: After implementing a new feature that needs tests.\nuser: \"I've added the social sharing functionality\"\nassistant: \"Great! The social sharing is implemented. Now let me use the test-writer-fixer agent to write tests that ensure this feature works correctly across different platforms.\"\n<commentary>\nNew features should always include comprehensive test coverage from the start.\n</commentary>\n</example>\n",
                       "color": "cyan"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 8163,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T18:10:27.163Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T18:10:27.163Z",
                 "tags": []
               },
               {
@@ -1067,25 +938,21 @@
                     "type": "file",
                     "path": ".claude/agents/marketing/reddit-community-builder.md",
                     "frontmatter": {},
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 6917,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T18:10:27.163Z"
                   },
                   {
                     "name": "twitter-engager.md",
                     "type": "file",
                     "path": ".claude/agents/marketing/twitter-engager.md",
                     "frontmatter": {},
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 6120,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T18:10:27.164Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T18:10:27.163Z",
                 "tags": []
               },
               {
@@ -1103,11 +970,9 @@
                       "color": "purple",
                       "tools": "WebSearch, WebFetch, Write, Read, Bash"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 7758,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T18:10:27.164Z"
                   },
                   {
                     "name": "workflow-optimizer.md",
@@ -1119,14 +984,12 @@
                       "color": "teal",
                       "tools": "Read, Write, Bash, TodoWrite, MultiEdit, Grep"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 8540,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T18:10:27.164Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T18:10:27.164Z",
                 "tags": []
               },
               {
@@ -1139,18 +1002,16 @@
                     "type": "file",
                     "path": ".claude/agents/universal-app/CLAUDE.md",
                     "frontmatter": {},
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 9607,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T18:10:27.165Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T18:10:27.165Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.198Z",
+            "lastModified": "2025-08-31T18:10:27.165Z",
             "tags": []
           },
           {
@@ -1163,25 +1024,21 @@
                 "type": "file",
                 "path": ".claude/commands/fix-github-issue.md",
                 "frontmatter": {},
-                "tags": [
-                  "commands"
-                ],
+                "tags": ["commands"],
                 "size": 487,
-                "lastModified": "2025-08-31T12:12:11.199Z"
+                "lastModified": "2025-08-31T18:10:27.165Z"
               },
               {
                 "name": "shadCN.md",
                 "type": "file",
                 "path": ".claude/commands/shadCN.md",
                 "frontmatter": {},
-                "tags": [
-                  "commands"
-                ],
+                "tags": ["commands"],
                 "size": 444,
-                "lastModified": "2025-08-31T12:12:11.199Z"
+                "lastModified": "2025-08-31T18:10:27.166Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.199Z",
+            "lastModified": "2025-08-31T18:10:27.165Z",
             "tags": []
           },
           {
@@ -1192,10 +1049,10 @@
             "frontmatter": {},
             "tags": [],
             "size": 5,
-            "lastModified": "2025-08-31T12:12:11.199Z"
+            "lastModified": "2025-08-31T18:10:27.166Z"
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.199Z",
+        "lastModified": "2025-08-31T18:10:27.166Z",
         "tags": []
       },
       {
@@ -1219,14 +1076,12 @@
                     "path": ".cursor/rules/nextjs/nextjs-modern-ui.mdc",
                     "content": "",
                     "frontmatter": {},
-                    "tags": [
-                      "instructions"
-                    ],
+                    "tags": ["instructions"],
                     "size": 3832,
-                    "lastModified": "2025-08-31T12:12:11.199Z"
+                    "lastModified": "2025-08-31T18:10:27.167Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.199Z",
+                "lastModified": "2025-08-31T18:10:27.167Z",
                 "tags": []
               },
               {
@@ -1239,22 +1094,20 @@
                     "type": "file",
                     "path": ".cursor/rules/tamagui/monorepo-tamagui.md",
                     "frontmatter": {},
-                    "tags": [
-                      "instructions"
-                    ],
+                    "tags": ["instructions"],
                     "size": 5627,
-                    "lastModified": "2025-08-31T12:12:11.199Z"
+                    "lastModified": "2025-08-31T18:10:27.167Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.199Z",
+                "lastModified": "2025-08-31T18:10:27.167Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.199Z",
+            "lastModified": "2025-08-31T18:10:27.167Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.199Z",
+        "lastModified": "2025-08-31T18:10:27.166Z",
         "tags": []
       },
       {
@@ -1276,12 +1129,9 @@
                   "model": "GPT-4.1",
                   "title": "4.1 Beast Mode (VS Code v1.102)"
                 },
-                "tags": [
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["github", "configuration"],
                 "size": 9204,
-                "lastModified": "2025-08-31T12:12:11.200Z"
+                "lastModified": "2025-08-31T18:10:27.167Z"
               },
               {
                 "name": "janitor.chatmode.md",
@@ -1314,12 +1164,9 @@
                     "github"
                   ]
                 },
-                "tags": [
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["github", "configuration"],
                 "size": 2969,
-                "lastModified": "2025-08-31T12:12:11.200Z"
+                "lastModified": "2025-08-31T18:10:27.168Z"
               },
               {
                 "name": "prompt-builder.chatmode.md",
@@ -1344,12 +1191,9 @@
                     "context7"
                   ]
                 },
-                "tags": [
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["github", "configuration"],
                 "size": 18511,
-                "lastModified": "2025-08-31T12:12:11.200Z"
+                "lastModified": "2025-08-31T18:10:27.168Z"
               },
               {
                 "name": "tdd-green.chatmode.md",
@@ -1371,12 +1215,9 @@
                     "terminalLastCommand"
                   ]
                 },
-                "tags": [
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["github", "configuration"],
                 "size": 3431,
-                "lastModified": "2025-08-31T12:12:11.200Z"
+                "lastModified": "2025-08-31T18:10:27.168Z"
               },
               {
                 "name": "tdd-red.chatmode.md",
@@ -1398,15 +1239,12 @@
                     "terminalLastCommand"
                   ]
                 },
-                "tags": [
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["github", "configuration"],
                 "size": 3480,
-                "lastModified": "2025-08-31T12:12:11.200Z"
+                "lastModified": "2025-08-31T18:10:27.168Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.200Z",
+            "lastModified": "2025-08-31T18:10:27.168Z",
             "tags": []
           },
           {
@@ -1419,18 +1257,12 @@
                 "type": "file",
                 "path": ".github/instructions/ai-prompt-engineering-safety-best-practices.instructions.md",
                 "frontmatter": {
-                  "applyTo": [
-                    "*"
-                  ],
+                  "applyTo": ["*"],
                   "description": "Comprehensive best practices for AI prompt engineering, safety frameworks, bias mitigation, and responsible AI usage for Copilot and LLMs."
                 },
-                "tags": [
-                  "instructions",
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["instructions", "github", "configuration"],
                 "size": 28145,
-                "lastModified": "2025-08-31T12:12:11.200Z"
+                "lastModified": "2025-08-31T18:10:27.169Z"
               },
               {
                 "name": "nextjs-tailwind.instructions.md",
@@ -1440,13 +1272,9 @@
                   "description": "Next.js + Tailwind development standards and instructions",
                   "applyTo": "**/*.tsx, **/*.ts, **/*.jsx, **/*.js, **/*.css"
                 },
-                "tags": [
-                  "instructions",
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["instructions", "github", "configuration"],
                 "size": 1860,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T18:10:27.169Z"
               },
               {
                 "name": "progressive-tracking-task-implementation.instructions.md",
@@ -1456,16 +1284,12 @@
                   "applyTo": "**/.copilot-tracking/changes/*.md",
                   "description": "Instructions for implementing task plans with progressive tracking and change record - Brought to you by microsoft/edge-ai"
                 },
-                "tags": [
-                  "instructions",
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["instructions", "github", "configuration"],
                 "size": 8326,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T18:10:27.170Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.201Z",
+            "lastModified": "2025-08-31T18:10:27.169Z",
             "tags": []
           },
           {
@@ -1481,13 +1305,9 @@
                   "description": "Comprehensive technology-agnostic prompt for analyzing and documenting project folder structures. Auto-detects project types (.NET, Java, React, Angular, Python, Node.js, Flutter), generates detailed blueprints with visualization options, naming conventions, file placement patterns, and extension templates for maintaining consistent code organization across diverse technology stacks.",
                   "mode": "agent"
                 },
-                "tags": [
-                  "prompts",
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["prompts", "github", "configuration"],
                 "size": 13768,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T18:10:27.170Z"
               },
               {
                 "name": "sql-optimization.prompt.md",
@@ -1495,29 +1315,20 @@
                 "path": ".github/prompts/sql-optimization.prompt.md",
                 "frontmatter": {
                   "mode": "agent",
-                  "tools": [
-                    "changes",
-                    "codebase",
-                    "editFiles",
-                    "problems"
-                  ],
+                  "tools": ["changes", "codebase", "editFiles", "problems"],
                   "description": "Universal SQL performance optimization assistant for comprehensive query tuning, indexing strategies, and database performance analysis across all SQL databases (MySQL, PostgreSQL, SQL Server, Oracle). Provides execution plan analysis, pagination optimization, batch operations, and performance monitoring guidance.",
                   "tested_with": "GitHub Copilot Chat (GPT-4o) - Validated July 20, 2025"
                 },
-                "tags": [
-                  "prompts",
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["prompts", "github", "configuration"],
                 "size": 9351,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T18:10:27.170Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.201Z",
+            "lastModified": "2025-08-31T18:10:27.170Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.201Z",
+        "lastModified": "2025-08-31T18:10:27.170Z",
         "tags": []
       },
       {
@@ -1535,51 +1346,43 @@
                 "type": "file",
                 "path": ".windsurf/rules/angular-fullstack.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 5634,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T18:10:27.171Z"
               },
               {
                 "name": "data-science-ai-dev.md",
                 "type": "file",
                 "path": ".windsurf/rules/data-science-ai-dev.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 12048,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T18:10:27.171Z"
               },
               {
                 "name": "monorepo-tamagui.md",
                 "type": "file",
                 "path": ".windsurf/rules/monorepo-tamagui.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 5625,
-                "lastModified": "2025-08-31T12:12:11.202Z"
+                "lastModified": "2025-08-31T18:10:27.172Z"
               },
               {
                 "name": "react-nextjs-standards-rules.md",
                 "type": "file",
                 "path": ".windsurf/rules/react-nextjs-standards-rules.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 8920,
-                "lastModified": "2025-08-31T12:12:11.202Z"
+                "lastModified": "2025-08-31T18:10:27.172Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.202Z",
+            "lastModified": "2025-08-31T18:10:27.172Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.201Z",
+        "lastModified": "2025-08-31T18:10:27.170Z",
         "tags": []
       },
       {
@@ -1594,10 +1397,10 @@
             "frontmatter": {},
             "tags": [],
             "size": 217,
-            "lastModified": "2025-08-31T12:12:11.202Z"
+            "lastModified": "2025-08-31T18:10:27.174Z"
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.202Z",
+        "lastModified": "2025-08-31T18:10:27.174Z",
         "tags": []
       }
     ],
@@ -1627,11 +1430,9 @@
                       "color": "indigo",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 9372,
-                    "lastModified": "2025-08-31T12:12:11.196Z"
+                    "lastModified": "2025-08-31T18:10:27.160Z"
                   },
                   {
                     "name": "ui-designer.md",
@@ -1643,11 +1444,9 @@
                       "color": "magenta",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 7991,
-                    "lastModified": "2025-08-31T12:12:11.196Z"
+                    "lastModified": "2025-08-31T18:10:27.161Z"
                   },
                   {
                     "name": "ux-researcher.md",
@@ -1659,11 +1458,9 @@
                       "color": "purple",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 8499,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T18:10:27.161Z"
                   },
                   {
                     "name": "visual-storyteller.md",
@@ -1675,11 +1472,9 @@
                       "color": "cyan",
                       "tools": "Write, Read, MultiEdit, WebSearch, WebFetch"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 10001,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T18:10:27.161Z"
                   },
                   {
                     "name": "whimsy-injector.md",
@@ -1691,14 +1486,12 @@
                       "color": "yellow",
                       "tools": "Read, Write, MultiEdit, Grep, Glob"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 7192,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T18:10:27.161Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.197Z",
+                "lastModified": "2025-08-31T18:10:27.161Z",
                 "tags": []
               },
               {
@@ -1716,11 +1509,9 @@
                       "color": "cyan",
                       "tools": "Write, Read, MultiEdit, Bash, WebFetch"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 5619,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T18:10:27.162Z"
                   },
                   {
                     "name": "backend-architect.md",
@@ -1732,11 +1523,9 @@
                       "color": "purple",
                       "tools": "Write, Read, MultiEdit, Bash, Grep"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 5186,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T18:10:27.162Z"
                   },
                   {
                     "name": "devops-automator.md",
@@ -1748,11 +1537,9 @@
                       "color": "orange",
                       "tools": "Write, Read, MultiEdit, Bash, Grep"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 5182,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T18:10:27.162Z"
                   },
                   {
                     "name": "frontend-developer.md",
@@ -1764,11 +1551,9 @@
                       "color": "blue",
                       "tools": "Write, Read, MultiEdit, Bash, Grep, Glob"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 5345,
-                    "lastModified": "2025-08-31T12:12:11.197Z"
+                    "lastModified": "2025-08-31T18:10:27.163Z"
                   },
                   {
                     "name": "test-writer-fixer.md",
@@ -1779,14 +1564,12 @@
                       "description": "Use this agent when code changes have been made and you need to write new tests, run existing tests, analyze failures, and fix them while maintaining test integrity. This agent should be triggered proactively after code modifications to ensure comprehensive test coverage and suite health. Examples:\n\n<example>\nContext: The user has just implemented a new feature or modified existing code.\nuser: \"I've updated the user authentication logic to support OAuth\"\nassistant: \"I've successfully updated the authentication logic. Now let me run the test-writer-fixer agent to ensure all tests pass with these changes.\"\n<commentary>\nSince code changes were made, use the Task tool to launch the test-writer-fixer agent to run relevant tests and fix any failures.\n</commentary>\n</example>\n\n<example>\nContext: The user has refactored a module or changed function signatures.\nuser: \"Please refactor this payment processing module to use async/await\"\nassistant: \"I've completed the refactoring to use async/await throughout the payment module.\"\n<function call omitted for brevity>\nassistant: \"Now I'll use the test-writer-fixer agent to run the tests and fix any issues caused by the refactoring.\"\n<commentary>\nAfter refactoring code, proactively use the test-writer-fixer agent to ensure tests still pass.\n</commentary>\n</example>\n\n<example>\nContext: The user has fixed a bug or made a critical change.\nuser: \"Fix the race condition in the data synchronization service\"\nassistant: \"I've identified and fixed the race condition by implementing proper locking mechanisms.\"\n<function call omitted for brevity>\nassistant: \"Let me run the test-writer-fixer agent to verify the fix doesn't break existing functionality.\"\n<commentary>\nAfter bug fixes, use the test-writer-fixer agent to ensure the fix works and doesn't introduce regressions.\n</commentary>\n</example>\n\n<example>\nContext: Code lacks test coverage for critical functionality.\nuser: \"Our payment processing module has no tests\"\nassistant: \"That's a critical gap. Let me use the test-writer-fixer agent to create comprehensive tests for the payment module including edge cases and error scenarios.\"\n<commentary>\nCritical modules without tests are high-risk areas that need immediate test coverage.\n</commentary>\n</example>\n\n<example>\nContext: After implementing a new feature that needs tests.\nuser: \"I've added the social sharing functionality\"\nassistant: \"Great! The social sharing is implemented. Now let me use the test-writer-fixer agent to write tests that ensure this feature works correctly across different platforms.\"\n<commentary>\nNew features should always include comprehensive test coverage from the start.\n</commentary>\n</example>\n",
                       "color": "cyan"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 8163,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T18:10:27.163Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T18:10:27.163Z",
                 "tags": []
               },
               {
@@ -1799,25 +1582,21 @@
                     "type": "file",
                     "path": ".claude/agents/marketing/reddit-community-builder.md",
                     "frontmatter": {},
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 6917,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T18:10:27.163Z"
                   },
                   {
                     "name": "twitter-engager.md",
                     "type": "file",
                     "path": ".claude/agents/marketing/twitter-engager.md",
                     "frontmatter": {},
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 6120,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T18:10:27.164Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T18:10:27.163Z",
                 "tags": []
               },
               {
@@ -1835,11 +1614,9 @@
                       "color": "purple",
                       "tools": "WebSearch, WebFetch, Write, Read, Bash"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 7758,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T18:10:27.164Z"
                   },
                   {
                     "name": "workflow-optimizer.md",
@@ -1851,14 +1628,12 @@
                       "color": "teal",
                       "tools": "Read, Write, Bash, TodoWrite, MultiEdit, Grep"
                     },
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 8540,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T18:10:27.164Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T18:10:27.164Z",
                 "tags": []
               },
               {
@@ -1871,22 +1646,20 @@
                     "type": "file",
                     "path": ".claude/agents/universal-app/CLAUDE.md",
                     "frontmatter": {},
-                    "tags": [
-                      "agents"
-                    ],
+                    "tags": ["agents"],
                     "size": 9607,
-                    "lastModified": "2025-08-31T12:12:11.198Z"
+                    "lastModified": "2025-08-31T18:10:27.165Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.198Z",
+                "lastModified": "2025-08-31T18:10:27.165Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.198Z",
+            "lastModified": "2025-08-31T18:10:27.165Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.199Z",
+        "lastModified": "2025-08-31T18:10:27.166Z",
         "tags": []
       }
     ],
@@ -1909,13 +1682,9 @@
                   "description": "Comprehensive technology-agnostic prompt for analyzing and documenting project folder structures. Auto-detects project types (.NET, Java, React, Angular, Python, Node.js, Flutter), generates detailed blueprints with visualization options, naming conventions, file placement patterns, and extension templates for maintaining consistent code organization across diverse technology stacks.",
                   "mode": "agent"
                 },
-                "tags": [
-                  "prompts",
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["prompts", "github", "configuration"],
                 "size": 13768,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T18:10:27.170Z"
               },
               {
                 "name": "sql-optimization.prompt.md",
@@ -1923,29 +1692,20 @@
                 "path": ".github/prompts/sql-optimization.prompt.md",
                 "frontmatter": {
                   "mode": "agent",
-                  "tools": [
-                    "changes",
-                    "codebase",
-                    "editFiles",
-                    "problems"
-                  ],
+                  "tools": ["changes", "codebase", "editFiles", "problems"],
                   "description": "Universal SQL performance optimization assistant for comprehensive query tuning, indexing strategies, and database performance analysis across all SQL databases (MySQL, PostgreSQL, SQL Server, Oracle). Provides execution plan analysis, pagination optimization, batch operations, and performance monitoring guidance.",
                   "tested_with": "GitHub Copilot Chat (GPT-4o) - Validated July 20, 2025"
                 },
-                "tags": [
-                  "prompts",
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["prompts", "github", "configuration"],
                 "size": 9351,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T18:10:27.170Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.201Z",
+            "lastModified": "2025-08-31T18:10:27.170Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.201Z",
+        "lastModified": "2025-08-31T18:10:27.170Z",
         "tags": []
       }
     ],
@@ -1965,29 +1725,25 @@
                 "type": "file",
                 "path": ".claude/commands/fix-github-issue.md",
                 "frontmatter": {},
-                "tags": [
-                  "commands"
-                ],
+                "tags": ["commands"],
                 "size": 487,
-                "lastModified": "2025-08-31T12:12:11.199Z"
+                "lastModified": "2025-08-31T18:10:27.165Z"
               },
               {
                 "name": "shadCN.md",
                 "type": "file",
                 "path": ".claude/commands/shadCN.md",
                 "frontmatter": {},
-                "tags": [
-                  "commands"
-                ],
+                "tags": ["commands"],
                 "size": 444,
-                "lastModified": "2025-08-31T12:12:11.199Z"
+                "lastModified": "2025-08-31T18:10:27.166Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.199Z",
+            "lastModified": "2025-08-31T18:10:27.165Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.199Z",
+        "lastModified": "2025-08-31T18:10:27.166Z",
         "tags": []
       }
     ],
@@ -2012,14 +1768,12 @@
                     "type": "file",
                     "path": ".cursor/rules/nextjs/nextjs-modern-ui.mdc",
                     "frontmatter": {},
-                    "tags": [
-                      "instructions"
-                    ],
+                    "tags": ["instructions"],
                     "size": 3832,
-                    "lastModified": "2025-08-31T12:12:11.199Z"
+                    "lastModified": "2025-08-31T18:10:27.167Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.199Z",
+                "lastModified": "2025-08-31T18:10:27.167Z",
                 "tags": []
               },
               {
@@ -2032,22 +1786,20 @@
                     "type": "file",
                     "path": ".cursor/rules/tamagui/monorepo-tamagui.md",
                     "frontmatter": {},
-                    "tags": [
-                      "instructions"
-                    ],
+                    "tags": ["instructions"],
                     "size": 5627,
-                    "lastModified": "2025-08-31T12:12:11.199Z"
+                    "lastModified": "2025-08-31T18:10:27.167Z"
                   }
                 ],
-                "lastModified": "2025-08-31T12:12:11.199Z",
+                "lastModified": "2025-08-31T18:10:27.167Z",
                 "tags": []
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.199Z",
+            "lastModified": "2025-08-31T18:10:27.167Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.199Z",
+        "lastModified": "2025-08-31T18:10:27.166Z",
         "tags": []
       },
       {
@@ -2065,18 +1817,12 @@
                 "type": "file",
                 "path": ".github/instructions/ai-prompt-engineering-safety-best-practices.instructions.md",
                 "frontmatter": {
-                  "applyTo": [
-                    "*"
-                  ],
+                  "applyTo": ["*"],
                   "description": "Comprehensive best practices for AI prompt engineering, safety frameworks, bias mitigation, and responsible AI usage for Copilot and LLMs."
                 },
-                "tags": [
-                  "instructions",
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["instructions", "github", "configuration"],
                 "size": 28145,
-                "lastModified": "2025-08-31T12:12:11.200Z"
+                "lastModified": "2025-08-31T18:10:27.169Z"
               },
               {
                 "name": "nextjs-tailwind.instructions.md",
@@ -2086,13 +1832,9 @@
                   "description": "Next.js + Tailwind development standards and instructions",
                   "applyTo": "**/*.tsx, **/*.ts, **/*.jsx, **/*.js, **/*.css"
                 },
-                "tags": [
-                  "instructions",
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["instructions", "github", "configuration"],
                 "size": 1860,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T18:10:27.169Z"
               },
               {
                 "name": "progressive-tracking-task-implementation.instructions.md",
@@ -2102,20 +1844,16 @@
                   "applyTo": "**/.copilot-tracking/changes/*.md",
                   "description": "Instructions for implementing task plans with progressive tracking and change record - Brought to you by microsoft/edge-ai"
                 },
-                "tags": [
-                  "instructions",
-                  "github",
-                  "configuration"
-                ],
+                "tags": ["instructions", "github", "configuration"],
                 "size": 8326,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T18:10:27.170Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.201Z",
+            "lastModified": "2025-08-31T18:10:27.169Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.201Z",
+        "lastModified": "2025-08-31T18:10:27.170Z",
         "tags": []
       },
       {
@@ -2133,51 +1871,43 @@
                 "type": "file",
                 "path": ".windsurf/rules/angular-fullstack.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 5634,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T18:10:27.171Z"
               },
               {
                 "name": "data-science-ai-dev.md",
                 "type": "file",
                 "path": ".windsurf/rules/data-science-ai-dev.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 12048,
-                "lastModified": "2025-08-31T12:12:11.201Z"
+                "lastModified": "2025-08-31T18:10:27.171Z"
               },
               {
                 "name": "monorepo-tamagui.md",
                 "type": "file",
                 "path": ".windsurf/rules/monorepo-tamagui.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 5625,
-                "lastModified": "2025-08-31T12:12:11.202Z"
+                "lastModified": "2025-08-31T18:10:27.172Z"
               },
               {
                 "name": "react-nextjs-standards-rules.md",
                 "type": "file",
                 "path": ".windsurf/rules/react-nextjs-standards-rules.md",
                 "frontmatter": {},
-                "tags": [
-                  "instructions"
-                ],
+                "tags": ["instructions"],
                 "size": 8920,
-                "lastModified": "2025-08-31T12:12:11.202Z"
+                "lastModified": "2025-08-31T18:10:27.172Z"
               }
             ],
-            "lastModified": "2025-08-31T12:12:11.202Z",
+            "lastModified": "2025-08-31T18:10:27.172Z",
             "tags": []
           }
         ],
-        "lastModified": "2025-08-31T12:12:11.201Z",
+        "lastModified": "2025-08-31T18:10:27.170Z",
         "tags": []
       }
     ]

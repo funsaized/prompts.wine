@@ -59,13 +59,13 @@ function getDefinitions() {
         name: "Instructions",
         description: "Setup guides and configuration instructions",
       },
-      github: { 
-        name: "GitHub", 
-        description: "GitHub workflows and configuration files" 
+      github: {
+        name: "GitHub",
+        description: "GitHub workflows and configuration files",
       },
-      configuration: { 
-        name: "Configuration", 
-        description: "Configuration files and settings" 
+      configuration: {
+        name: "Configuration",
+        description: "Configuration files and settings",
       },
     },
     patterns: [],
@@ -78,7 +78,7 @@ function getDefinitions() {
 function parseMarkdownFile(filePath) {
   try {
     const fileContent = fs.readFileSync(filePath, "utf8");
-    
+
     // First, try normal parsing
     try {
       const parsed = matter(fileContent);
@@ -88,43 +88,49 @@ function parseMarkdownFile(filePath) {
       };
     } catch (yamlError) {
       // If YAML parsing fails, try to extract basic metadata and treat rest as content
-      console.warn(`YAML parsing failed for ${filePath}, attempting recovery...`);
-      
+      console.warn(
+        `YAML parsing failed for ${filePath}, attempting recovery...`
+      );
+
       // Try to extract frontmatter manually
-      const frontmatterMatch = fileContent.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+      const frontmatterMatch = fileContent.match(
+        /^---\n([\s\S]*?)\n---\n([\s\S]*)$/
+      );
       if (frontmatterMatch) {
         const [, rawFrontmatter, content] = frontmatterMatch;
-        
+
         // Extract simple key-value pairs, ignoring complex structures
         const frontmatter = {};
-        const lines = rawFrontmatter.split('\n');
-        
+        const lines = rawFrontmatter.split("\n");
+
         for (const line of lines) {
           const match = line.match(/^([a-zA-Z_][a-zA-Z0-9_]*)\s*:\s*(.*)$/);
           if (match) {
             const [, key, value] = match;
             // Only extract simple values, skip complex multiline content
-            if (!value.includes('<') && !value.includes('\\n')) {
-              frontmatter[key] = value.replace(/^["']|["']$/g, ''); // Remove quotes
-            } else if (key === 'name' || key === 'color' || key === 'tools') {
+            if (!value.includes("<") && !value.includes("\\n")) {
+              frontmatter[key] = value.replace(/^["']|["']$/g, ""); // Remove quotes
+            } else if (key === "name" || key === "color" || key === "tools") {
               // Always extract these important fields
-              frontmatter[key] = value.replace(/^["']|["']$/g, '');
+              frontmatter[key] = value.replace(/^["']|["']$/g, "");
             }
           }
         }
-        
+
         return {
           content: content,
           frontmatter,
         };
       }
-      
+
       // Last resort: treat entire file as content
-      console.warn(`Could not parse frontmatter for ${filePath}, treating as plain content`);
+      console.warn(
+        `Could not parse frontmatter for ${filePath}, treating as plain content`
+      );
       return {
         content: fileContent,
         frontmatter: {
-          name: path.basename(filePath, '.md'), // Use filename as fallback name
+          name: path.basename(filePath, ".md"), // Use filename as fallback name
         },
       };
     }
@@ -133,7 +139,7 @@ function parseMarkdownFile(filePath) {
     return {
       content: "",
       frontmatter: {
-        name: path.basename(filePath, '.md'), // Use filename as fallback name
+        name: path.basename(filePath, ".md"), // Use filename as fallback name
       },
     };
   }
@@ -449,7 +455,9 @@ function generateStaticContentData() {
     `📊 Parsing health: ${parsedFiles}/${totalFiles} successful (${stats.parseSuccessRate}%)`
   );
   if (failedFiles > 0) {
-    console.warn(`⚠️  ${failedFiles} files had parsing issues but were recovered`);
+    console.warn(
+      `⚠️  ${failedFiles} files had parsing issues but were recovered`
+    );
   }
 
   return {
