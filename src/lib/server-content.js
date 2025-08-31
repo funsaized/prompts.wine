@@ -147,6 +147,7 @@ function matchesPattern(filePath, pattern) {
   // Handle ** first (matches any number of directories including none)
   // Then handle single * (matches within a single directory level)
   const regexPattern = pattern
+    .replace(/\./g, "\\.") // Escape dots to match literal dots
     .replace(/\*\*/g, "§DOUBLE_STAR§") // Temporary placeholder
     .replace(/\*/g, "[^/]*") // Single * matches within directory
     .replace(/§DOUBLE_STAR§/g, ".*") // ** matches across directories
