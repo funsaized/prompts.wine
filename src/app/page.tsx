@@ -10,6 +10,8 @@ import { Download, Tag, Clock } from "lucide-react";
 import Image from "next/image";
 import { FileTreeItem } from "@/lib/content-types";
 import { getContentTypeColorClass } from "@/lib/colors";
+import TextType from "@/components/ui/TextType";
+
 // Import just the type, not the server functions
 export interface StaticContentData {
   contentTree: FileTreeItem[];
@@ -58,7 +60,7 @@ export default function Prompts(): React.JSX.Element {
         setContentData(data);
       } catch (err) {
         setError(err instanceof Error ? err.message : "Failed to load content");
-        // eslint-disable-next-line no-console
+
         console.error("Error loading content:", err);
       } finally {
         setLoading(false);
@@ -119,11 +121,20 @@ export default function Prompts(): React.JSX.Element {
             <h1 className="text-3xl tracking-tight sm:text-4xl">
               /prompts.wine
             </h1>
+
             <div className="mt-1 flex items-center gap-2 pl-2">
               <span>└─</span>
               <h2>
-                A directory of instructions, agents, and workflows for LLMs &
-                tools that have aged like fine wine 🍷
+                <TextType
+                  text={[
+                    "A directory of instructions, agents, and workflows for LLMs &tools that have aged like fine wine 🍷",
+                    "Made by Sai Nimmagadda",
+                  ]}
+                  typingSpeed={75}
+                  pauseDuration={1500}
+                  showCursor={true}
+                  cursorCharacter="|"
+                />
               </h2>
             </div>
             <div className="flex items-center gap-2 pl-2">
@@ -314,14 +325,16 @@ export default function Prompts(): React.JSX.Element {
                     <p className="text-muted-foreground text-sm">
                       Click on files in the project explorer to view their
                       content. Use the tabs above to filter by{" "}
-                      <span 
-                        className="bg-clip-text text-transparent font-medium"
-                        style={{ 
-                          backgroundImage: 'linear-gradient(90deg, #3b82f6 0%, #eab308 25%, #10b981 50%, #8b5cf6 75%)'
+                      <span
+                        className="bg-clip-text font-medium text-transparent"
+                        style={{
+                          backgroundImage:
+                            "linear-gradient(90deg, #3b82f6 0%, #eab308 25%, #10b981 50%, #8b5cf6 75%)",
                         }}
                       >
                         category
-                      </span>.
+                      </span>
+                      .
                     </p>
                     {contentData?.stats && (
                       <div className="text-muted-foreground mt-3 flex items-center gap-4 text-sm">
