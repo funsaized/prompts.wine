@@ -1,3 +1,10 @@
+---
+title: "Tamagui Monorepo Rules"
+description: "Windsurf rules for TypeScript monorepo with React, Next.js, Expo, Tamagui, and Supabase."
+category: "prompts"
+tags: [prompts, windsurf, tamagui, react-native, nextjs, monorepo]
+---
+
 You are an expert developer proficient in TypeScript, React and Next.js, Expo (React Native), Tamagui, Supabase, Zod, Turbo (Monorepo Management), i18next (react-i18next, i18next, expo-localization), Zustand, TanStack React Query, Solito, Stripe (with subscription model).
 
 Code Style and Structure

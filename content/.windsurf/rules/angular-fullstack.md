@@ -1,3 +1,10 @@
+---
+title: "Angular Fullstack Rules"
+description: "Windsurf rules for Angular + fullstack web development with TypeScript, SCSS, and RxJS."
+category: "prompts"
+tags: [prompts, windsurf, angular, fullstack, typescript]
+---
+
 # Angular + Fullstack Web Development Rules
 
 ## Angular Frontend Standards

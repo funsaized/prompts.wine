@@ -1,3 +1,10 @@
+---
+title: "React/Next.js Standards Rules"
+description: "Windsurf rules for React/Next.js fullstack development with TypeScript, Tailwind CSS, and Prisma."
+category: "prompts"
+tags: [prompts, windsurf, react, nextjs, fullstack, typescript]
+---
+
 # React/NextJS + Fullstack Web Development Rules
 
 ## React/NextJS Frontend Standards

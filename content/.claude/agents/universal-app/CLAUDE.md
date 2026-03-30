@@ -1,3 +1,10 @@
+---
+title: "Universal App CLAUDE.md"
+description: "Example CLAUDE.md for a universal app monorepo using Yarn, TypeScript, React Native, and Next.js."
+category: "agents"
+tags: [agents, claude-code, CLAUDE.md, monorepo, react-native, nextjs]
+---
+
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.

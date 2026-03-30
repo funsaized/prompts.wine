@@ -7,7 +7,7 @@ import { ContentViewer } from "@/components/ui/content-viewer";
 import { FrontmatterDisplay } from "@/components/ui/frontmatter-display";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import { Download, Tag, Clock } from "lucide-react";
+import { Download, Tag, Clock, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { FileTreeItem } from "@/lib/content-types";
 import { getContentTypeColorClass } from "@/lib/colors";
@@ -249,6 +249,17 @@ export default function Prompts(): React.JSX.Element {
                         <p className="text-muted-foreground text-sm">
                           {selectedFile}
                         </p>
+                        {selectedFileItem.frontmatter?.source && (
+                          <a
+                            href={selectedFileItem.frontmatter.source}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-primary hover:text-primary/80 mt-1 inline-flex items-center gap-1 text-xs transition-colors"
+                          >
+                            <ExternalLink className="h-3 w-3" />
+                            Source
+                          </a>
+                        )}
                       </div>
                       <div className="flex items-center gap-2">
                         {selectedFileItem.tags &&

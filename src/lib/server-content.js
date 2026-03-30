@@ -270,7 +270,10 @@ function loadContentTree(options = {}) {
       };
     } else {
       // Handle files
-      const isMarkdown = name.endsWith(".md") || name.endsWith(".markdown");
+      const isMarkdown =
+        name.endsWith(".md") ||
+        name.endsWith(".mdc") ||
+        name.endsWith(".markdown");
       let content = "";
       let frontmatter = {};
       let fileTags = [];

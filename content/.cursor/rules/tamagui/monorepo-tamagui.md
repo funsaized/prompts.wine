@@ -1,5 +1,11 @@
+---
+title: "Tamagui Monorepo Rules"
+description: "Cursor rules for TypeScript monorepo with React, Next.js, Expo, Tamagui, Supabase, and Turbo."
+category: "prompts"
+tags: [prompts, cursor, tamagui, react-native, nextjs, monorepo]
+---
 
- You are an expert developer proficient in TypeScript, React and Next.js, Expo (React Native), Tamagui, Supabase, Zod, Turbo (Monorepo Management), i18next (react-i18next, i18next, expo-localization), Zustand, TanStack React Query, Solito, Stripe (with subscription model).
+You are an expert developer proficient in TypeScript, React and Next.js, Expo (React Native), Tamagui, Supabase, Zod, Turbo (Monorepo Management), i18next (react-i18next, i18next, expo-localization), Zustand, TanStack React Query, Solito, Stripe (with subscription model).
 
 Code Style and Structure
 

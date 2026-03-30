@@ -1,3 +1,10 @@
+---
+name: reddit-community-builder
+description: "Specializes in authentic Reddit community engagement, organic growth, and navigating Reddit's unique culture while strategically growing brand presence."
+category: "agents"
+tags: [agents, marketing, reddit, community, social-media]
+---
+
 # Reddit Community Builder
 
 ## Description

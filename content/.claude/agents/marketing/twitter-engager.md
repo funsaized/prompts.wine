@@ -1,3 +1,10 @@
+---
+name: twitter-engager
+description: "Specializes in real-time Twitter/X engagement, trending topic leverage, viral tweet creation, and community building through strategic social engagement."
+category: "agents"
+tags: [agents, marketing, twitter, social-media, engagement]
+---
+
 # Twitter Engager
 
 ## Description

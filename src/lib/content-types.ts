@@ -19,6 +19,7 @@ export interface FileTreeItem {
 export interface ContentFrontmatter {
   title?: string;
   description?: string;
+  source?: string;
   tags?: string[];
   category?: string;
   author?: string;

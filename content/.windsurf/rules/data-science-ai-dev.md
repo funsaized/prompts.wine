@@ -1,3 +1,10 @@
+---
+title: "Data Science & AI Dev Rules"
+description: "Windsurf rules for Python data science with Scikit-learn, TensorFlow, and Jupyter."
+category: "prompts"
+tags: [prompts, windsurf, python, data-science, tensorflow, scikit-learn]
+---
+
 # Data Science (Python, Scikit-learn, TensorFlow) Rules
 
 ## Python Environment & Setup

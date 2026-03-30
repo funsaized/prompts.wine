@@ -1,3 +1,10 @@
+---
+title: "shadcn/ui Command"
+description: "Claude Code slash command for using shadcn/ui components via the MCP server during planning and implementation."
+category: "commands"
+tags: [commands, claude-code, shadcn-ui, mcp]
+---
+
 shadCN Usage Rule
 When asked to use shadcn components, use the MCP server.
 

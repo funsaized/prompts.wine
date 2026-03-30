@@ -1,1 +1,0 @@
-Help me create a process that will allow a user to interact with an LLM to work through the following. I am not looking to create an interface; just a series of well-thought-out prompts and user instructions will do.

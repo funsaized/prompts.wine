@@ -1,3 +1,10 @@
+---
+title: "Fix GitHub Issue"
+description: "Claude Code slash command that analyzes a GitHub issue, implements a fix, runs tests, and creates a PR."
+category: "commands"
+tags: [commands, claude-code, github, automation]
+---
+
 Please analyze and fix the GitHub issue: $ARGUMENTS.
 
 Follow these steps:
