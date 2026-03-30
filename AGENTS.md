@@ -40,7 +40,7 @@ src/
 │       ├── tabs.tsx         # shadcn/ui Tabs (Radix)
 │       ├── scroll-area.tsx  # shadcn/ui ScrollArea (Radix)
 │       ├── collapsible.tsx  # shadcn/ui Collapsible (Radix)
-│       ├── tooltip.tsx      # shadcn/ui Tooltip (Radix)
+│       ├── tooltip.tsx      #col shadcn/ui Tooltip (Radix)
 │       ├── file-tree.tsx    # Custom file tree with color-coded content types
 │       ├── content-viewer.tsx  # Markdown renderer (react-markdown + syntax highlighting)
 │       ├── frontmatter-display.tsx  # Expandable frontmatter description
